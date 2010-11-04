@@ -1,8 +1,5 @@
 <?php
 class JSBreadCrumbsHooks {
-
-	private static $variables = array();
-
 	/**
 	 * BeforePageDisplay hook
 	 */
