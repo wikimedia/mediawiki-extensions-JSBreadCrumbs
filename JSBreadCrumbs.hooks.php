@@ -25,6 +25,8 @@ class JSBreadCrumbsHooks {
 			return true;
 		}
 
+		wfLoadExtensionMessages( 'JSBreadCrumbs' );
+
 		// Allow localized separator to be overriden
 		if ( $wgJSBreadCrumbsSeparator !== '' ) {
 			$separator = $wgJSBreadCrumbsSeparator;
