@@ -55,9 +55,9 @@ $messages['be-tarask'] = array(
  * @author Y-M D
  */
 $messages['br'] = array(
-	'jsbreadcrumbs-desc' => 'Ouzhpennañ a ra un heuliad liammoù merdeiñ dindan barenn an ivinelloù',
+	'jsbreadcrumbs-desc' => 'Ouzhpennañ a ra un heuliad liammoù merdeiñ dindan barrenn an ivinelloù',
 	'jsbreadcrumbs-leading-description' => 'Hentad merdeiñ',
-	'prefs-jsbreadcrumbs' => 'Barenn merdeiñ',
+	'prefs-jsbreadcrumbs' => 'Barrenn verdeiñ',
 	'prefs-jsbreadcrumbs-showsite' => "Merkañ anv al lec'hienn er varrenn verdeiñ (talvoudus pa vez implijet an arc'hwel e meur a wiki)",
 	'prefs-jsbreadcrumbs-showcrumbs' => 'Diskouez ar varenn merdeiñ',
 	'prefs-jsbreadcrumbs-numberofcrumbs' => 'Niver a liammoù merdeiñ',
