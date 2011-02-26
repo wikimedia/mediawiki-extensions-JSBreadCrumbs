@@ -150,6 +150,19 @@ $messages['gsw'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maximal 20 „Brogmoseme“',
 );
 
+/** Hebrew (עברית)
+ * @author Amire80
+ */
+$messages['he'] = array(
+	'jsbreadcrumbs-desc' => 'הוספת שביל פירורי לחם תחת סרגל הלשוניות',
+	'jsbreadcrumbs-leading-description' => 'שביל ניווט',
+	'prefs-jsbreadcrumbs' => 'פירורי לחם',
+	'prefs-jsbreadcrumbs-showsite' => 'לכלול את שם האתר בפירורי הלחם (זה שימושי במערכות של מספר אתרי ויקי)',
+	'prefs-jsbreadcrumbs-showcrumbs' => 'להציג פירורי לחם',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'מספר פירורי הלחם',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => '20 פירורי לחם לכל היותר',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
