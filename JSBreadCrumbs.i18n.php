@@ -357,3 +357,10 @@ $messages['tl'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Pinakamaraming 20 mga himulmol ng tinapay',
 );
 
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Hydra
+ */
+$messages['zh-hans'] = array(
+	'jsbreadcrumbs-separator' => '》',
+);
+
