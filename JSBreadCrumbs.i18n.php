@@ -24,8 +24,10 @@ $messages['en'] = array(
 
 /** Message documentation (Message documentation)
  * @author Peter17
+ * @author Purodha
  */
 $messages['qqq'] = array(
+	'jsbreadcrumbs-desc' => '{{desc}}',
 	'prefs-jsbreadcrumbs' => 'This is the name of the extension JS Bread Crumbs (http://www.mediawiki.org/wiki/Extension:BreadCrumbs). The expression "Bread Crumbs" designates a kind of navigation bar (see http://en.wiktionary.org/wiki/breadcrumbs).',
 );
 
