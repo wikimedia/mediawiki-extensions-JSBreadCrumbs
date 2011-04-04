@@ -71,6 +71,12 @@ $messages['br'] = array(
  */
 $messages['bs'] = array(
 	'jsbreadcrumbs-desc' => 'Dodaje trag za navigaciju putem mrvica ispod trake sa jezičcima',
+	'jsbreadcrumbs-leading-description' => 'Trag navigacije',
+	'prefs-jsbreadcrumbs' => 'Mrvice',
+	'prefs-jsbreadcrumbs-showsite' => 'Uključuje ime sajta u mrvice (korisno kad se koristi među wikijima)',
+	'prefs-jsbreadcrumbs-showcrumbs' => 'Prikaži mrvice',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'Broj mrvica',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Najviše 20 mrvica',
 );
 
 /** German (Deutsch)
