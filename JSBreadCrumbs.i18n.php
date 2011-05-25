@@ -132,6 +132,17 @@ $messages['fr'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maximum 20 liens de navigation',
 );
 
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'jsbreadcrumbs-leading-description' => 'Rota de navigacion',
+	'prefs-jsbreadcrumbs' => '« Chaplons de pan »',
+	'prefs-jsbreadcrumbs-showcrumbs' => 'Fâre vêre los « chaplons de pan »',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'Nombro de « chaplons de pan »',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'U més 20 « chaplons de pan »',
+);
+
 /** Galician (Galego)
  * @author Toliño
  */
