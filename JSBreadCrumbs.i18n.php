@@ -39,6 +39,19 @@ $messages['af'] = array(
 	'jsbreadcrumbs-leading-description' => 'Navigasie roete',
 );
 
+/** Asturian (Asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'jsbreadcrumbs-desc' => "Amiesta un camín d'enllaces de navegación baxo la barra de llingüetes",
+	'jsbreadcrumbs-leading-description' => 'Camín de navegación',
+	'prefs-jsbreadcrumbs' => 'Enllaces de navegación',
+	'prefs-jsbreadcrumbs-showsite' => "Incluir el nome del sitiu nos enllaces de navegación (útil cuando s'usa al traviés de varies wikis)",
+	'prefs-jsbreadcrumbs-showcrumbs' => 'Amosar los enllaces de navegación',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => "Númberu d'enllaces de navegación",
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Máximu, 20 enllaces de navegación',
+);
+
 /** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  */
