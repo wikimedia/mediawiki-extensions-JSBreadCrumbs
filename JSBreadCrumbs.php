@@ -29,7 +29,7 @@ $wgExtensionCredits['other'][] = array(
         'name' => 'JSBreadCrumbs',
         'author' => 'Ryan Lane',
         'version' => '0.5',
-        'url' => 'http://www.mediawiki.org/wiki/Extension:JSBreadCrumbs',
+        'url' => 'https://www.mediawiki.org/wiki/Extension:JSBreadCrumbs',
         'descriptionmsg' => 'jsbreadcrumbs-desc',
 );
 
