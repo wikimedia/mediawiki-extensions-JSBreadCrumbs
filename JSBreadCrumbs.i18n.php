@@ -385,6 +385,11 @@ $messages['sr-ec'] = array(
 	'jsbreadcrumbs-separator' => '»',
 );
 
+/** Serbian (Latin script) (‪Srpski (latinica)‬) */
+$messages['sr-el'] = array(
+	'jsbreadcrumbs-separator' => '»',
+);
+
 /** Tagalog (Tagalog)
  * @author AnakngAraw
  */
@@ -402,6 +407,11 @@ $messages['tl'] = array(
  * @author Hydra
  */
 $messages['zh-hans'] = array(
+	'jsbreadcrumbs-separator' => '》',
+);
+
+/** Traditional Chinese (‪中文(繁體)‬) */
+$messages['zh-hant'] = array(
 	'jsbreadcrumbs-separator' => '》',
 );
 
