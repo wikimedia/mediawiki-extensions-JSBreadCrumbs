@@ -286,19 +286,6 @@ $messages['mk'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Највеќе до 20 трошки',
 );
 
-/** Dutch (Nederlands)
- * @author Siebrand
- */
-$messages['nl'] = array(
-	'jsbreadcrumbs-desc' => 'Voegt een spoor van broodkruimels toe onder de menubalk',
-	'jsbreadcrumbs-leading-description' => 'Navigatiepad',
-	'prefs-jsbreadcrumbs' => 'Navigatiegeschiedenis',
-	'prefs-jsbreadcrumbs-showsite' => "Sitenaam opnemen in de navigatiegeschiedenis (handig bij gebruik van meerdere wiki's)",
-	'prefs-jsbreadcrumbs-showcrumbs' => 'Navigatiegeschiedenis weergeven',
-	'prefs-jsbreadcrumbs-numberofcrumbs' => "Aantal weer te geven pagina's in navigatiegeschiedenis",
-	'prefs-jsbreadcrumbs-numberofcrumbs-max' => "Maximaal 20 weergegeven pagina's",
-);
-
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Nghtwlkr
  */
@@ -310,6 +297,19 @@ $messages['nb'] = array(
 	'prefs-jsbreadcrumbs-showcrumbs' => 'Vis brødsmuler',
 	'prefs-jsbreadcrumbs-numberofcrumbs' => 'Antall brødsmuler',
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maks 20 brødsmuler',
+);
+
+/** Dutch (Nederlands)
+ * @author Siebrand
+ */
+$messages['nl'] = array(
+	'jsbreadcrumbs-desc' => 'Voegt een spoor van broodkruimels toe onder de menubalk',
+	'jsbreadcrumbs-leading-description' => 'Navigatiepad',
+	'prefs-jsbreadcrumbs' => 'Navigatiegeschiedenis',
+	'prefs-jsbreadcrumbs-showsite' => "Sitenaam opnemen in de navigatiegeschiedenis (handig bij gebruik van meerdere wiki's)",
+	'prefs-jsbreadcrumbs-showcrumbs' => 'Navigatiegeschiedenis weergeven',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => "Aantal weer te geven pagina's in navigatiegeschiedenis",
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => "Maximaal 20 weergegeven pagina's",
 );
 
 /** Polish (Polski)
