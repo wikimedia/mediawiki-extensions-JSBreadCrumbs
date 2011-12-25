@@ -302,7 +302,7 @@ $messages['nl'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'jsbreadcrumbs-desc' => 'Legger til et brødsmulespor under fanelinjen',
 	'jsbreadcrumbs-leading-description' => 'Navigasjonsspor',
 	'prefs-jsbreadcrumbs' => 'Brødsmuler',
