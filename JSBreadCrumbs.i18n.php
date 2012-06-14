@@ -41,7 +41,7 @@ $messages['af'] = array(
 	'jsbreadcrumbs-leading-description' => 'Navigasie roete',
 );
 
-/** Asturian (Asturianu)
+/** Asturian (asturianu)
  * @author Xuacu
  */
 $messages['ast'] = array(
@@ -67,7 +67,7 @@ $messages['be-tarask'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Ня болей 20 пунктаў',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  * @author Y-M D
  */
@@ -81,7 +81,7 @@ $messages['br'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => "D'ar muiañ 20 liamm merdeiñ",
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -120,7 +120,7 @@ $messages['dsb'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maksimalnje 20 srjodkow',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Crazymadlover
  * @author Translationista
  */
@@ -134,7 +134,7 @@ $messages['es'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Máximo, 20 vínculos de recorrido de navegación',
 );
 
-/** French (Français)
+/** French (français)
  * @author Peter17
  * @author Urhixidur
  */
@@ -148,7 +148,7 @@ $messages['fr'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maximum 20 liens de navigation',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -211,7 +211,7 @@ $messages['hsb'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maksimalnje 20 srjódkow',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  */
 $messages['hu'] = array(
@@ -222,7 +222,7 @@ $messages['hu'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maximum 20 bread crumb',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -274,7 +274,7 @@ $messages['lb'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maximal 20 Navigatiounslinken',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
@@ -313,7 +313,7 @@ $messages['nl'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => "Maximaal 20 weergegeven pagina's",
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author Sp5uhe
  */
 $messages['pl'] = array(
@@ -340,7 +340,7 @@ $messages['pms'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Al pi 20 ampovrà',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Hamilton Abreu
  */
 $messages['pt'] = array(
@@ -353,7 +353,7 @@ $messages['pt'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'No máximo 20 passos',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Giro720
  */
 $messages['pt-br'] = array(
@@ -366,7 +366,7 @@ $messages['pt-br'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'No máximo 20 passos',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -379,14 +379,14 @@ $messages['ru'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Не более 20 «хлебных крошек»',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  */
 $messages['sr-ec'] = array(
 	'jsbreadcrumbs-separator' => '»',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬) */
+/** Serbian (Latin script) (‪srpski (latinica)‬) */
 $messages['sr-el'] = array(
 	'jsbreadcrumbs-separator' => '»',
 );
@@ -404,14 +404,14 @@ $messages['tl'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Pinakamaraming 20 mga himulmol ng tinapay',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Hydra
  */
 $messages['zh-hans'] = array(
 	'jsbreadcrumbs-separator' => '》',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文（繁體）‬) */
 $messages['zh-hant'] = array(
 	'jsbreadcrumbs-separator' => '》',
 );
