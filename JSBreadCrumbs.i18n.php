@@ -98,13 +98,13 @@ $messages['bs'] = array(
  * @author Kghbln
  */
 $messages['de'] = array(
-	'jsbreadcrumbs-desc' => 'Fügt eine Brotkrümelnavigation unterhalb der Reiterleiste hinzu',
-	'jsbreadcrumbs-leading-description' => 'Navigationspfad',
-	'prefs-jsbreadcrumbs' => '„Brotkrümel“',
-	'prefs-jsbreadcrumbs-showsite' => 'Name der Website in die Brotkrümelnavigation aufnehmen (nützlich sofern wikiübergreifend eingesetzt)',
-	'prefs-jsbreadcrumbs-showcrumbs' => '„Brotkrümel“ anzeigen',
-	'prefs-jsbreadcrumbs-numberofcrumbs' => 'Anzahl der „Brotkrümel“',
-	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maximal 20 „Brotkrümel“',
+	'jsbreadcrumbs-desc' => 'Ermöglicht die Anzeige des Navigationsweges des Benutzers durch das Wiki',
+	'jsbreadcrumbs-leading-description' => 'Navigationsweg',
+	'prefs-jsbreadcrumbs' => 'Navigationsweg',
+	'prefs-jsbreadcrumbs-showsite' => 'Namen der Website in den Navigationsweg aufnehmen (nützlich sofern wikiübergreifend eingesetzt)',
+	'prefs-jsbreadcrumbs-showcrumbs' => 'Navigationsweg anzeigen',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'Anzahl der Navigationselemente',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maximal 20 Navigationselemente',
 );
 
 /** Lower Sorbian (Dolnoserbski)
