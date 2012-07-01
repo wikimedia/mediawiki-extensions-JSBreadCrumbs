@@ -54,7 +54,7 @@ $messages['ast'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Máximu, 20 enllaces de navegación',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  */
 $messages['be-tarask'] = array(
@@ -107,7 +107,7 @@ $messages['de'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maximal 20 Navigationselemente',
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -159,7 +159,7 @@ $messages['frp'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'U més 20 « chaplons de pan »',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Toliño
  */
 $messages['gl'] = array(
@@ -198,7 +198,7 @@ $messages['he'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => '20 פירורי לחם לכל היותר',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
