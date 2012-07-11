@@ -287,7 +287,7 @@ $messages['mk'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Највеќе до 20 трошки',
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+/** Norwegian Bokmål (‪norsk (bokmål)‬)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
