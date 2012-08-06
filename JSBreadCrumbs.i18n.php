@@ -396,6 +396,7 @@ $messages['sr-el'] = array(
  */
 $messages['tl'] = array(
 	'jsbreadcrumbs-desc' => 'Nagdaragdag ng isang bulaos ng mga pispis ng tinapay sa ilalim ng bareta ng panglaylay',
+	'jsbreadcrumbs-separator' => '»',
 	'jsbreadcrumbs-leading-description' => 'Bakas ng paglilibot',
 	'prefs-jsbreadcrumbs' => 'Mga Pispis ng tinapay',
 	'prefs-jsbreadcrumbs-showsite' => 'Isama ang pangalan ng sityo sa mga pispis ng tinapay (magagamit kapag ginamit sa kahabaan ng mga wiki)',
