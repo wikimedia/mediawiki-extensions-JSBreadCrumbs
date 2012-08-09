@@ -248,6 +248,17 @@ $messages['id'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maksimum 20 remah roti',
 );
 
+/** Italian (italiano)
+ * @author Darth Kule
+ */
+$messages['it'] = array(
+	'prefs-jsbreadcrumbs' => 'Breadcrumb',
+	'prefs-jsbreadcrumbs-showsite' => 'Includere il nome del sito nelle breadcrumb (utile quando utilizzate attraverso più wiki)',
+	'prefs-jsbreadcrumbs-showcrumbs' => 'Mostra breadcrumb',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'Numero di breadcrumb',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Massimo 20 breadcrumb',
+);
+
 /** Japanese (日本語)
  * @author 青子守歌
  */
