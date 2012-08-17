@@ -416,6 +416,13 @@ $messages['tl'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Pinakamaraming 20 mga himulmol ng tinapay',
 );
 
+/** Urdu (اردو)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['ur'] = array(
+	'jsbreadcrumbs-leading-description' => 'نیوی گیشن پگڈنڈی',
+);
+
 /** Simplified Chinese (‪中文（简体）‬)
  * @author Hydra
  */
