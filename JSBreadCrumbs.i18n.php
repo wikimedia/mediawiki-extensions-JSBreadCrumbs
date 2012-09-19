@@ -272,6 +272,19 @@ $messages['ja'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => '最大20個のパンくずリスト',
 );
 
+/** Colognian (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'jsbreadcrumbs-desc' => 'Donn dä Wääsch aanzeije, dä mer dorj_et Wiki jejange es, jenannt „Bruutjrömmelle“',
+	'jsbreadcrumbs-leading-description' => 'Der Wääsch dorsch et Wiki',
+	'prefs-jsbreadcrumbs' => 'Bruutjrömmelle',
+	'prefs-jsbreadcrumbs-showsite' => 'Donn däm Wiki singe Naame met en de „Bruutjrömmele“ aanzeije. Dat es joot, wam_mer dorsch en Aanzahl Wikis jeiht.',
+	'prefs-jsbreadcrumbs-showcrumbs' => 'De „Bruutjrömmele“ aanzeije',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'De Aanzahl vun Jrömelle',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Nit mieh wi 20 Jrömmelle',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
