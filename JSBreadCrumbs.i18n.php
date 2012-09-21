@@ -277,6 +277,7 @@ $messages['ja'] = array(
  */
 $messages['ksh'] = array(
 	'jsbreadcrumbs-desc' => 'Donn dä Wääsch aanzeije, dä mer dorj_et Wiki jejange es, jenannt „Bruutjrömmelle“',
+	'jsbreadcrumbs-separator' => '›',
 	'jsbreadcrumbs-leading-description' => 'Der Wääsch dorsch et Wiki',
 	'prefs-jsbreadcrumbs' => 'Bruutjrömmelle',
 	'prefs-jsbreadcrumbs-showsite' => 'Donn däm Wiki singe Naame met en de „Bruutjrömmele“ aanzeije. Dat es joot, wam_mer dorsch en Aanzahl Wikis jeiht.',
