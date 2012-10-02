@@ -54,7 +54,7 @@ $messages['ast'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Máximu, 20 enllaces de navegación',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  */
 $messages['be-tarask'] = array(
@@ -312,7 +312,7 @@ $messages['mk'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Највеќе до 20 трошки',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Nghtwlkr
  */
 $messages['nb'] = array(
@@ -404,14 +404,14 @@ $messages['ru'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Не более 20 «хлебных крошек»',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  */
 $messages['sr-ec'] = array(
 	'jsbreadcrumbs-separator' => '»',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬) */
+/** Serbian (Latin script) (srpski (latinica)‎) */
 $messages['sr-el'] = array(
 	'jsbreadcrumbs-separator' => '»',
 );
@@ -437,14 +437,14 @@ $messages['ur'] = array(
 	'jsbreadcrumbs-leading-description' => 'نیوی گیشن پگڈنڈی',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Hydra
  */
 $messages['zh-hans'] = array(
 	'jsbreadcrumbs-separator' => '》',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬) */
+/** Traditional Chinese (中文（繁體）‎) */
 $messages['zh-hant'] = array(
 	'jsbreadcrumbs-separator' => '》',
 );
