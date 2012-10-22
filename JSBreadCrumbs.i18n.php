@@ -411,7 +411,8 @@ $messages['sr-ec'] = array(
 	'jsbreadcrumbs-separator' => '»',
 );
 
-/** Serbian (Latin script) (srpski (latinica)‎) */
+/** Serbian (Latin script) (srpski (latinica)‎)
+ */
 $messages['sr-el'] = array(
 	'jsbreadcrumbs-separator' => '»',
 );
@@ -444,8 +445,8 @@ $messages['zh-hans'] = array(
 	'jsbreadcrumbs-separator' => '》',
 );
 
-/** Traditional Chinese (中文（繁體）‎) */
+/** Traditional Chinese (中文（繁體）‎)
+ */
 $messages['zh-hant'] = array(
 	'jsbreadcrumbs-separator' => '》',
 );
-
