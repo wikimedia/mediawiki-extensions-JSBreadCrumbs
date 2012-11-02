@@ -303,7 +303,7 @@ $messages['lb'] = array(
  * @author Bjankuloski06
  */
 $messages['mk'] = array(
-	'jsbreadcrumbs-desc' => 'Додава траги од трошки под лентата со јазичиња',
+	'jsbreadcrumbs-desc' => 'Става траги од трошки под лентата со јазичиња',
 	'jsbreadcrumbs-leading-description' => 'Траги од навигацијата',
 	'prefs-jsbreadcrumbs' => 'Трошки',
 	'prefs-jsbreadcrumbs-showsite' => 'Вклучи го името на мреж. место во трошките (корисно за употреба на повеќе викија)',
