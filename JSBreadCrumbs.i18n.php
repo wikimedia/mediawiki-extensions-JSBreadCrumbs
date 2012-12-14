@@ -431,6 +431,19 @@ $messages['tl'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Pinakamaraming 20 mga himulmol ng tinapay',
 );
 
+/** Ukrainian (українська)
+ * @author Base
+ */
+$messages['uk'] = array(
+	'jsbreadcrumbs-desc' => 'Додає навігаційний шлях («хлібні крихти») під панель інструментів',
+	'jsbreadcrumbs-leading-description' => 'Навігаційний шлях',
+	'prefs-jsbreadcrumbs' => 'Хлібні крихти',
+	'prefs-jsbreadcrumbs-showsite' => 'Включає назву сайту до хлібних крихт (корисно при використанні декількох вікі)',
+	'prefs-jsbreadcrumbs-showcrumbs' => 'Показувати хлібні крихти',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'Число хлібних крихт',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Максимум 20 хлібних крихт',
+);
+
 /** Urdu (اردو)
  * @author පසිඳු කාවින්ද
  */
