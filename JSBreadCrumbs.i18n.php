@@ -404,6 +404,13 @@ $messages['ru'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Не более 20 «хлебных крошек»',
 );
 
+/** Sinhala (සිංහල)
+ * @author පසිඳු කාවින්ද
+ */
+$messages['si'] = array(
+	'prefs-jsbreadcrumbs' => 'පාං කැබැලි',
+);
+
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  */
