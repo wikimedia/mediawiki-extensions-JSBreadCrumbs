@@ -408,7 +408,11 @@ $messages['ru'] = array(
  * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
+	'jsbreadcrumbs-leading-description' => 'යාත්‍රණ සලකුණ',
 	'prefs-jsbreadcrumbs' => 'පාං කැබැලි',
+	'prefs-jsbreadcrumbs-showcrumbs' => 'පාන් කැබලි පෙන්වන්න',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'පාන් කැබලි සංඛ්‍යාව',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'උපරිමය පාන් කැබලි 20',
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
