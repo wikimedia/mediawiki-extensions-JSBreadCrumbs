@@ -94,6 +94,16 @@ $messages['bs'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Najviše 20 mrvica',
 );
 
+/** Czech (česky)
+ * @author Vks
+ */
+$messages['cs'] = array(
+	'prefs-jsbreadcrumbs' => 'Drobky chleba',
+	'prefs-jsbreadcrumbs-showcrumbs' => 'Zobrazit drobky chleba',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'Počet drobků chleba',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maximálně 20 drobků chleba',
+);
+
 /** German (Deutsch)
  * @author Kghbln
  */
