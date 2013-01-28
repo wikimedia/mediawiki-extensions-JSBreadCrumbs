@@ -282,6 +282,13 @@ $messages['ja'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => '最大20個のパンくずリスト',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'jsbreadcrumbs-separator' => '»',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
