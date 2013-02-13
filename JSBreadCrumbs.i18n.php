@@ -287,6 +287,11 @@ $messages['ja'] = array(
  */
 $messages['ka'] = array(
 	'jsbreadcrumbs-separator' => '»',
+	'jsbreadcrumbs-leading-description' => 'სანავიგაციო გზა',
+	'prefs-jsbreadcrumbs' => 'პურის ნამცეცები',
+	'prefs-jsbreadcrumbs-showcrumbs' => 'პურის ნამცეცების ჩვენება',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'პურის ნამცეცების რაოდენობა',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'მაქსიმუმ 20 პურის ნამცეცი',
 );
 
 /** Colognian (Ripoarisch)
