@@ -486,9 +486,17 @@ $messages['ur'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Hydra
+ * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
+	'jsbreadcrumbs-desc' => '在选项卡栏下面添加面包屑轨迹',
 	'jsbreadcrumbs-separator' => '》',
+	'jsbreadcrumbs-leading-description' => '轨迹导航',
+	'prefs-jsbreadcrumbs' => '面包屑',
+	'prefs-jsbreadcrumbs-showsite' => '在面包屑中包含站点名称（跨wiki使用时这是有用的）',
+	'prefs-jsbreadcrumbs-showcrumbs' => '显示面包屑',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => '面包屑数量',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => '面包屑最多20项',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
