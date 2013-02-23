@@ -294,6 +294,19 @@ $messages['ka'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'მაქსიმუმ 20 პურის ნამცეცი',
 );
 
+/** Korean (한국어)
+ * @author 아라
+ */
+$messages['ko'] = array(
+	'jsbreadcrumbs-desc' => '탭 바 아래에 빵 부스러기의 발자취를 추가합니다',
+	'jsbreadcrumbs-leading-description' => '발자취 둘러보기',
+	'prefs-jsbreadcrumbs' => '빵 부스러기',
+	'prefs-jsbreadcrumbs-showsite' => '빵 부스러기에 사이트 이름 포함 (위키에서 사용할 때 유용함)',
+	'prefs-jsbreadcrumbs-showcrumbs' => '빵 부스러기 보기',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => '빵 부스러기의 수',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => '최대 빵 부스러기 20개',
+);
+
 /** Colognian (Ripoarisch)
  * @author Purodha
  */
