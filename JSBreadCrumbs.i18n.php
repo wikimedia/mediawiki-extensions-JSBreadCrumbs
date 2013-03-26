@@ -31,7 +31,18 @@ $messages['en'] = array(
 $messages['qqq'] = array(
 	'jsbreadcrumbs-desc' => '{{desc|name=JS Bread Crumbs|url=http://www.mediawiki.org/wiki/Extension:JSBreadCrumbs}}',
 	'jsbreadcrumbs-separator' => '{{optional}}',
+	'jsbreadcrumbs-leading-description' => 'Used as bread crumb description.
+
+This message is followed by ":" and bread crumbs ("»"-separated links).',
 	'prefs-jsbreadcrumbs' => 'This is the name of the extension JS Bread Crumbs (http://www.mediawiki.org/wiki/Extension:BreadCrumbs). The expression "Bread Crumbs" designates a kind of navigation bar (see http://en.wiktionary.org/wiki/breadcrumbs).',
+	'prefs-jsbreadcrumbs-showsite' => 'Used as checkbox label in [[Special:Preferences]].',
+	'prefs-jsbreadcrumbs-showcrumbs' => 'Used as checkbox label in [[Special:Preferences]].',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'Used as label for input box in [[Special:Preferences]].
+
+The help message for the input box is {{msg-mw|prefs-jsbreadcrumbs-numberofcrumbs-max}}.',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Used as help message for input box in [[Special:Preferences]].
+
+The input box follows the label {{msg-mw|prefs-jsbreadcrumbs-numberofcrumbs}}.',
 );
 
 /** Afrikaans (Afrikaans)
