@@ -439,6 +439,15 @@ $messages['pt-br'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'No máximo 20 passos',
 );
 
+/** tarandíne (tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'prefs-jsbreadcrumbs' => 'Briciole de pane',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'Numere de briciole de pane',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Massime 20 briciole de pane',
+);
+
 /** Russian (русский)
  * @author Александр Сигачёв
  */
