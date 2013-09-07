@@ -386,6 +386,19 @@ $messages['nl'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => "Maximaal 20 weergegeven pagina's",
 );
 
+/** Occitan (occitan)
+ * @author Cedric31
+ */
+$messages['oc'] = array(
+	'jsbreadcrumbs-desc' => 'Apond una seguida de ligams de navigacion jos la barra d’onglets',
+	'jsbreadcrumbs-leading-description' => 'Percors de navigacion',
+	'prefs-jsbreadcrumbs' => 'Barra de navigacion',
+	'prefs-jsbreadcrumbs-showsite' => 'Inclure lo nom del site dins la barra de navigacion (utile quand la foncionalitat es utilizada a travèrs mantun wiki)',
+	'prefs-jsbreadcrumbs-showcrumbs' => 'Afichar la barra de navigacion',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'Nombre de ligams de navigacion',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Maximum 20 ligams de navigacion',
+);
+
 /** Polish (polski)
  * @author Sp5uhe
  */
