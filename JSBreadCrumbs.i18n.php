@@ -539,10 +539,11 @@ $messages['ur'] = array(
 
 /** Simplified Chinese (中文（简体）‎)
  * @author Hydra
+ * @author Xiaomingyan
  * @author Yfdyh000
  */
 $messages['zh-hans'] = array(
-	'jsbreadcrumbs-desc' => '在选项卡栏下面添加面包屑轨迹',
+	'jsbreadcrumbs-desc' => '在标签页栏下面添加面包屑导航',
 	'jsbreadcrumbs-separator' => '》',
 	'jsbreadcrumbs-leading-description' => '轨迹导航',
 	'prefs-jsbreadcrumbs' => '面包屑',
