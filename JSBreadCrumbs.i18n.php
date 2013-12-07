@@ -106,7 +106,7 @@ $messages['bs'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Najviše 20 mrvica',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Vks
  */
 $messages['cs'] = array(
