@@ -339,7 +339,7 @@ $messages['ksh'] = array(
  * @author Soued031
  */
 $messages['lb'] = array(
-	'jsbreadcrumbs-desc' => "Setzt eng Lëscht vun Navigatiounslinken ënner d'Läischt vun den Navigatiounsongleten dobäi",
+	'jsbreadcrumbs-desc' => "Setzt eng Lëscht vun Navigatiounslinken ënner d'Läischt vun den Navigatiounsongleten derbäi",
 	'jsbreadcrumbs-leading-description' => 'Navigatiounspad',
 	'prefs-jsbreadcrumbs' => 'Navigatiounslinken (bread crumbs)',
 	'prefs-jsbreadcrumbs-showsite' => 'Den Numm vum Site an den Navigatiounslinken drasetzen (nëtzlech wann et tëscht verschidde Wikie benotzt gëtt)',
