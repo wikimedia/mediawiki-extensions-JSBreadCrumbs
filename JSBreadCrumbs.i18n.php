@@ -156,6 +156,18 @@ $messages['es'] = array(
 	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'Máximo, 20 vínculos de recorrido de navegación',
 );
 
+/** Persian (فارسی)
+ * @author Armin1392
+ */
+$messages['fa'] = array(
+	'jsbreadcrumbs-leading-description' => 'مسیر جهت‌یابی',
+	'prefs-jsbreadcrumbs' => 'خرده‌های نان',
+	'prefs-jsbreadcrumbs-showsite' => 'شامل کردن نام سایت در خرده‌های نان (هنگامی که همه‌جای ویکی‌ها استفاده شد مفید بود)',
+	'prefs-jsbreadcrumbs-showcrumbs' => 'نمایش خرده‌های نان',
+	'prefs-jsbreadcrumbs-numberofcrumbs' => 'تعداد خرده‌های نان',
+	'prefs-jsbreadcrumbs-numberofcrumbs-max' => 'حداکثر ۲۰ خرده نان',
+);
+
 /** French (français)
  * @author Peter17
  * @author Urhixidur
