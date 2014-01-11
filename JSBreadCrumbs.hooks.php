@@ -25,7 +25,7 @@ class JSBreadCrumbsHooks {
 			return true;
 		}
 
-		
+
 
 		// Allow localized separator to be overriden
 		if ( $wgJSBreadCrumbsSeparator !== '' ) {
@@ -49,7 +49,7 @@ class JSBreadCrumbsHooks {
 
 	/**
 	 * GetPreferences hook
-	 * 
+	 *
 	 * Add module-releated items to the preferences
 	 */
 	public static function addPreferences( $user, $defaultPreferences ) {
@@ -78,11 +78,11 @@ class JSBreadCrumbsHooks {
 	}
 
 	static function enableBreadCrumbs() {
-		global $wgUser;
+		global $wgOut, $wgUser;
 
 		// Ensure we only enable bread crumbs if we are using vector and
 		// the user has them enabled
-		if ( $wgUser->getSkin() instanceof SkinVector && $wgUser->getOption( "jsbreadcrumbs-showcrumbs" ) ) {
+		if ( $wgOut->getSkin() instanceof SkinVector && $wgUser->getOption( "jsbreadcrumbs-showcrumbs" ) ) {
 			return true;
 		}
 	}
