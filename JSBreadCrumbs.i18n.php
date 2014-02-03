@@ -160,6 +160,7 @@ $messages['es'] = array(
  * @author Armin1392
  */
 $messages['fa'] = array(
+	'jsbreadcrumbs-desc' => 'افزودن دنبالهٔ خرده نان‌ها زیر نوار تب',
 	'jsbreadcrumbs-leading-description' => 'مسیر جهت‌یابی',
 	'prefs-jsbreadcrumbs' => 'خرده‌های نان',
 	'prefs-jsbreadcrumbs-showsite' => 'شامل کردن نام سایت در خرده‌های نان (هنگامی که همه‌جای ویکی‌ها استفاده شد مفید بود)',
