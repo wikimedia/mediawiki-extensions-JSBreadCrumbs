@@ -172,9 +172,11 @@ $messages['fa'] = array(
 /** French (français)
  * @author Peter17
  * @author Urhixidur
+ * @author Verdy p
  */
 $messages['fr'] = array(
 	'jsbreadcrumbs-desc' => 'Ajoute une suite de liens de navigation sous la barre d’onglets',
+	'jsbreadcrumbs-separator' => '&nbsp;»',
 	'jsbreadcrumbs-leading-description' => 'Parcours de navigation',
 	'prefs-jsbreadcrumbs' => 'Barre de navigation',
 	'prefs-jsbreadcrumbs-showsite' => 'Inclure le nom du site dans la barre de navigation (utile lorsque la fonctionnalité est utilisée à travers plusieurs wikis)',
