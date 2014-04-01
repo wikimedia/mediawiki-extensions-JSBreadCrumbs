@@ -1,0 +1,12 @@
+{
+    "@metadata": {
+        "authors": [
+            "Darth Kule"
+        ]
+    },
+    "prefs-jsbreadcrumbs": "Breadcrumb",
+    "prefs-jsbreadcrumbs-showsite": "Includere il nome del sito nelle breadcrumb (utile quando utilizzate attraverso più wiki)",
+    "prefs-jsbreadcrumbs-showcrumbs": "Mostra breadcrumb",
+    "prefs-jsbreadcrumbs-numberofcrumbs": "Numero di breadcrumb",
+    "prefs-jsbreadcrumbs-numberofcrumbs-max": "Massimo 20 breadcrumb"
+}

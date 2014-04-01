@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Joetaras"
+        ]
+    },
+    "jsbreadcrumbs-desc": "Aggiunge 'nu percorse de briciole de pane sotte 'a barre de le tabbulaziune",
+    "jsbreadcrumbs-leading-description": "Percorse de navigazione",
+    "prefs-jsbreadcrumbs": "Briciole de pane",
+    "prefs-jsbreadcrumbs-showsite": "'Nglude 'u nome d'u site jndr'à le briciole de pane (utile quanne ause le uicchi 'ngrociate)",
+    "prefs-jsbreadcrumbs-showcrumbs": "Fà vedè le briciole de pane",
+    "prefs-jsbreadcrumbs-numberofcrumbs": "Numere de briciole de pane",
+    "prefs-jsbreadcrumbs-numberofcrumbs-max": "Massime 20 briciole de pane"
+}

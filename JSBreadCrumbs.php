@@ -28,7 +28,7 @@ $wgExtensionCredits['other'][] = array(
         'path' => __FILE__,
         'name' => 'JSBreadCrumbs',
         'author' => 'Ryan Lane',
-        'version' => '0.5',
+        'version' => '0.6.0',
         'url' => 'https://www.mediawiki.org/wiki/Extension:JSBreadCrumbs',
         'descriptionmsg' => 'jsbreadcrumbs-desc',
 );
@@ -38,6 +38,7 @@ $wgAutoloadClasses['JSBreadCrumbsHooks'] =
         dirname( __FILE__ ) . "/JSBreadCrumbs.hooks.php";
 
 // Adds Internationalized Messages
+$wgMessagesDirs['JSBreadCrumbs'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['JSBreadCrumbs'] =
         dirname( __FILE__ ) . "/JSBreadCrumbs.i18n.php";
 

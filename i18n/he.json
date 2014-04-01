@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Amire80"
+        ]
+    },
+    "jsbreadcrumbs-desc": "הוספת שביל פירורי לחם תחת סרגל הלשוניות",
+    "jsbreadcrumbs-leading-description": "שביל ניווט",
+    "prefs-jsbreadcrumbs": "פירורי לחם",
+    "prefs-jsbreadcrumbs-showsite": "לכלול את שם האתר בפירורי הלחם (זה שימושי במערכות של מספר אתרי ויקי)",
+    "prefs-jsbreadcrumbs-showcrumbs": "להציג פירורי לחם",
+    "prefs-jsbreadcrumbs-numberofcrumbs": "מספר פירורי הלחם",
+    "prefs-jsbreadcrumbs-numberofcrumbs-max": "20 פירורי לחם לכל היותר"
+}

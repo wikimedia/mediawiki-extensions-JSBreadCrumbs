@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Toliño"
+        ]
+    },
+    "jsbreadcrumbs-desc": "Engade un conxunto de ligazóns de navegación baixo a barra de lapelas",
+    "jsbreadcrumbs-leading-description": "Barra de navegación",
+    "prefs-jsbreadcrumbs": "Barra de navegación",
+    "prefs-jsbreadcrumbs-showsite": "Incluír o nome do sitio na barra de navegación (útil ao usar a funcionalidade a través de varios wikis)",
+    "prefs-jsbreadcrumbs-showcrumbs": "Mostrar a barra de navegación",
+    "prefs-jsbreadcrumbs-numberofcrumbs": "Número de ligazóns de navegación",
+    "prefs-jsbreadcrumbs-numberofcrumbs-max": "Un máximo de 20 ligazóns de navegación"
+}

@@ -1,0 +1,14 @@
+{
+    "@metadata": {
+        "authors": [
+            "Bjankuloski06"
+        ]
+    },
+    "jsbreadcrumbs-desc": "Става траги од трошки под лентата со јазичиња",
+    "jsbreadcrumbs-leading-description": "Траги од навигацијата",
+    "prefs-jsbreadcrumbs": "Трошки",
+    "prefs-jsbreadcrumbs-showsite": "Вклучи го името на мреж. место во трошките (корисно за употреба на повеќе викија)",
+    "prefs-jsbreadcrumbs-showcrumbs": "Прикажувај трошки",
+    "prefs-jsbreadcrumbs-numberofcrumbs": "Број на трошки",
+    "prefs-jsbreadcrumbs-numberofcrumbs-max": "Највеќе до 20 трошки"
+}
