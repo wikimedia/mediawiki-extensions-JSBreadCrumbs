@@ -10,7 +10,7 @@
     "jsbreadcrumbs-separator": "》",
     "jsbreadcrumbs-leading-description": "轨迹导航",
     "prefs-jsbreadcrumbs": "面包屑",
-    "prefs-jsbreadcrumbs-showsite": "在面包屑中包含站点名称（跨wiki使用时这是有用的）",
+    "prefs-jsbreadcrumbs-showsite": "在面包屑导航中包含网站名称（在跨wiki使用时很实用）",
     "prefs-jsbreadcrumbs-showcrumbs": "显示面包屑",
     "prefs-jsbreadcrumbs-numberofcrumbs": "面包屑数量",
     "prefs-jsbreadcrumbs-numberofcrumbs-max": "面包屑最多20项"
