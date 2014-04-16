@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Shirayuki",
-            "青子守歌"
-        ]
-    },
-    "jsbreadcrumbs-desc": "パンくずリストをタブバーの下に追加する",
-    "jsbreadcrumbs-leading-description": "案内追跡",
-    "prefs-jsbreadcrumbs": "パンくずリスト",
-    "prefs-jsbreadcrumbs-showsite": "サイト名をパンくずリストに含める (ウィキを横断的に利用する際に便利)",
-    "prefs-jsbreadcrumbs-showcrumbs": "パンくずリストを表示",
-    "prefs-jsbreadcrumbs-numberofcrumbs": "パンくずリストの数",
-    "prefs-jsbreadcrumbs-numberofcrumbs-max": "最大20個のパンくずリスト"
+	"@metadata": {
+		"authors": [
+			"Shirayuki",
+			"青子守歌"
+		]
+	},
+	"jsbreadcrumbs-desc": "パンくずリストをタブバーの下に追加する",
+	"jsbreadcrumbs-leading-description": "案内追跡",
+	"prefs-jsbreadcrumbs": "パンくずリスト",
+	"prefs-jsbreadcrumbs-showsite": "サイト名をパンくずリストに含める (ウィキを横断的に利用する際に便利)",
+	"prefs-jsbreadcrumbs-showcrumbs": "パンくずリストを表示",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "パンくずリストの数",
+	"prefs-jsbreadcrumbs-numberofcrumbs-max": "最大20個のパンくずリスト"
 }

@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "McDutchie"
-        ]
-    },
-    "jsbreadcrumbs-desc": "Adde un tracia de \"micas de pan\" sub le barra de schedas",
-    "jsbreadcrumbs-leading-description": "Percurso de navigation",
-    "prefs-jsbreadcrumbs": "Micas de pan",
-    "prefs-jsbreadcrumbs-showsite": "Includer le nomine del sito in le micas de pan (utile si usate trans wikis)",
-    "prefs-jsbreadcrumbs-showcrumbs": "Monstrar micas de pan",
-    "prefs-jsbreadcrumbs-numberofcrumbs": "Numero de micas de pan",
-    "prefs-jsbreadcrumbs-numberofcrumbs-max": "Al plus 20 micas de pan"
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"jsbreadcrumbs-desc": "Adde un tracia de \"micas de pan\" sub le barra de schedas",
+	"jsbreadcrumbs-leading-description": "Percurso de navigation",
+	"prefs-jsbreadcrumbs": "Micas de pan",
+	"prefs-jsbreadcrumbs-showsite": "Includer le nomine del sito in le micas de pan (utile si usate trans wikis)",
+	"prefs-jsbreadcrumbs-showcrumbs": "Monstrar micas de pan",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Numero de micas de pan",
+	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Al plus 20 micas de pan"
 }

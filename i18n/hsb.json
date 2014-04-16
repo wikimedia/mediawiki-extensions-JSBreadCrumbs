@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Michawiki"
-        ]
-    },
-    "jsbreadcrumbs-desc": "Přidawa slěd srjódkow pod rajtarkowej lajstu",
-    "jsbreadcrumbs-leading-description": "Nawigaciski slěd",
-    "prefs-jsbreadcrumbs": "Srjódki",
-    "prefs-jsbreadcrumbs-showsite": "Sydłowe mjeno do srjódkow zapřijeć (wužitne, hdyž so we wjacorych wikijach wužiwa)",
-    "prefs-jsbreadcrumbs-showcrumbs": "Srjódki zwobraznić",
-    "prefs-jsbreadcrumbs-numberofcrumbs": "Ličba srjódkow",
-    "prefs-jsbreadcrumbs-numberofcrumbs-max": "Maksimalnje 20 srjódkow"
+	"@metadata": {
+		"authors": [
+			"Michawiki"
+		]
+	},
+	"jsbreadcrumbs-desc": "Přidawa slěd srjódkow pod rajtarkowej lajstu",
+	"jsbreadcrumbs-leading-description": "Nawigaciski slěd",
+	"prefs-jsbreadcrumbs": "Srjódki",
+	"prefs-jsbreadcrumbs-showsite": "Sydłowe mjeno do srjódkow zapřijeć (wužitne, hdyž so we wjacorych wikijach wužiwa)",
+	"prefs-jsbreadcrumbs-showcrumbs": "Srjódki zwobraznić",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Ličba srjódkow",
+	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Maksimalnje 20 srjódkow"
 }

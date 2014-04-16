@@ -1,17 +1,17 @@
 {
-    "@metadata": {
-        "authors": [
-            "Peter17",
-            "Urhixidur",
-            "Verdy p"
-        ]
-    },
-    "jsbreadcrumbs-desc": "Ajoute une suite de liens de navigation sous la barre d’onglets",
-    "jsbreadcrumbs-separator": "&nbsp;»",
-    "jsbreadcrumbs-leading-description": "Parcours de navigation",
-    "prefs-jsbreadcrumbs": "Barre de navigation",
-    "prefs-jsbreadcrumbs-showsite": "Inclure le nom du site dans la barre de navigation (utile lorsque la fonctionnalité est utilisée à travers plusieurs wikis)",
-    "prefs-jsbreadcrumbs-showcrumbs": "Afficher la barre de navigation",
-    "prefs-jsbreadcrumbs-numberofcrumbs": "Nombre de liens de navigation",
-    "prefs-jsbreadcrumbs-numberofcrumbs-max": "Maximum 20 liens de navigation"
+	"@metadata": {
+		"authors": [
+			"Peter17",
+			"Urhixidur",
+			"Verdy p"
+		]
+	},
+	"jsbreadcrumbs-desc": "Ajoute une suite de liens de navigation sous la barre d’onglets",
+	"jsbreadcrumbs-separator": "&nbsp;»",
+	"jsbreadcrumbs-leading-description": "Parcours de navigation",
+	"prefs-jsbreadcrumbs": "Barre de navigation",
+	"prefs-jsbreadcrumbs-showsite": "Inclure le nom du site dans la barre de navigation (utile lorsque la fonctionnalité est utilisée à travers plusieurs wikis)",
+	"prefs-jsbreadcrumbs-showcrumbs": "Afficher la barre de navigation",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Nombre de liens de navigation",
+	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Maximum 20 liens de navigation"
 }

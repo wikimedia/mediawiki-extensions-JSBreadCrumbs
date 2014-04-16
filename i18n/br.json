@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Fulup",
-            "Y-M D"
-        ]
-    },
-    "jsbreadcrumbs-desc": "Ouzhpennañ a ra un heuliad liammoù merdeiñ dindan barrenn an ivinelloù",
-    "jsbreadcrumbs-leading-description": "Hentad merdeiñ",
-    "prefs-jsbreadcrumbs": "Barrenn verdeiñ",
-    "prefs-jsbreadcrumbs-showsite": "Merkañ anv al lec'hienn er varrenn verdeiñ (talvoudus pa vez implijet an arc'hwel e meur a wiki)",
-    "prefs-jsbreadcrumbs-showcrumbs": "Diskouez ar varenn merdeiñ",
-    "prefs-jsbreadcrumbs-numberofcrumbs": "Niver a liammoù merdeiñ",
-    "prefs-jsbreadcrumbs-numberofcrumbs-max": "D'ar muiañ 20 liamm merdeiñ"
+	"@metadata": {
+		"authors": [
+			"Fulup",
+			"Y-M D"
+		]
+	},
+	"jsbreadcrumbs-desc": "Ouzhpennañ a ra un heuliad liammoù merdeiñ dindan barrenn an ivinelloù",
+	"jsbreadcrumbs-leading-description": "Hentad merdeiñ",
+	"prefs-jsbreadcrumbs": "Barrenn verdeiñ",
+	"prefs-jsbreadcrumbs-showsite": "Merkañ anv al lec'hienn er varrenn verdeiñ (talvoudus pa vez implijet an arc'hwel e meur a wiki)",
+	"prefs-jsbreadcrumbs-showcrumbs": "Diskouez ar varenn merdeiñ",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Niver a liammoù merdeiñ",
+	"prefs-jsbreadcrumbs-numberofcrumbs-max": "D'ar muiañ 20 liamm merdeiñ"
 }

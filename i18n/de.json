@@ -1,14 +1,14 @@
 {
-    "@metadata": {
-        "authors": [
-            "Kghbln"
-        ]
-    },
-    "jsbreadcrumbs-desc": "Ermöglicht die Anzeige des Navigationsweges des Benutzers durch das Wiki",
-    "jsbreadcrumbs-leading-description": "Navigationsweg",
-    "prefs-jsbreadcrumbs": "Navigationsweg",
-    "prefs-jsbreadcrumbs-showsite": "Namen der Website in den Navigationsweg aufnehmen (nützlich sofern wikiübergreifend eingesetzt)",
-    "prefs-jsbreadcrumbs-showcrumbs": "Navigationsweg anzeigen",
-    "prefs-jsbreadcrumbs-numberofcrumbs": "Anzahl der Navigationselemente",
-    "prefs-jsbreadcrumbs-numberofcrumbs-max": "Maximal 20 Navigationselemente"
+	"@metadata": {
+		"authors": [
+			"Kghbln"
+		]
+	},
+	"jsbreadcrumbs-desc": "Ermöglicht die Anzeige des Navigationsweges des Benutzers durch das Wiki",
+	"jsbreadcrumbs-leading-description": "Navigationsweg",
+	"prefs-jsbreadcrumbs": "Navigationsweg",
+	"prefs-jsbreadcrumbs-showsite": "Namen der Website in den Navigationsweg aufnehmen (nützlich sofern wikiübergreifend eingesetzt)",
+	"prefs-jsbreadcrumbs-showcrumbs": "Navigationsweg anzeigen",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Anzahl der Navigationselemente",
+	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Maximal 20 Navigationselemente"
 }

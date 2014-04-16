@@ -1,8 +1,8 @@
 {
-    "@metadata": {
-        "authors": [
-            "Rancher"
-        ]
-    },
-    "jsbreadcrumbs-separator": "»"
+	"@metadata": {
+		"authors": [
+			"Rancher"
+		]
+	},
+	"jsbreadcrumbs-separator": "»"
 }

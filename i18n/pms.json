@@ -1,15 +1,15 @@
 {
-    "@metadata": {
-        "authors": [
-            "Borichèt",
-            "Dragonòt"
-        ]
-    },
-    "jsbreadcrumbs-desc": "A gionta com na trassa ëd farin-a sota a la tichëtta dla bara",
-    "jsbreadcrumbs-leading-description": "Trassa ëd navigassion",
-    "prefs-jsbreadcrumbs": "Ampovrà ëd farin-a",
-    "prefs-jsbreadcrumbs-showsite": "Anclud ël nòm dël sit ant l'ampovrà (ùtil quand dovrà an tra wiki diferente)",
-    "prefs-jsbreadcrumbs-showcrumbs": "Visualisé l'ampovrà",
-    "prefs-jsbreadcrumbs-numberofcrumbs": "Nùmer d'ampovrà",
-    "prefs-jsbreadcrumbs-numberofcrumbs-max": "Al pi 20 ampovrà"
+	"@metadata": {
+		"authors": [
+			"Borichèt",
+			"Dragonòt"
+		]
+	},
+	"jsbreadcrumbs-desc": "A gionta com na trassa ëd farin-a sota a la tichëtta dla bara",
+	"jsbreadcrumbs-leading-description": "Trassa ëd navigassion",
+	"prefs-jsbreadcrumbs": "Ampovrà ëd farin-a",
+	"prefs-jsbreadcrumbs-showsite": "Anclud ël nòm dël sit ant l'ampovrà (ùtil quand dovrà an tra wiki diferente)",
+	"prefs-jsbreadcrumbs-showcrumbs": "Visualisé l'ampovrà",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Nùmer d'ampovrà",
+	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Al pi 20 ampovrà"
 }

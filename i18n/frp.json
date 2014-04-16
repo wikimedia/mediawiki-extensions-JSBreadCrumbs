@@ -1,12 +1,12 @@
 {
-    "@metadata": {
-        "authors": [
-            "ChrisPtDe"
-        ]
-    },
-    "jsbreadcrumbs-leading-description": "Rota de navigacion",
-    "prefs-jsbreadcrumbs": "« Chaplons de pan »",
-    "prefs-jsbreadcrumbs-showcrumbs": "Fâre vêre los « chaplons de pan »",
-    "prefs-jsbreadcrumbs-numberofcrumbs": "Nombro de « chaplons de pan »",
-    "prefs-jsbreadcrumbs-numberofcrumbs-max": "U més 20 « chaplons de pan »"
+	"@metadata": {
+		"authors": [
+			"ChrisPtDe"
+		]
+	},
+	"jsbreadcrumbs-leading-description": "Rota de navigacion",
+	"prefs-jsbreadcrumbs": "« Chaplons de pan »",
+	"prefs-jsbreadcrumbs-showcrumbs": "Fâre vêre los « chaplons de pan »",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Nombro de « chaplons de pan »",
+	"prefs-jsbreadcrumbs-numberofcrumbs-max": "U més 20 « chaplons de pan »"
 }
