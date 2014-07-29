@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8e28a382_56f98cbf",
+        "filename": "JSBreadCrumbs.hooks.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 74,
+      "author": {
+        "id": 105
+      },
+      "writtenOn": "2014-07-29T07:09:58Z",
+      "side": 1,
+      "message": "Good, no parsing needed and HTML certainly not appropriate on Special:Preferences.\nhttps://translatewiki.net/wiki/Special:Translations/MediaWiki:prefs-jsbreadcrumbs-numberofcrumbs-max",
+      "range": {
+        "startLine": 74,
+        "startChar": 13,
+        "endLine": 74,
+        "endChar": 22
+      },
+      "revId": "30f104f63e3fd42f1c242f31362a738017e7445c",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
