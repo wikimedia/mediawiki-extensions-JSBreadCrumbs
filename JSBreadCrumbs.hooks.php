@@ -31,7 +31,7 @@ class JSBreadCrumbsHooks {
 		if ( $wgJSBreadCrumbsSeparator !== '' ) {
 			$separator = $wgJSBreadCrumbsSeparator;
 		} else {
-			$separator = wfMsg( "jsbreadcrumbs-separator" );
+			$separator = wfMessage( "jsbreadcrumbs-separator" )->text();
 		}
 
 		$variables = array();
@@ -39,7 +39,8 @@ class JSBreadCrumbsHooks {
 		$variables['wgJSBreadCrumbsMaxCrumbs'] = $wgUser->getOption( "jsbreadcrumbs-numberofcrumbs" );
 		$variables['wgJSBreadCrumbsSeparator'] = $separator;
 		$variables['wgJSBreadCrumbsCookiePath'] = $wgJSBreadCrumbsCookiePath;
-		$variables['wgJSBreadCrumbsLeadingDescription'] = wfMsg( "jsbreadcrumbs-leading-description" );
+		$variables['wgJSBreadCrumbsLeadingDescription'] =
+			wfMessage( "jsbreadcrumbs-leading-description" )->text();
 		$variables['wgJSBreadCrumbsShowSiteName'] = $wgUser->getOption( "jsbreadcrumbs-showsite" );
 
 		$vars = array_merge( $vars, $variables );
@@ -70,7 +71,7 @@ class JSBreadCrumbsHooks {
 			'min' => 1,
 			'max' => 20,
 			'section' => 'rendering/jsbreadcrumbs',
-			'help' => wfMsgHtml( 'prefs-jsbreadcrumbs-numberofcrumbs-max' ),
+			'help' => wfMessage( 'prefs-jsbreadcrumbs-numberofcrumbs-max' )->text(),
 			'label-message' => 'prefs-jsbreadcrumbs-numberofcrumbs',
 		);
 
