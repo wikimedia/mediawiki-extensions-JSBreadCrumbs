@@ -31,7 +31,7 @@ class JSBreadCrumbsHooks {
 		if ( $wgJSBreadCrumbsSeparator !== '' ) {
 			$separator = $wgJSBreadCrumbsSeparator;
 		} else {
-			$separator = wfMessage( "jsbreadcrumbs-separator" )->text();
+			$separator = wfMessage( "jsbreadcrumbs-separator" )->escaped();
 		}
 
 		$variables = array();
@@ -40,7 +40,7 @@ class JSBreadCrumbsHooks {
 		$variables['wgJSBreadCrumbsSeparator'] = $separator;
 		$variables['wgJSBreadCrumbsCookiePath'] = $wgJSBreadCrumbsCookiePath;
 		$variables['wgJSBreadCrumbsLeadingDescription'] =
-			wfMessage( "jsbreadcrumbs-leading-description" )->text();
+			wfMessage( "jsbreadcrumbs-leading-description" )->escaped();
 		$variables['wgJSBreadCrumbsShowSiteName'] = $wgUser->getOption( "jsbreadcrumbs-showsite" );
 
 		$vars = array_merge( $vars, $variables );
