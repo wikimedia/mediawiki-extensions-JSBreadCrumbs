@@ -43,6 +43,13 @@ class JSBreadCrumbsHooks {
 			wfMessage( "jsbreadcrumbs-leading-description" )->escaped();
 		$variables['wgJSBreadCrumbsShowSiteName'] = $wgUser->getOption( "jsbreadcrumbs-showsite" );
 
+		global $wgTitle;
+		if ( class_exists( "SemanticTitle" ) ) {
+			$variables['wgJSBreadCrumbsPageName'] = SemanticTitle::getText( $wgTitle );
+		} else {
+			$variables['wgJSBreadCrumbsPageName'] = $wgTitle->getPrefixedText();
+		}
+
 		$vars = array_merge( $vars, $variables );
 
 		return true;

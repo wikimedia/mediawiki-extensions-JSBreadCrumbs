@@ -35,10 +35,7 @@ $j(document).ready( function() {
     }
 
     // Get the full title
-    var title = wgTitle;
-    if ( wgNamespaceNumber != 0 ) {
-        title = wgFormattedNamespaces[wgNamespaceNumber] + ":" + wgTitle;
-    }
+    var title = wgJSBreadCrumbsPageName;
 
     // Remove duplicates
     var matchTitleIndex = $j.inArray( title, titleState );
