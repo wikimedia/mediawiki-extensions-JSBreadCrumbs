@@ -1,90 +1,127 @@
-$j(document).ready( function() {
-    // Set defaults if included as a gadget, otherwise they should
-    // be defined by the extension.
-    if ( typeof wgJSBreadCrumbsMaxCrumbs == "undefined" ) {
-        wgJSBreadCrumbsMaxCrumbs = 5;
-    }
-    if ( typeof wgJSBreadCrumbsSeparator == "undefined" ) {
-        wgJSBreadCrumbsSeparator = "»";
-    }
-    if ( typeof wgJSBreadCrumbsCookiePath == "undefined" ) {
-        wgJSBreadCrumbsCookiePath = "/";
-    }
-    if ( typeof wgJSBreadCrumbsLeadingDescription == "undefined" ) {
-        wgJSBreadCrumbsLeadingDescription = "Navigation trail";
-    }
-    if ( typeof wgJSBreadCrumbsShowSiteName == "undefined" ) {
-    	wgJSBreadCrumbsShowSiteName = false;
-    }
+$(document).ready( function() {
+	// Set defaults if included as a gadget, otherwise they should
+	// be defined by the extension.
 
-    if ( wgCanonicalSpecialPageName == "Userlogout" ) {
-    	$j.cookie( 'mwext-bc-title', '', { path: wgJSBreadCrumbsCookiePath } );
-    	$j.cookie( 'mwext-bc-url', '', { path: wgJSBreadCrumbsCookiePath } );
-    	$j.cookie( 'mwext-bc-site', '', { path: wgJSBreadCrumbsCookiePath } );
-    }
-    // Get the breadcrumbs from the cookies
-    var titleState = ( $j.cookie( 'mwext-bc-title' ) || "" ).split( '|' );
-    var urlState = ( $j.cookie( 'mwext-bc-url' ) || "" ).split( '|' );
-    var siteState = ( $j.cookie( 'mwext-bc-site' ) || "" ).split( '|' );
+	if ( typeof wgJSBreadCrumbsMaxCrumbs == "undefined" ) {
+		wgJSBreadCrumbsMaxCrumbs = 5;
+	}
+	if ( typeof wgJSBreadCrumbsSeparator == "undefined" ) {
+		wgJSBreadCrumbsSeparator = "»";
+	}
+	if ( typeof wgJSBreadCrumbsCookiePath == "undefined" ) {
+		wgJSBreadCrumbsCookiePath = "/";
+	}
+	if ( typeof wgJSBreadCrumbsLeadingDescription == "undefined" ) {
+		wgJSBreadCrumbsLeadingDescription = "Navigation trail";
+	}
+	if ( typeof wgJSBreadCrumbsCSSSelector == "undefined" ) {
+		wgJSBreadCrumbsCSSSelector = "#top";
+	}
+	if ( typeof wgJSBreadCrumbsShowSiteName == "undefined" ) {
+		wgJSBreadCrumbsShowSiteName = false;
+	}
+	if ( typeof wgJSBreadCrumbsShowSidebar == "undefined" ) {
+		wgJSBreadCrumbsShowSidebar = false;
+	}
 
-    // Strip the first title/url if it is empty
-    if ( titleState[0].length == 0 ) {
-        titleState.splice( 0, 1 );
-        urlState.splice( 0, 1 );
-        siteState.splice( 0, 1 );
-    }
+	if ( wgCanonicalSpecialPageName == "Userlogout" ) {
+		$.cookie( 'mwext-bc-title', '', { path: wgJSBreadCrumbsCookiePath } );
+		$.cookie( 'mwext-bc-url', '', { path: wgJSBreadCrumbsCookiePath } );
+		$.cookie( 'mwext-bc-site', '', { path: wgJSBreadCrumbsCookiePath } );
+	}
+	// Get the breadcrumbs from the cookies
+	var titleState = ( $.cookie( 'mwext-bc-title' ) || "" ).split( '|' );
+	var urlState = ( $.cookie( 'mwext-bc-url' ) || "" ).split( '|' );
+	var siteState = ( $.cookie( 'mwext-bc-site' ) || "" ).split( '|' );
 
-    // Get the full title
-    var title = wgTitle;
-    if ( wgNamespaceNumber != 0 ) {
-        title = wgFormattedNamespaces[wgNamespaceNumber] + ":" + wgTitle;
-    }
+	// Strip the first title/url if it is empty
+	if ( titleState[0].length === 0 ) {
+		titleState.splice( 0, 1 );
+		urlState.splice( 0, 1 );
+		siteState.splice( 0, 1 );
+	}
 
-    // Remove duplicates
-    var matchTitleIndex = $j.inArray( title, titleState );
-    var matchUrlIndex = $j.inArray( location.pathname + location.search, urlState );
-    if ( matchTitleIndex != -1 && ( matchUrlIndex == matchTitleIndex ) ) {
-        titleState.splice( matchTitleIndex, 1 );
-        urlState.splice( matchTitleIndex, 1 );
-        siteState.splice( matchTitleIndex, 1 );
-    }
- 
-    // Add the current page
-    titleState.push( title );
-    urlState.push( location.pathname + location.search );
-    siteState.push( wgSiteName );
+	// Get the full title
+	var title = wgJSBreadCrumbsPageName;
 
-    // Ensure we only display the maximum breadcrumbs set 
-    if ( titleState.length > wgJSBreadCrumbsMaxCrumbs ) {
-        titleState = titleState.slice( titleState.length - wgJSBreadCrumbsMaxCrumbs );
-        urlState = urlState.slice( urlState.length - wgJSBreadCrumbsMaxCrumbs );
-        siteState = siteState.slice( siteState.length - wgJSBreadCrumbsMaxCrumbs );
-    }
+	// Remove duplicates
+	var matchTitleIndex = $.inArray( title, titleState );
+	var matchUrlIndex = $.inArray( location.pathname + location.search, urlState );
+	if ( matchTitleIndex != -1 && ( matchUrlIndex == matchTitleIndex ) ) {
+		titleState.splice( matchTitleIndex, 1 );
+		urlState.splice( matchTitleIndex, 1 );
+		siteState.splice( matchTitleIndex, 1 );
+	}
 
-    // Insert the span we are going to populate 
-    $j( "#top" ).before( '<span id="mwext-bc" class="noprint plainlinks breadcrumbs"></span>' );
+	// Add the current page
+	titleState.push( title );
+	urlState.push( location.pathname + location.search );
+	siteState.push( wgSiteName );
 
-    var mwextbc = $j( "#mwext-bc" );
+	// Ensure we only display the maximum breadcrumbs set
+	if ( titleState.length > wgJSBreadCrumbsMaxCrumbs ) {
+		titleState = titleState.slice( titleState.length - wgJSBreadCrumbsMaxCrumbs );
+		urlState = urlState.slice( urlState.length - wgJSBreadCrumbsMaxCrumbs );
+		siteState = siteState.slice( siteState.length - wgJSBreadCrumbsMaxCrumbs );
+	}
 
-    // Add the bread crumb description 
-    mwextbc.append( wgJSBreadCrumbsLeadingDescription + ': ' );
+	//Insert SideBar List
+	if( wgJSBreadCrumbsShowSidebar === true ) {
+		if(skin == "vector") {
+			postVector();
+		} else if(skin == "modern") {
+			postOther('#mw_portlets');
+		} else if(skin == "monobook") {
+			postOther('#column-one');
+		} else if(skin == "cologneblue") {
+			postOther('#quickbar');
+		}
 
-    // Add the bread crumbs
-    for ( var i = 0; i < titleState.length; i++ ) {
-        if ( wgJSBreadCrumbsShowSiteName == true ) {
-            urltoappend = '<a href="' + urlState[i] + '">' + '(' + siteState[i] + ') ' + titleState[i] + '</a> ';
-        } else {
-            urltoappend = '<a href="' + urlState[i] + '">' + titleState[i] + '</a> ';
-        }
-        // Only add the separator if this isn't the last title
-        if ( i < titleState.length - 1 ) {
-		    urltoappend = urltoappend + wgJSBreadCrumbsSeparator + ' ';
-        }
-        mwextbc.append( urltoappend );
-    }
+		for ( var i = titleState.length-1; i >= 0; i-- ) {
+			if ( wgJSBreadCrumbsShowSiteName === true ) {
+				$("#p-rv-list2").append('<li><a href="'  + urlState[i]+'">'+ '(' + siteState[i] + ')' + titleState[i] + '</a></li>');
+			} else {
+				$("#p-rv-list2").append('<li><a href="'  + urlState[i]+'">'+ titleState[i]+'</a></li>');
+			}
+		}
+	} else {
+		// Insert the span we are going to populate
+		$( wgJSBreadCrumbsCSSSelector ).before( '<span id="mwext-bc" class="noprint plainlinks jsbc-breadcrumbs"></span>' );
 
-    // Save the bread crumb states to the cookies
-    $j.cookie( 'mwext-bc-title', titleState.join( '|' ), { path: wgJSBreadCrumbsCookiePath } );
-    $j.cookie( 'mwext-bc-url', urlState.join( '|' ), { path: wgJSBreadCrumbsCookiePath } );
-    $j.cookie( 'mwext-bc-site', siteState.join( '|' ), { path: wgJSBreadCrumbsCookiePath } );
+		var mwextbc = $( "#mwext-bc" );
+
+		// Add the bread crumb description
+		mwextbc.append( wgJSBreadCrumbsLeadingDescription + ': ' );
+
+		// Add the bread crumbs
+		for ( var k = 0; k < titleState.length; k++ ) {
+			if ( wgJSBreadCrumbsShowSiteName === true ) {
+				urltoappend = '<a href="' + urlState[k] + '">' + '(' + siteState[k] + ') ' + titleState[k] + '</a> ';
+			} else {
+				urltoappend = '<a href="' + urlState[k] + '">' + titleState[k] + '</a> ';
+			}
+
+			// Only add the separator if this isn't the last title
+			if ( k < titleState.length - 1 ) {
+				urltoappend = urltoappend + wgJSBreadCrumbsSeparator + ' ';
+			}
+			mwextbc.append( urltoappend );
+		}
+	}
+	// Save the bread crumb states to the cookies
+	$.cookie( 'mwext-bc-title', titleState.join( '|' ), { path: wgJSBreadCrumbsCookiePath } );
+	$.cookie( 'mwext-bc-url', urlState.join( '|' ), { path: wgJSBreadCrumbsCookiePath } );
+	$.cookie( 'mwext-bc-site', siteState.join( '|' ), { path: wgJSBreadCrumbsCookiePath } );
 });
+
+
+function postVector() {
+	$("#mw-panel").append("<div class='portal persistent' role='navigation' id='p-rv' aria-labelledby='p-rv-label'></div>");
+	$("#p-rv").append("<h3 id='p-rv-label' tabindex='3'><a href='#' aria-haspopup='true' aria-controls='p-rv-list2' role='button' aria-pressed='false' aria-expanded='true'>Last "+ wgJSBreadCrumbsMaxCrumbs + " Pages Viewed</a></h3>");
+	$("#p-rv").append("<div class='body' style='display: block;'><ul id='p-rv-list2'></ul>");
+}
+
+function postOther(id) {
+	$(id).append("<div class='portlet' id='p-rv' role='navigation'></div>");
+	$("#p-rv").append("<h3>Last " + wgJSBreadCrumbsMaxCrumbs+ "  Pages Viewed</h3><div class='pBody'><ul id='p-rv-list'></ul></div>");
+}

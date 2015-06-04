@@ -19,28 +19,49 @@
 //BreadCrumbsSeparator default set via localization
 $wgJSBreadCrumbsSeparator = '';
 $wgJSBreadCrumbsCookiePath = '/';
-$wgDefaultUserOptions['jsbreadcrumbs-showcrumbs'] = false;
+$wgJSBreadCrumbsCSSSelector = "#top";
+$wgJSBreadCrumbsSkinCSSArray = array (
+    "vector" => "#top",
+    "foreground" => "#mw-js-message"
+);
+
+$wgDefaultUserOptions['jsbreadcrumbs-showcrumbs'] = true;
+$wgDefaultUserOptions['jsbreadcrumbs-showcrumbssidebar'] = false;
 $wgDefaultUserOptions['jsbreadcrumbs-showsite'] = false;
 $wgDefaultUserOptions['jsbreadcrumbs-numberofcrumbs'] = 5;
 
 // Sets Credits
 $wgExtensionCredits['other'][] = array(
-        'path' => __FILE__,
-        'name' => 'JSBreadCrumbs',
-        'author' => 'Ryan Lane',
-        'version' => '0.6.0',
-        'url' => 'https://www.mediawiki.org/wiki/Extension:JSBreadCrumbs',
-        'descriptionmsg' => 'jsbreadcrumbs-desc',
+		'path' => __FILE__,
+		'name' => 'JSBreadCrumbs',
+		'author' => 'Ryan Lane',
+		'version' => '0.6.1',
+		'url' => 'https://www.mediawiki.org/wiki/Extension:JSBreadCrumbs',
+		'descriptionmsg' => 'jsbreadcrumbs-desc',
 );
 
 // Adds Autoload Classes
+//$wgAutoloadClasses['JSBreadCrumbsHooks'] =
+//		dirname( __FILE__ ) . "/JSBreadCrumbs.hooks.php";
+
+$wgResourceModules['ext.JSBreadCrumbs'] = array(
+	'localBasePath' => __DIR__,
+	'remoteExtPath' => 'JSBreadCrumbs',
+	'scripts' => array( 'js/BreadCrumbs.js' ),
+	'styles' => array( 'css/BreadCrumbs.css' ),
+	'dependencies' => array(
+		'jquery.cookie',
+	)
+);
+
 $wgAutoloadClasses['JSBreadCrumbsHooks'] =
-        dirname( __FILE__ ) . "/JSBreadCrumbs.hooks.php";
+		dirname( __FILE__ ) . "/JSBreadCrumbs.hooks.php";
+
 
 // Adds Internationalized Messages
 $wgMessagesDirs['JSBreadCrumbs'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['JSBreadCrumbs'] =
-        dirname( __FILE__ ) . "/JSBreadCrumbs.i18n.php";
+		dirname( __FILE__ ) . "/JSBreadCrumbs.i18n.php";
 
 // Registers Hooks
 $wgHooks['BeforePageDisplay'][] = 'JSBreadCrumbsHooks::addResources';
