@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8ec42329_4d5ff9e8",
+        "filename": "JSBreadCrumbs.php",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 890
+      },
+      "writtenOn": "2015-06-17T13:40:43Z",
+      "side": 1,
+      "message": "What if a wiki can have more than one skin. Say: The administrator have monobook and Vector enabled and changes this value to reflect the situation for Vector (which is the default skin). Now a user changes the skin to monobook and this setting may be false for it. So i suggest to make this skin specific:\n\n$wgJSBreadCrumbsCSSSelector \u003d array(\n    \u0027vector\u0027 \u003d\u003e \u0027#top\u0027,\n    \u0027monobook\u0027 \u003d\u003e \u0027#whatever\u0027,\n);",
+      "revId": "f716627c3832aae684309045840ca75ab24ad2fc",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
