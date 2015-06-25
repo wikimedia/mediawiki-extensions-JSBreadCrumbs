@@ -20,6 +20,11 @@
 $wgJSBreadCrumbsSeparator = '';
 $wgJSBreadCrumbsCookiePath = '/';
 $wgJSBreadCrumbsCSSSelector = "#top";
+$wgJSBreadCrumbsSkinCSSArray = array (
+    "vector" => "#top",
+    "foreground" => "#mw-js-message"
+);
+
 $wgDefaultUserOptions['jsbreadcrumbs-showcrumbs'] = false;
 $wgDefaultUserOptions['jsbreadcrumbs-showcrumbssidebar'] = false;
 $wgDefaultUserOptions['jsbreadcrumbs-showsite'] = false;

@@ -19,7 +19,7 @@ class JSBreadCrumbsHooks {
 	 * MakeGlobalVariablesScript hook
 	 */
 	public static function addJSVars( $vars ) {
-		global $wgJSBreadCrumbsSeparator, $wgJSBreadCrumbsCookiePath, $wgJSBreadCrumbsCSSSelector;
+		global $wgJSBreadCrumbsSeparator, $wgJSBreadCrumbsCookiePath, $wgJSBreadCrumbsCSSSelector, $wgJSBreadCrumbsSkinCSSArray;
 		global $wgUser;
 
 		if ( !self::enableBreadCrumbs() ) {
@@ -33,13 +33,20 @@ class JSBreadCrumbsHooks {
 			$separator = wfMessage( "jsbreadcrumbs-separator" )->escaped();
 		}
 
+
 		$variables = array();
+
+		$skinName = $wgUser->getSkin()->getSkinName();
+		if(array_key_exists($skinName, $wgJSBreadCrumbsSkinCSSArray)) {
+			$variables['wgJSBreadCrumbsCSSSelector'] = $wgJSBreadCrumbsSkinCSSArray[$skinName];
+		} else {
+			$variables['wgJSBreadCrumbsCSSSelector'] = $wgJSBreadCrumbsCSSSelector;
+		}
 
 		$variables['wgJSBreadCrumbsMaxCrumbs'] = $wgUser->getOption( "jsbreadcrumbs-numberofcrumbs" );
 		$variables['wgJSBreadCrumbsShowSidebar'] = $wgUser->getOption( "jsbreadcrumbs-showcrumbssidebar" );
 		$variables['wgJSBreadCrumbsSeparator'] = $separator;
 		$variables['wgJSBreadCrumbsCookiePath'] = $wgJSBreadCrumbsCookiePath;
-		$variables['wgJSBreadCrumbsCSSSelector'] = $wgJSBreadCrumbsCSSSelector;
 		$variables['wgJSBreadCrumbsLeadingDescription'] =
 			wfMessage( "jsbreadcrumbs-leading-description" )->escaped();
 		$variables['wgJSBreadCrumbsShowSiteName'] = $wgUser->getOption( "jsbreadcrumbs-showsite" );
