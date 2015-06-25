@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8ec42329_c466104e",
+        "filename": "JSBreadCrumbs.hooks.php",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 890
+      },
+      "writtenOn": "2015-06-25T19:17:44Z",
+      "side": 1,
+      "message": "Why not use the mediawiki.cookie module?",
+      "revId": "bd75ad4debd12e735e1cdb48e47983851251c988",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
