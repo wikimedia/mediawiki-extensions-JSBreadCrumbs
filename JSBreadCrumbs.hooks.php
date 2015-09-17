@@ -7,8 +7,7 @@ class JSBreadCrumbsHooks {
 		global $wgExtensionAssetsPath;
 
 		if ( self::enableBreadCrumbs() ) {
-			$out->addScriptFile( "$wgExtensionAssetsPath/JSBreadCrumbs/js/BreadCrumbs.js", 7 );
-			$out->addExtensionStyle( "$wgExtensionAssetsPath/JSBreadCrumbs/css/BreadCrumbs.css?1" );
+			$out->addModules( 'ext.JSBreadCrumbs' );		
 		}
 
 		return true;
@@ -17,15 +16,13 @@ class JSBreadCrumbsHooks {
 	/**
 	 * MakeGlobalVariablesScript hook
 	 */
-	public static function addJSVars( $vars ) {
-		global $wgJSBreadCrumbsSeparator, $wgJSBreadCrumbsCookiePath;
+	public static function addJSVars( $vars, $outPage ) {
+		global $wgJSBreadCrumbsSeparator, $wgJSBreadCrumbsCookiePath, $wgJSBreadCrumbsCSSSelector, $wgJSBreadCrumbsSkinCSSArray;
 		global $wgUser;
 
 		if ( !self::enableBreadCrumbs() ) {
 			return true;
 		}
-
-
 
 		// Allow localized separator to be overriden
 		if ( $wgJSBreadCrumbsSeparator !== '' ) {
@@ -34,14 +31,43 @@ class JSBreadCrumbsHooks {
 			$separator = wfMessage( "jsbreadcrumbs-separator" )->escaped();
 		}
 
+
 		$variables = array();
 
-		$variables['wgJSBreadCrumbsMaxCrumbs'] = $wgUser->getOption( "jsbreadcrumbs-numberofcrumbs" );
-		$variables['wgJSBreadCrumbsSeparator'] = $separator;
-		$variables['wgJSBreadCrumbsCookiePath'] = $wgJSBreadCrumbsCookiePath;
-		$variables['wgJSBreadCrumbsLeadingDescription'] =
-			wfMessage( "jsbreadcrumbs-leading-description" )->escaped();
-		$variables['wgJSBreadCrumbsShowSiteName'] = $wgUser->getOption( "jsbreadcrumbs-showsite" );
+		$skinName = $wgUser->getSkin()->getSkinName();
+		if(array_key_exists($skinName, $wgJSBreadCrumbsSkinCSSArray)) {
+			//$variables['wgJSBreadCrumbsCSSSelector'] = $wgJSBreadCrumbsSkinCSSArray[$skinName];
+			$outPage->addJsConfigVars('wgJSBreadCrumbsCSSSelector', $wgJSBreadCrumbsSkinCSSArray[$skinName]);
+		} else {
+			//$variables['wgJSBreadCrumbsCSSSelector'] = $wgJSBreadCrumbsCSSSelector;
+			$outPage->addJsConfigVars('wgJSBreadCrumbsCSSSelector', $wgJSBreadCrumbsSkinCSSSelector);
+		}
+
+		//$variables['wgJSBreadCrumbsMaxCrumbs'] = $wgUser->getOption( "jsbreadcrumbs-numberofcrumbs" );
+		//$variables['wgJSBreadCrumbsShowSidebar'] = $wgUser->getOption( "jsbreadcrumbs-showcrumbssidebar" );
+		//$variables['wgJSBreadCrumbsPervasiveWikiFarm'] = $wgUser->getOption( "jsbreadcrumbs-pervasivewikifarm" );
+		//$variables['wgJSBreadCrumbsSeparator'] = $separator;
+		//$variables['wgJSBreadCrumbsCookiePath'] = $wgJSBreadCrumbsCookiePath;
+		//$variables['wgJSBreadCrumbsLeadingDescription'] =
+		//	wfMessage( "jsbreadcrumbs-leading-description" )->escaped();
+		//$variables['wgJSBreadCrumbsShowSiteName'] = $wgUser->getOption( "jsbreadcrumbs-showsite" );
+
+			$outPage->addJsConfigVars('wgJSBreadCrumbsMaxCrumbs', $wgUser->getOption( "jsbreadcrumbs-numberofcrumbs" ));
+			$outPage->addJsConfigVars('wgJSBreadCrumbsShowSidebar', $wgUser->getOption( "jsbreadcrumbs-showcrumbssidebar" ));
+			$outPage->addJsConfigVars('wgJSBreadCrumbsPervasiveWikiFarm', $wgUser->getOption ("jsbreadcrumbs-pervasivewikifarm" ));
+			$outPage->addJsConfigVars('wgJSBreadCrumbsSeparator', $separator);
+			$outPage->addJsConfigVars('wgJSBreadCrumbsCookiePath', $wgJSBreadCrumbsCookiePath);
+			$outPage->addJsConfigVars('wgJSBreadCrumbsLeadingDescription', wfMessage( "jsbreadcrumbs-leading-description" )->escaped());
+			$outPage->addJsConfigVars('wgJSBreadCrumbsShowSiteName', $wgUser->getOption( "jsbreadcrumbs-showsite" ));
+
+		global $wgTitle;
+		if ( class_exists( "SemanticTitle" ) ) {
+			//$variables['wgJSBreadCrumbsPageName'] = SemanticTitle::getText( $wgTitle );
+			$outPage->addJsConfigVars('wgJSBreadCrumbsPageName', SemanticTitle::getText( $wgTitle ));
+		} else {
+			//$variables['wgJSBreadCrumbsPageName'] = $wgTitle->getPrefixedText();
+			$outPage->addJsConfigVars('wgJSBreadCrumbsPageName', $wgTitle->getPrefixedText());
+		}
 
 		$vars = array_merge( $vars, $variables );
 
@@ -57,6 +83,12 @@ class JSBreadCrumbsHooks {
 		$defaultPreferences['jsbreadcrumbs-showcrumbs'] = array(
 			'type' => 'toggle',
 			'label-message' => 'prefs-jsbreadcrumbs-showcrumbs',
+			'section' => 'rendering/jsbreadcrumbs',
+		);
+
+		$defaultPreferences['jsbreadcrumbs-showcrumbssidebar'] = array(
+			'type' => 'toggle',
+			'label-message' => 'prefs-jsbreadcrumbs-showcrumbssidebar',
 			'section' => 'rendering/jsbreadcrumbs',
 		);
 
@@ -79,11 +111,11 @@ class JSBreadCrumbsHooks {
 	}
 
 	static function enableBreadCrumbs() {
-		global $wgOut, $wgUser;
+		global $wgUser;
 
 		// Ensure we only enable bread crumbs if we are using vector and
 		// the user has them enabled
-		if ( $wgOut->getSkin() instanceof SkinVector && $wgUser->getOption( "jsbreadcrumbs-showcrumbs" ) ) {
+		if ( $wgUser->getOption( "jsbreadcrumbs-showcrumbs" ) ) {
 			return true;
 		}
 	}
