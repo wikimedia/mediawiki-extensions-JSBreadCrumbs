@@ -15,8 +15,8 @@ $(document).ready( function() {
 	var pervasiveWikiFarm = mw.config.get('wgJSBreadCrumbsPervasiveWikiFarm');
 	var cookieNameSuffix = "-" + siteName;
 
-	console.log("PervasiveWikiFarm:" + pervasiveWikiFarm);
-
+	if(endsWith(crumbsPageName, "Badtitle")) {
+	}
 	if ( typeof maxCrumbs == "undefined" ) {
 		maxCrumbs = 5;
 	}
@@ -81,10 +81,11 @@ $(document).ready( function() {
 	}
 
 	// Add the current page
-	titleState.push( title );
-	urlState.push( location.pathname + location.search );
-	siteState.push( siteName );
-
+	if(!endsWith(crumbsPageName, "Badtitle")) {
+		titleState.push( title );
+		urlState.push( location.pathname + location.search );
+		siteState.push( siteName );
+	}
 	// Ensure we only display the maximum breadcrumbs set
 	if ( titleState.length > maxCrumbs ) {
 		titleState = titleState.slice( titleState.length - maxCrumbs );
@@ -136,9 +137,9 @@ $(document).ready( function() {
 		}
 	}
 	// Save the bread crumb states to the cookies
-	$.cookie( 'mwext-bc-title' + cookieNameSuffix, titleState.join( '|' ), { path: cookiePath } );
-	$.cookie( 'mwext-bc-url' + cookieNameSuffix, urlState.join( '|' ), { path: cookiePath } );
-	$.cookie( 'mwext-bc-site' + cookieNameSuffix, siteState.join( '|' ), { path: cookiePath } );
+	$.cookie( 'mwext-bc-title' + cookieNameSuffix, titleState.join( '|' ), { path: cookiePath, expires: 30 } );
+	$.cookie( 'mwext-bc-url' + cookieNameSuffix, urlState.join( '|' ), { path: cookiePath, expires: 30 } );
+	$.cookie( 'mwext-bc-site' + cookieNameSuffix, siteState.join( '|' ), { path: cookiePath, expires: 30 } );
 });
 
 
@@ -152,3 +153,8 @@ function postOther(id, maxCrumbs) {
 	$(id).append("<div class='portlet' id='p-rv' role='navigation'></div>");
 	$("#p-rv").append("<h3>Last " + maxCrumbs+ "  Pages Viewed</h3><div class='pBody'><ul id='p-rv-list'></ul></div>");
 }
+
+function endsWith(str, suffix) {
+	return str.indexOf(suffix, str.length - suffix.length) !== -1;
+}
+
