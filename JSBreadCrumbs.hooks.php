@@ -5,9 +5,12 @@ class JSBreadCrumbsHooks {
 	 */
 	public static function addResources( $out ) {
 		global $wgExtensionAssetsPath;
+		global $wgUser;
 
-		if ( self::enableBreadCrumbs() ) {
-			$out->addModules( 'ext.JSBreadCrumbs' );		
+		if ( $wgUser->isAllowed('read') ) {
+			if ( self::enableBreadCrumbs() ) {
+				$out->addModules( 'ext.JSBreadCrumbs' );
+			}
 		}
 
 		return true;
@@ -60,12 +63,11 @@ class JSBreadCrumbsHooks {
 			$outPage->addJsConfigVars('wgJSBreadCrumbsLeadingDescription', wfMessage( "jsbreadcrumbs-leading-description" )->escaped());
 			$outPage->addJsConfigVars('wgJSBreadCrumbsShowSiteName', $wgUser->getOption( "jsbreadcrumbs-showsite" ));
 
+
 		global $wgTitle;
-		if ( class_exists( "SemanticTitle" ) ) {
-			//$variables['wgJSBreadCrumbsPageName'] = SemanticTitle::getText( $wgTitle );
-			$outPage->addJsConfigVars('wgJSBreadCrumbsPageName', SemanticTitle::getText( $wgTitle ));
+		if ( self::getDisplayTitle($wgTitle, $displayTitle) ) {
+			$outPage->addJsConfigVars('wgJSBreadCrumbsPageName', $displayTitle );
 		} else {
-			//$variables['wgJSBreadCrumbsPageName'] = $wgTitle->getPrefixedText();
 			$outPage->addJsConfigVars('wgJSBreadCrumbsPageName', $wgTitle->getPrefixedText());
 		}
 
@@ -109,6 +111,33 @@ class JSBreadCrumbsHooks {
 
 		return true;
 	}
+
+  	public static function getDisplayTitle( Title $title, &$displayTitle ) {
+    	$id = $title->getArticleID();
+ 
+    	$dbr = wfGetDB( DB_SLAVE );
+    	$result = $dbr->select(
+      		'page_props',
+      		array( 'pp_value' ),
+      		array(
+        		'pp_page' => $id,
+        		'pp_propname' => 'displaytitle'
+      		),
+      		__METHOD__
+    	);
+ 
+	    if ( $result->numRows() > 0 ) {
+    		$row = $result->fetchRow();
+      		$displayTitle = $row['pp_value'];
+
+			if($displayTitle == '') {
+				return false;
+			}
+      		return true;
+    	}
+ 
+    	return false;
+  	}
 
 	static function enableBreadCrumbs() {
 		global $wgUser;
