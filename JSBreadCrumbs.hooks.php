@@ -18,6 +18,11 @@ class JSBreadCrumbsHooks {
 
 	/**
 	 * MakeGlobalVariablesScript hook
+	 *
+	 * @param array $vars
+	 * @param OutputPage $outPage
+	 *
+	 * @return bool
 	 */
 	public static function addJSVars( $vars, $outPage ) {
 		global $wgJSBreadCrumbsSeparator, $wgJSBreadCrumbsCookiePath, $wgJSBreadCrumbsCSSSelector, $wgJSBreadCrumbsSkinCSSArray;
@@ -34,10 +39,9 @@ class JSBreadCrumbsHooks {
 			$separator = wfMessage( "jsbreadcrumbs-separator" )->escaped();
 		}
 
-
 		$variables = array();
 
-		$skinName = $wgUser->getSkin()->getSkinName();
+		$skinName = $outPage->getSkin()->getSkinName();
 		if(array_key_exists($skinName, $wgJSBreadCrumbsSkinCSSArray)) {
 			//$variables['wgJSBreadCrumbsCSSSelector'] = $wgJSBreadCrumbsSkinCSSArray[$skinName];
 			$outPage->addJsConfigVars('wgJSBreadCrumbsCSSSelector', $wgJSBreadCrumbsSkinCSSArray[$skinName]);
@@ -55,13 +59,13 @@ class JSBreadCrumbsHooks {
 		//	wfMessage( "jsbreadcrumbs-leading-description" )->escaped();
 		//$variables['wgJSBreadCrumbsShowSiteName'] = $wgUser->getOption( "jsbreadcrumbs-showsite" );
 
-			$outPage->addJsConfigVars('wgJSBreadCrumbsMaxCrumbs', $wgUser->getOption( "jsbreadcrumbs-numberofcrumbs" ));
-			$outPage->addJsConfigVars('wgJSBreadCrumbsShowSidebar', $wgUser->getOption( "jsbreadcrumbs-showcrumbssidebar" ));
-			$outPage->addJsConfigVars('wgJSBreadCrumbsPervasiveWikiFarm', $wgUser->getOption ("jsbreadcrumbs-pervasivewikifarm" ));
-			$outPage->addJsConfigVars('wgJSBreadCrumbsSeparator', $separator);
-			$outPage->addJsConfigVars('wgJSBreadCrumbsCookiePath', $wgJSBreadCrumbsCookiePath);
-			$outPage->addJsConfigVars('wgJSBreadCrumbsLeadingDescription', wfMessage( "jsbreadcrumbs-leading-description" )->escaped());
-			$outPage->addJsConfigVars('wgJSBreadCrumbsShowSiteName', $wgUser->getOption( "jsbreadcrumbs-showsite" ));
+		$outPage->addJsConfigVars('wgJSBreadCrumbsMaxCrumbs', $wgUser->getOption( "jsbreadcrumbs-numberofcrumbs" ));
+		$outPage->addJsConfigVars('wgJSBreadCrumbsShowSidebar', $wgUser->getOption( "jsbreadcrumbs-showcrumbssidebar" ));
+		$outPage->addJsConfigVars('wgJSBreadCrumbsPervasiveWikiFarm', $wgUser->getOption ("jsbreadcrumbs-pervasivewikifarm" ));
+		$outPage->addJsConfigVars('wgJSBreadCrumbsSeparator', $separator);
+		$outPage->addJsConfigVars('wgJSBreadCrumbsCookiePath', $wgJSBreadCrumbsCookiePath);
+		$outPage->addJsConfigVars('wgJSBreadCrumbsLeadingDescription', wfMessage( "jsbreadcrumbs-leading-description" )->escaped());
+		$outPage->addJsConfigVars('wgJSBreadCrumbsShowSiteName', $wgUser->getOption( "jsbreadcrumbs-showsite" ));
 
 
 		global $wgTitle;
