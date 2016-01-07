@@ -43,34 +43,28 @@ class JSBreadCrumbsHooks {
 
 		$skinName = $outPage->getSkin()->getSkinName();
 		if(array_key_exists($skinName, $wgJSBreadCrumbsSkinCSSArray)) {
-			//$variables['wgJSBreadCrumbsCSSSelector'] = $wgJSBreadCrumbsSkinCSSArray[$skinName];
 			$outPage->addJsConfigVars('wgJSBreadCrumbsCSSSelector', $wgJSBreadCrumbsSkinCSSArray[$skinName]);
 		} else {
-			//$variables['wgJSBreadCrumbsCSSSelector'] = $wgJSBreadCrumbsCSSSelector;
 			$outPage->addJsConfigVars('wgJSBreadCrumbsCSSSelector', $wgJSBreadCrumbsSkinCSSSelector);
 		}
 
-		//$variables['wgJSBreadCrumbsMaxCrumbs'] = $wgUser->getOption( "jsbreadcrumbs-numberofcrumbs" );
-		//$variables['wgJSBreadCrumbsShowSidebar'] = $wgUser->getOption( "jsbreadcrumbs-showcrumbssidebar" );
-		//$variables['wgJSBreadCrumbsPervasiveWikiFarm'] = $wgUser->getOption( "jsbreadcrumbs-pervasivewikifarm" );
-		//$variables['wgJSBreadCrumbsSeparator'] = $separator;
-		//$variables['wgJSBreadCrumbsCookiePath'] = $wgJSBreadCrumbsCookiePath;
-		//$variables['wgJSBreadCrumbsLeadingDescription'] =
-		//	wfMessage( "jsbreadcrumbs-leading-description" )->escaped();
-		//$variables['wgJSBreadCrumbsShowSiteName'] = $wgUser->getOption( "jsbreadcrumbs-showsite" );
-
-		$outPage->addJsConfigVars('wgJSBreadCrumbsMaxCrumbs', $wgUser->getOption( "jsbreadcrumbs-numberofcrumbs" ));
-		$outPage->addJsConfigVars('wgJSBreadCrumbsShowSidebar', $wgUser->getOption( "jsbreadcrumbs-showcrumbssidebar" ));
-		$outPage->addJsConfigVars('wgJSBreadCrumbsPervasiveWikiFarm', $wgUser->getOption ("jsbreadcrumbs-pervasivewikifarm" ));
-		$outPage->addJsConfigVars('wgJSBreadCrumbsSeparator', $separator);
-		$outPage->addJsConfigVars('wgJSBreadCrumbsCookiePath', $wgJSBreadCrumbsCookiePath);
-		$outPage->addJsConfigVars('wgJSBreadCrumbsLeadingDescription', wfMessage( "jsbreadcrumbs-leading-description" )->escaped());
-		$outPage->addJsConfigVars('wgJSBreadCrumbsShowSiteName', $wgUser->getOption( "jsbreadcrumbs-showsite" ));
+			$outPage->addJsConfigVars('wgJSBreadCrumbsMaxCrumbs', $wgUser->getOption( "jsbreadcrumbs-numberofcrumbs" ));
+			$outPage->addJsConfigVars('wgJSBreadCrumbsShowSidebar', $wgUser->getOption( "jsbreadcrumbs-showcrumbssidebar" ));
+			$outPage->addJsConfigVars('wgJSBreadCrumbsPervasiveWikiFarm', $wgUser->getOption ("jsbreadcrumbs-pervasivewikifarm" ));
+			$outPage->addJsConfigVars('wgJSBreadCrumbsSeparator', $separator);
+			$outPage->addJsConfigVars('wgJSBreadCrumbsCookiePath', $wgJSBreadCrumbsCookiePath);
+			$outPage->addJsConfigVars('wgJSBreadCrumbsLeadingDescription', wfMessage( "jsbreadcrumbs-leading-description" )->escaped());
+			$outPage->addJsConfigVars('wgJSBreadCrumbsShowSiteName', $wgUser->getOption( "jsbreadcrumbs-showsite" ));
 
 
 		global $wgTitle;
 		if ( self::getDisplayTitle($wgTitle, $displayTitle) ) {
-			$outPage->addJsConfigVars('wgJSBreadCrumbsPageName', $displayTitle );
+
+			if(trim( str_replace( '&nbsp;', '', strip_tags( $displayTitle ) ) ) != '' ) {
+				$outPage->addJsConfigVars('wgJSBreadCrumbsPageName', $displayTitle );
+			} else {
+				$outPage->addJsConfigVars('wgJSBreadCrumbsPageName', $wgTitle->getPrefixedText());
+			}
 		} else {
 			$outPage->addJsConfigVars('wgJSBreadCrumbsPageName', $wgTitle->getPrefixedText());
 		}
