@@ -1,4 +1,4 @@
-$(document).ready( function() {
+jQuery(document).ready( function( $, mw ) {
 	// Set defaults if included as a gadget, otherwise they should
 	// be defined by the extension.
 
@@ -140,18 +140,18 @@ $(document).ready( function() {
 	$.cookie( 'mwext-bc-title' + cookieNameSuffix, titleState.join( '|' ), { path: cookiePath, expires: 30 } );
 	$.cookie( 'mwext-bc-url' + cookieNameSuffix, urlState.join( '|' ), { path: cookiePath, expires: 30 } );
 	$.cookie( 'mwext-bc-site' + cookieNameSuffix, siteState.join( '|' ), { path: cookiePath, expires: 30 } );
-});
+}( jQuery, mediaWiki ) );
 
 
 function postVector(maxCrumbs) {
-	$("#mw-panel").append("<div class='portal persistent' role='navigation' id='p-rv' aria-labelledby='p-rv-label'></div>");
-	$("#p-rv").append("<h3 id='p-rv-label' tabindex='3'><a href='#' aria-haspopup='true' aria-controls='p-rv-list2' role='button' aria-pressed='false' aria-expanded='true'>Last "+ maxCrumbs + " Pages Viewed</a></h3>");
-	$("#p-rv").append("<div class='body' style='display: block;'><ul id='p-rv-list2'></ul>");
+	jQuery("#mw-panel").append("<div class='portal persistent' role='navigation' id='p-rv' aria-labelledby='p-rv-label'></div>");
+	jQuery("#p-rv").append("<h3 id='p-rv-label' tabindex='3'><a href='#' aria-haspopup='true' aria-controls='p-rv-list2' role='button' aria-pressed='false' aria-expanded='true'>Last "+ maxCrumbs + " Pages Viewed</a></h3>");
+	jQuery("#p-rv").append("<div class='body' style='display: block;'><ul id='p-rv-list2'></ul>");
 }
 
 function postOther(id, maxCrumbs) {
-	$(id).append("<div class='portlet' id='p-rv' role='navigation'></div>");
-	$("#p-rv").append("<h3>Last " + maxCrumbs+ "  Pages Viewed</h3><div class='pBody'><ul id='p-rv-list'></ul></div>");
+	jQuery(id).append("<div class='portlet' id='p-rv' role='navigation'></div>");
+	jQuery("#p-rv").append("<h3>Last " + maxCrumbs+ "  Pages Viewed</h3><div class='pBody'><ul id='p-rv-list'></ul></div>");
 }
 
 function endsWith(str, suffix) {
