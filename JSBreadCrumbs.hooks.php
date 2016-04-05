@@ -25,8 +25,8 @@ class JSBreadCrumbsHooks {
 	 * @return bool
 	 */
 	public static function addJSVars( $vars, $outPage ) {
-		global $wgJSBreadCrumbsSeparator, $wgJSBreadCrumbsCookiePath, $wgJSBreadCrumbsCSSSelector, $wgJSBreadCrumbsSkinCSSArray,
-		$wgJSBreadCrumbsSkinCSSSelector, $wgUser;
+		global $wgJSBreadCrumbsSeparator, $wgJSBreadCrumbsCookiePath, $wgJSBreadCrumbsCSSSelector, $wgJSBreadCrumbsSkinCSSArray;
+		global $wgUser;
 
 		if ( !self::enableBreadCrumbs() ) {
 			return true;

@@ -1,4 +1,4 @@
-jQuery(document).ready( function( $, mw ) {
+$(document).ready( function() {
 	// Set defaults if included as a gadget, otherwise they should
 	// be defined by the extension.
 
@@ -17,28 +17,28 @@ jQuery(document).ready( function( $, mw ) {
 
 	if(endsWith(crumbsPageName, "Badtitle")) {
 	}
-	if ( typeof maxCrumbs === "undefined" ) {
+	if ( typeof maxCrumbs == "undefined" ) {
 		maxCrumbs = 5;
 	}
-	if ( typeof separator === "undefined" ) {
+	if ( typeof separator == "undefined" ) {
 		separator = "»";
 	}
-	if ( typeof cookiePath === "undefined" ) {
+	if ( typeof cookiePath == "undefined" ) {
 		cookiePath = "/";
 	}
-	if ( typeof leadingDescription === "undefined" ) {
+	if ( typeof leadingDescription == "undefined" ) {
 		leadingDescription = "Navigation trail";
 	}
-	if ( typeof cssSelector === "undefined" ) {
+	if ( typeof cssSelector == "undefined" ) {
 		cssSelector = "#top";
 	}
-	if ( typeof showSiteName === "undefined" ) {
+	if ( typeof showSiteName == "undefined" ) {
 		showSiteName = false;
 	}
-	if ( typeof showSidebar === "undefined" ) {
+	if ( typeof showSidebar == "undefined" ) {
 		showSidebar = false;
 	}
-	if ( typeof pervasiveWikiFarm === "undefined" ) {
+	if ( typeof pervasiveWikiFarm == "undefined" ) {
 		pervasiveWikiFarm = false;
 	}
 
@@ -46,7 +46,7 @@ jQuery(document).ready( function( $, mw ) {
 		cookieNameSuffix = "";
 	}
 
-	if ( specialPageName === "Userlogout" ) {
+	if ( specialPageName == "Userlogout" ) {
 		$.cookie( 'mwext-bc-title' + cookieNameSuffix, '', { path: cookiePath } );
 		$.cookie( 'mwext-bc-url' + cookieNameSuffix, '', { path: cookiePath } );
 		$.cookie( 'mwext-bc-site' + cookieNameSuffix, '', { path: cookiePath } );
@@ -67,14 +67,14 @@ jQuery(document).ready( function( $, mw ) {
 	var title = crumbsPageName;
 
 	// Remove duplicates
-	/* var matchTitleIndex = $.inArray( title, titleState ); */
+	var matchTitleIndex = $.inArray( title, titleState );
 	var matchUrlIndex = $.inArray( location.pathname + location.search, urlState );
 	/*if ( matchTitleIndex != -1 && ( matchUrlIndex == matchTitleIndex ) ) {
 		titleState.splice( matchTitleIndex, 1 );
 		urlState.splice( matchTitleIndex, 1 );
 		siteState.splice( matchTitleIndex, 1 );
 	}*/
-	if ( matchUrlIndex !== -1  ) {
+	if ( matchUrlIndex != -1  ) {
 		titleState.splice( matchUrlIndex, 1 );
 		urlState.splice( matchUrlIndex, 1 );
 		siteState.splice( matchUrlIndex, 1 );
@@ -92,18 +92,16 @@ jQuery(document).ready( function( $, mw ) {
 		urlState = urlState.slice( urlState.length - maxCrumbs );
 		siteState = siteState.slice( siteState.length - maxCrumbs );
 	}
-	
-	var skin;
 
 	//Insert SideBar List
 	if( showSidebar === true ) {
-		if(skin === "vector") {
+		if(skin == "vector") {
 			postVector(maxCrumbs);
-		} else if(skin === "modern") {
+		} else if(skin == "modern") {
 			postOther('#mw_portlets', maxCrumbs);
-		} else if(skin === "monobook") {
+		} else if(skin == "monobook") {
 			postOther('#column-one', maxCrumbs);
-		} else if(skin === "cologneblue") {
+		} else if(skin == "cologneblue") {
 			postOther('#quickbar', maxCrumbs);
 		}
 
@@ -119,8 +117,6 @@ jQuery(document).ready( function( $, mw ) {
 		$( cssSelector ).before( '<span id="mwext-bc" class="noprint plainlinks jsbc-breadcrumbs"></span>' );
 
 		var mwextbc = $( "#mwext-bc" );
-		
-		var urltoappend;
 
 		// Add the bread crumb description
 		mwextbc.append( leadingDescription + ': ' );
@@ -144,18 +140,18 @@ jQuery(document).ready( function( $, mw ) {
 	$.cookie( 'mwext-bc-title' + cookieNameSuffix, titleState.join( '|' ), { path: cookiePath, expires: 30 } );
 	$.cookie( 'mwext-bc-url' + cookieNameSuffix, urlState.join( '|' ), { path: cookiePath, expires: 30 } );
 	$.cookie( 'mwext-bc-site' + cookieNameSuffix, siteState.join( '|' ), { path: cookiePath, expires: 30 } );
-}( jQuery, mediaWiki ) );
+});
 
 
 function postVector(maxCrumbs) {
-	jQuery("#mw-panel").append("<div class='portal persistent' role='navigation' id='p-rv' aria-labelledby='p-rv-label'></div>");
-	jQuery("#p-rv").append("<h3 id='p-rv-label' tabindex='3'><a href='#' aria-haspopup='true' aria-controls='p-rv-list2' role='button' aria-pressed='false' aria-expanded='true'>Last "+ maxCrumbs + " Pages Viewed</a></h3>");
-	jQuery("#p-rv").append("<div class='body' style='display: block;'><ul id='p-rv-list2'></ul>");
+	$("#mw-panel").append("<div class='portal persistent' role='navigation' id='p-rv' aria-labelledby='p-rv-label'></div>");
+	$("#p-rv").append("<h3 id='p-rv-label' tabindex='3'><a href='#' aria-haspopup='true' aria-controls='p-rv-list2' role='button' aria-pressed='false' aria-expanded='true'>Last "+ maxCrumbs + " Pages Viewed</a></h3>");
+	$("#p-rv").append("<div class='body' style='display: block;'><ul id='p-rv-list2'></ul>");
 }
 
 function postOther(id, maxCrumbs) {
-	jQuery(id).append("<div class='portlet' id='p-rv' role='navigation'></div>");
-	jQuery("#p-rv").append("<h3>Last " + maxCrumbs+ "  Pages Viewed</h3><div class='pBody'><ul id='p-rv-list'></ul></div>");
+	$(id).append("<div class='portlet' id='p-rv' role='navigation'></div>");
+	$("#p-rv").append("<h3>Last " + maxCrumbs+ "  Pages Viewed</h3><div class='pBody'><ul id='p-rv-list'></ul></div>");
 }
 
 function endsWith(str, suffix) {
