@@ -17,28 +17,28 @@ $(document).ready( function() {
 
 	if(endsWith(crumbsPageName, "Badtitle")) {
 	}
-	if ( typeof maxCrumbs == "undefined" ) {
+	if ( typeof maxCrumbs === "undefined" ) {
 		maxCrumbs = 5;
 	}
-	if ( typeof separator == "undefined" ) {
+	if ( typeof separator === "undefined" ) {
 		separator = "»";
 	}
-	if ( typeof cookiePath == "undefined" ) {
+	if ( typeof cookiePath === "undefined" ) {
 		cookiePath = "/";
 	}
-	if ( typeof leadingDescription == "undefined" ) {
+	if ( typeof leadingDescription === "undefined" ) {
 		leadingDescription = "Navigation trail";
 	}
-	if ( typeof cssSelector == "undefined" ) {
+	if ( typeof cssSelector === "undefined" ) {
 		cssSelector = "#top";
 	}
-	if ( typeof showSiteName == "undefined" ) {
+	if ( typeof showSiteName === "undefined" ) {
 		showSiteName = false;
 	}
-	if ( typeof showSidebar == "undefined" ) {
+	if ( typeof showSidebar === "undefined" ) {
 		showSidebar = false;
 	}
-	if ( typeof pervasiveWikiFarm == "undefined" ) {
+	if ( typeof pervasiveWikiFarm === "undefined" ) {
 		pervasiveWikiFarm = false;
 	}
 
@@ -46,7 +46,7 @@ $(document).ready( function() {
 		cookieNameSuffix = "";
 	}
 
-	if ( specialPageName == "Userlogout" ) {
+	if ( specialPageName === "Userlogout" ) {
 		$.cookie( 'mwext-bc-title' + cookieNameSuffix, '', { path: cookiePath } );
 		$.cookie( 'mwext-bc-url' + cookieNameSuffix, '', { path: cookiePath } );
 		$.cookie( 'mwext-bc-site' + cookieNameSuffix, '', { path: cookiePath } );
@@ -67,14 +67,14 @@ $(document).ready( function() {
 	var title = crumbsPageName;
 
 	// Remove duplicates
-	var matchTitleIndex = $.inArray( title, titleState );
+	/* var matchTitleIndex = $.inArray( title, titleState ); */
 	var matchUrlIndex = $.inArray( location.pathname + location.search, urlState );
 	/*if ( matchTitleIndex != -1 && ( matchUrlIndex == matchTitleIndex ) ) {
 		titleState.splice( matchTitleIndex, 1 );
 		urlState.splice( matchTitleIndex, 1 );
 		siteState.splice( matchTitleIndex, 1 );
 	}*/
-	if ( matchUrlIndex != -1  ) {
+	if ( matchUrlIndex !== -1  ) {
 		titleState.splice( matchUrlIndex, 1 );
 		urlState.splice( matchUrlIndex, 1 );
 		siteState.splice( matchUrlIndex, 1 );
@@ -93,15 +93,17 @@ $(document).ready( function() {
 		siteState = siteState.slice( siteState.length - maxCrumbs );
 	}
 
+	var skin;
+
 	//Insert SideBar List
 	if( showSidebar === true ) {
-		if(skin == "vector") {
+		if(skin === "vector") {
 			postVector(maxCrumbs);
-		} else if(skin == "modern") {
+		} else if(skin === "modern") {
 			postOther('#mw_portlets', maxCrumbs);
-		} else if(skin == "monobook") {
+		} else if(skin === "monobook") {
 			postOther('#column-one', maxCrumbs);
-		} else if(skin == "cologneblue") {
+		} else if(skin === "cologneblue") {
 			postOther('#quickbar', maxCrumbs);
 		}
 
@@ -117,6 +119,8 @@ $(document).ready( function() {
 		$( cssSelector ).before( '<span id="mwext-bc" class="noprint plainlinks jsbc-breadcrumbs"></span>' );
 
 		var mwextbc = $( "#mwext-bc" );
+
+		var urltoappend;
 
 		// Add the bread crumb description
 		mwextbc.append( leadingDescription + ': ' );
@@ -142,7 +146,6 @@ $(document).ready( function() {
 	$.cookie( 'mwext-bc-site' + cookieNameSuffix, siteState.join( '|' ), { path: cookiePath, expires: 30 } );
 });
 
-
 function postVector(maxCrumbs) {
 	$("#mw-panel").append("<div class='portal persistent' role='navigation' id='p-rv' aria-labelledby='p-rv-label'></div>");
 	$("#p-rv").append("<h3 id='p-rv-label' tabindex='3'><a href='#' aria-haspopup='true' aria-controls='p-rv-list2' role='button' aria-pressed='false' aria-expanded='true'>Last "+ maxCrumbs + " Pages Viewed</a></h3>");
@@ -157,4 +160,5 @@ function postOther(id, maxCrumbs) {
 function endsWith(str, suffix) {
 	return str.indexOf(suffix, str.length - suffix.length) !== -1;
 }
+
 
