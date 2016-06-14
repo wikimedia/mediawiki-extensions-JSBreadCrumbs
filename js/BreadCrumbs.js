@@ -93,7 +93,7 @@ $(document).ready( function() {
 		siteState = siteState.slice( siteState.length - maxCrumbs );
 	}
 
-	var skin;
+	var skin = mw.config.get( 'skin' );
 
 	//Insert SideBar List
 	if( showSidebar === true ) {
