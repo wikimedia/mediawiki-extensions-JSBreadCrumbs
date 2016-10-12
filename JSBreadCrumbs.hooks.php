@@ -53,7 +53,7 @@ class JSBreadCrumbsHooks {
 			$outPage->addJsConfigVars('wgJSBreadCrumbsPervasiveWikiFarm', $wgUser->getOption ("jsbreadcrumbs-pervasivewikifarm" ));
 			$outPage->addJsConfigVars('wgJSBreadCrumbsSeparator', $separator);
 			$outPage->addJsConfigVars('wgJSBreadCrumbsCookiePath', $wgJSBreadCrumbsCookiePath);
-			$outPage->addJsConfigVars('wgJSBreadCrumbsLeadingDescription', wfMessage( "jsbreadcrumbs-leading-description" )->escaped());
+			$outPage->addJsConfigVars('wgJSBreadCrumbsLeadingDescription', $wgUser->getOption( "jsbreadcrumbs-leading-description" ));
 			$outPage->addJsConfigVars('wgJSBreadCrumbsShowSiteName', $wgUser->getOption( "jsbreadcrumbs-showsite" ));
 
 
