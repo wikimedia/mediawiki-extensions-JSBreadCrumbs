@@ -30,6 +30,7 @@ $wgDefaultUserOptions['jsbreadcrumbs-showcrumbssidebar'] = false;
 $wgDefaultUserOptions['jsbreadcrumbs-showsite'] = false;
 $wgDefaultUserOptions['jsbreadcrumbs-pervasivewikifarm'] = false;
 $wgDefaultUserOptions['jsbreadcrumbs-numberofcrumbs'] = 5;
+$wgDefaultUserOptions['jsbreadcrumbs-leading-description'] = "Last Pages Viewed";
 
 // Sets Credits
 $wgExtensionCredits['other'][] = array(
