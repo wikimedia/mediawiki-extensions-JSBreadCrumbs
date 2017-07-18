@@ -34,12 +34,16 @@ $wgDefaultUserOptions['jsbreadcrumbs-leading-description'] = "Last Pages Viewed"
 
 // Sets Credits
 $wgExtensionCredits['other'][] = array(
-		'path' => __FILE__,
-		'name' => 'JSBreadCrumbs',
-		'author' => 'Ryan Lane',
-		'version' => '0.6.4',
-		'url' => 'https://www.mediawiki.org/wiki/Extension:JSBreadCrumbs',
-		'descriptionmsg' => 'jsbreadcrumbs-desc',
+	'path' => __FILE__,
+	'name' => 'JSBreadCrumbs',
+	'author' => array(
+		'Ryan Lane',
+		'...'
+	),
+	'version' => '0.7.0',
+	'url' => 'https://www.mediawiki.org/wiki/Extension:JSBreadCrumbs',
+	'descriptionmsg' => 'jsbreadcrumbs-desc',
+	'license-name' => 'GPL-2.0+'
 );
 
 // Adds Autoload Classes
@@ -59,11 +63,8 @@ $wgResourceModules['ext.JSBreadCrumbs'] = array(
 $wgAutoloadClasses['JSBreadCrumbsHooks'] =
 		dirname( __FILE__ ) . "/JSBreadCrumbs.hooks.php";
 
-
 // Adds Internationalized Messages
 $wgMessagesDirs['JSBreadCrumbs'] = __DIR__ . '/i18n';
-$wgExtensionMessagesFiles['JSBreadCrumbs'] =
-		dirname( __FILE__ ) . "/JSBreadCrumbs.i18n.php";
 
 // Registers Hooks
 $wgHooks['BeforePageDisplay'][] = 'JSBreadCrumbsHooks::addResources';
