@@ -1,0 +1,55 @@
+{
+	"name": "JSBreadCrumbs",
+	"version": "0.7.0",
+	"author": [
+		"Ryan Lane",
+		"..."
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:JSBreadCrumbs",
+	"descriptionmsg": "jsbreadcrumbs-desc",
+	"license-name": "GPL-2.0+",
+	"type": "other",
+	"MessagesDirs": {
+		"JSBreadCrumbs": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"JSBreadCrumbsHooks": "includes/JSBreadCrumbsHooks.php"
+	},
+	"ResourceModules": {
+		"ext.JSBreadCrumbs": {
+			"scripts": [
+				"JSBreadCrumbs.js"
+			],
+			"styles": [
+				"JSBreadCrumbs.css"
+			],
+			"dependencies": [
+				"jquery.cookie"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "JSBreadCrumbs/resources"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "JSBreadCrumbsHooks::onBeforePageDisplay",
+		"GetPreferences": "JSBreadCrumbsHooks::onGetPreferences"
+	},
+	"DefaultUserOptions": {
+		"jsbreadcrumbs-showcrumbs": true,
+		"jsbreadcrumbs-showcrumbssidebar": false,
+		"jsbreadcrumbs-numberofcrumbs": 5
+	},
+	"config": {
+		"JSBreadCrumbsSeparator": {
+			"value": ""
+		},
+		"JSBreadCrumbsGlobalMaxCrumbs": {
+			"value": 20
+		}
+	},
+	"manifest_version": 2
+}
