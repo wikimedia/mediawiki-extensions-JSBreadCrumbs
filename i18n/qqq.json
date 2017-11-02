@@ -4,15 +4,21 @@
 			"Peter17",
 			"Purodha",
 			"Shirayuki",
-			"Umherirrender"
+			"Umherirrender",
+			"Cindy Cicalese"
 		]
 	},
 	"jsbreadcrumbs-desc": "{{desc|name=JS Bread Crumbs|url=https://www.mediawiki.org/wiki/Extension:JSBreadCrumbs}}",
 	"jsbreadcrumbs-separator": "{{optional}}",
-	"jsbreadcrumbs-leading-description": "Used as bread crumb description.\n\nThis message is followed by \":\" and bread crumbs (\"»\"-separated links).",
-	"prefs-jsbreadcrumbs": "This is the name of the extension JS Bread Crumbs (https://www.mediawiki.org/wiki/Extension:BreadCrumbs). The expression \"Bread Crumbs\" designates a kind of navigation bar (see https://en.wiktionary.org/wiki/breadcrumbs).",
-	"prefs-jsbreadcrumbs-showsite": "Used as checkbox label in [[Special:Preferences]].",
+	"jsbreadcrumbs-intro-horizontal": "Used as bread crumb description when the bread crumbs are horizontal.\n\nThis message includes a parameter for the number of crumbs shown and is followed by \":\" and bread crumbs (\"»\"-separated links).",
+	"jsbreadcrumbs-intro-vertical": "Used as bread crumb description when the bread crumbs are vertical.\n\nThis message includes a parameter for the number of crumbs shown and is followed by \":\" and bread crumbs (\"»\"-separated links).",
+	"prefs-jsbreadcrumbs": "This is the name of the extension JS Bread Crumbs (https://www.mediawiki.org/wiki/Extension:JSBreadCrumbs). The expression \"Bread Crumbs\" designates a kind of navigation bar (see https://en.wiktionary.org/wiki/breadcrumbs).",
 	"prefs-jsbreadcrumbs-showcrumbs": "Used as checkbox label in [[Special:Preferences]].",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Used as label for input box in [[Special:Preferences]].\n\nThe help message for the input box is {{msg-mw|prefs-jsbreadcrumbs-numberofcrumbs-max}}.",
-	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Used as help message for input box in [[Special:Preferences]].\n\nThe input box follows the label {{msg-mw|prefs-jsbreadcrumbs-numberofcrumbs}}."
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Used as label for input box in [[Special:Preferences]].",
+	"prefs-jsbreadcrumbs-maxlength": "Used as label for input box in [[Special:Preferences]].",
+	"prefs-jsbreadcrumbs-direction": "Used as a dropdown label in [[Special:Preferences]].",
+	"prefs-jsbreadcrumbs-direction-horizontal": "Used as a dropdown select option in [[Special:Preferences]].",
+	"prefs-jsbreadcrumbs-direction-vertical": "Used as a dropdown select option in [[Special:Preferences]].",
+	"prefs-jsbreadcrumbs-showsite": "Used as a checkbox label in [[Special:Preferences]].",
+	"prefs-jsbreadcrumbs-showglobal": "Used as a checkbox label in [[Special:Preferences]]."
 }
