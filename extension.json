@@ -1,0 +1,68 @@
+{
+	"name": "JSBreadCrumbs",
+	"version": "1.0",
+	"author": [
+		"Ryan Lane",
+		"[https://www.mediawiki.org/wiki/User:Cindy.cicalese Cindy Cicalese]",
+		"Kevin Forbes",
+		"..."
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:JSBreadCrumbs",
+	"descriptionmsg": "jsbreadcrumbs-desc",
+	"license-name": "GPL-2.0+",
+	"type": "other",
+	"MessagesDirs": {
+		"JSBreadCrumbs": [
+			"i18n"
+		]
+	},
+	"AutoloadClasses": {
+		"JSBreadCrumbsHooks": "includes/JSBreadCrumbsHooks.php"
+	},
+	"ResourceModules": {
+		"ext.JSBreadCrumbs": {
+			"scripts": [
+				"JSBreadCrumbs.js"
+			],
+			"styles": [
+				"JSBreadCrumbs.css"
+			],
+			"dependencies": [
+				"jquery.cookie"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "JSBreadCrumbs/resources"
+	},
+	"Hooks": {
+		"BeforePageDisplay": "JSBreadCrumbsHooks::onBeforePageDisplay",
+		"GetPreferences": "JSBreadCrumbsHooks::onGetPreferences"
+	},
+	"DefaultUserOptions": {
+		"jsbreadcrumbs-showcrumbs": true,
+		"jsbreadcrumbs-numberofcrumbs": 5,
+		"jsbreadcrumbs-horizontal": true,
+		"jsbreadcrumbs-maxlength-horizontal": 40,
+		"jsbreadcrumbs-maxlength-vertical": 20,
+		"jsbreadcrumbs-showaction": false,
+		"jsbreadcrumbs-showsite": false,
+		"jsbreadcrumbs-domain": false
+	},
+	"config": {
+		"JSBreadCrumbsHorizontalSeparator": {
+			"value": ""
+		},
+		"JSBreadCrumbsCSSSelectorHorizontal": {
+			"value": []
+		},
+		"JSBreadCrumbsCSSSelectorVertical": {
+			"value": []
+		},
+		"JSBreadCrumbsGlobalMaxCrumbs": {
+			"value": 20
+		}
+	},
+	"manifest_version": 2
+}

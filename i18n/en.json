@@ -1,15 +1,22 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ryan Lane"
+			"Ryan Lane",
+			"Kevin Forbes",
+			"Cindy Cicalese"
 		]
 	},
-	"jsbreadcrumbs-desc": "Adds a trail of breadcrumbs below the tab bar",
-	"jsbreadcrumbs-separator": "»",
-	"jsbreadcrumbs-leading-description": "Navigation trail",
+	"jsbreadcrumbs-desc": "Adds a trail of bread crumbs below the tab bar",
+	"jsbreadcrumbs-horizontal-separator": "»",
+	"jsbreadcrumbs-intro-horizontal": "Last $1 Pages Viewed: ",
+	"jsbreadcrumbs-intro-vertical": "Last $1 Pages Viewed",
 	"prefs-jsbreadcrumbs": "Bread Crumbs",
-	"prefs-jsbreadcrumbs-showsite": "Include site name in bread crumbs (useful when used across wikis)",
+	"prefs-jsbreadcrumbs-showaction": "Show action bread crumbs",
 	"prefs-jsbreadcrumbs-showcrumbs": "Display bread crumbs",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Number of bread crumbs",
-	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Maximum 20 bread crumbs"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Maximum number of bread crumbs to display",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Maximum length to display for each bread crumb when horizontal",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Maximum length to display for each bread crumb when vertical",
+	"prefs-jsbreadcrumbs-horizontal": "Orientation of bread crumb trail is horizontal",
+	"prefs-jsbreadcrumbs-showsite": "Prefix bread crumbs with name of site",
+	"prefs-jsbreadcrumbs-domain": "Show bread crumbs for all sites on this domain"
 }

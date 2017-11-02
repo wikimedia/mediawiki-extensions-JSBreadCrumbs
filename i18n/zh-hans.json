@@ -7,7 +7,7 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "在标签页栏下面添加面包屑导航",
-	"jsbreadcrumbs-separator": "》",
+	"jsbreadcrumbs-horizontal-separator": "》",
 	"jsbreadcrumbs-leading-description": "轨迹导航",
 	"prefs-jsbreadcrumbs": "面包屑",
 	"prefs-jsbreadcrumbs-showsite": "在面包屑导航中包含网站名称（在跨wiki使用时很实用）",
