@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "6e5a8fde_8080fe4c",
+        "filename": "extension.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1157
+      },
+      "writtenOn": "2017-11-03T13:55:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6e5a8fde_66d4034c",
+      "range": {
+        "startLine": 3,
+        "startChar": 17,
+        "endLine": 3,
+        "endChar": 18
+      },
+      "revId": "ba93fa8e7c45848cad0de40aa9438d75a8279c8d",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6e5a8fde_86d9ff85",
         "filename": "extension.json",
         "patchSetId": 4
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "6e5a8fde_a085fa5b",
+        "filename": "extension.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1157
+      },
+      "writtenOn": "2017-11-03T13:55:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6e5a8fde_86d9ff85",
+      "range": {
+        "startLine": 5,
+        "startChar": 8,
+        "endLine": 5,
+        "endChar": 12
+      },
+      "revId": "ba93fa8e7c45848cad0de40aa9438d75a8279c8d",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "6e5a8fde_06c66f9d",
         "filename": "extension.json",
         "patchSetId": 4
@@ -59,6 +107,30 @@
       "writtenOn": "2017-11-02T22:45:25Z",
       "side": 1,
       "message": "I believe most people will want to have horizontal crumbs at the top of the page so the default should really be horizontal.",
+      "range": {
+        "startLine": 44,
+        "startChar": 3,
+        "endLine": 44,
+        "endChar": 26
+      },
+      "revId": "ba93fa8e7c45848cad0de40aa9438d75a8279c8d",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6e5a8fde_409be6c1",
+        "filename": "extension.json",
+        "patchSetId": 4
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1157
+      },
+      "writtenOn": "2017-11-03T13:55:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6e5a8fde_06c66f9d",
       "range": {
         "startLine": 44,
         "startChar": 3,
@@ -128,6 +200,30 @@
       "writtenOn": "2017-11-02T22:45:25Z",
       "side": 1,
       "message": "I believe that the colon should be part of the system message Jsbreadcrumbs-intro to allow for even more flexibility.\n\nMoreover the horizontal intro will in most cases have a colon whereas the vertical one will in most cases not have a colon. I guess we need two system messages here.",
+      "range": {
+        "startLine": 111,
+        "startChar": 0,
+        "endLine": 111,
+        "endChar": 48
+      },
+      "revId": "ba93fa8e7c45848cad0de40aa9438d75a8279c8d",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6e5a8fde_60b14242",
+        "filename": "resources/JSBreadCrumbs.js",
+        "patchSetId": 4
+      },
+      "lineNbr": 111,
+      "author": {
+        "id": 1157
+      },
+      "writtenOn": "2017-11-03T13:55:31Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6e5a8fde_66288333",
       "range": {
         "startLine": 111,
         "startChar": 0,
