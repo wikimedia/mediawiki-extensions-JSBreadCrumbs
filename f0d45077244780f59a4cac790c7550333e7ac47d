@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6e5a8fde_ba7182df",
+        "filename": "extension.json",
+        "patchSetId": 8
+      },
+      "lineNbr": 46,
+      "author": {
+        "id": 370
+      },
+      "writtenOn": "2017-11-07T23:35:12Z",
+      "side": 1,
+      "message": "After testing for a couple of day I\u0027d opt for 40 as default.",
+      "range": {
+        "startLine": 46,
+        "startChar": 0,
+        "endLine": 46,
+        "endChar": 32
+      },
+      "revId": "f0d45077244780f59a4cac790c7550333e7ac47d",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
