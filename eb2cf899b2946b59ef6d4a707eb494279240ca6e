@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "eee3df47_fe273860",
+        "filename": "i18n/en.json",
+        "patchSetId": 10
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 121
+      },
+      "writtenOn": "2017-11-30T22:24:54Z",
+      "side": 1,
+      "message": "{{PLURAL:$1....}} is needed",
+      "revId": "eb2cf899b2946b59ef6d4a707eb494279240ca6e",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eee3df47_de2cf447",
+        "filename": "i18n/en.json",
+        "patchSetId": 10
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 121
+      },
+      "writtenOn": "2017-11-30T22:24:54Z",
+      "side": 1,
+      "message": "{{PLURAL:$1....}} is needed",
+      "revId": "eb2cf899b2946b59ef6d4a707eb494279240ca6e",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    }
+  ]
+}
