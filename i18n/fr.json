@@ -3,15 +3,16 @@
 		"authors": [
 			"Peter17",
 			"Urhixidur",
-			"Verdy p"
+			"Verdy p",
+			"Wladek92"
 		]
 	},
 	"jsbreadcrumbs-desc": "Ajoute une suite de liens de navigation sous la barre d’onglets",
 	"jsbreadcrumbs-horizontal-separator": "&nbsp;»",
-	"jsbreadcrumbs-leading-description": "Parcours de navigation",
+	"jsbreadcrumbs-intro-horizontal": "$1 dernières pages visitées :",
+	"jsbreadcrumbs-intro-vertical": "$1 dernières pages visitées :",
 	"prefs-jsbreadcrumbs": "Barre de navigation",
-	"prefs-jsbreadcrumbs-showsite": "Inclure le nom du site dans la barre de navigation (utile lorsque la fonctionnalité est utilisée à travers plusieurs wikis)",
 	"prefs-jsbreadcrumbs-showcrumbs": "Afficher la barre de navigation",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Nombre de liens de navigation",
-	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Maximum 20 liens de navigation"
+	"prefs-jsbreadcrumbs-showsite": "Inclure le nom du site dans la barre de navigation (utile lorsque la fonctionnalité est utilisée à travers plusieurs wikis)"
 }

@@ -1,12 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"Darth Kule"
+			"Darth Kule",
+			"Beta16"
 		]
 	},
 	"prefs-jsbreadcrumbs": "Breadcrumb",
-	"prefs-jsbreadcrumbs-showsite": "Includere il nome del sito nelle breadcrumb (utile quando utilizzate attraverso più wiki)",
 	"prefs-jsbreadcrumbs-showcrumbs": "Mostra breadcrumb",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Numero di breadcrumb",
-	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Massimo 20 breadcrumb"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Numero massimo di breadcrumb da visualizzare",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Lunghezza massima da visualizzare per ogni breadcrumb quando verticale",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Lunghezza massima da visualizzare per ogni breadcrumb quando verticale",
+	"prefs-jsbreadcrumbs-showsite": "Anteponi il nome del sito nelle breadcrumb",
+	"prefs-jsbreadcrumbs-domain": "Mostra breadcrumb per tutti i siti in questo dominio"
 }

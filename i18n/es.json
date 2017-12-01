@@ -2,14 +2,16 @@
 	"@metadata": {
 		"authors": [
 			"Crazymadlover",
-			"Translationista"
+			"Translationista",
+			"Fitoschido",
+			"Indiralena"
 		]
 	},
 	"jsbreadcrumbs-desc": "Añade los vínculos del recorrido de navegación bajo la barra de pestañas",
-	"jsbreadcrumbs-leading-description": "Rastro de navegación",
+	"jsbreadcrumbs-intro-horizontal": "Últimas $1 páginas vistas:",
+	"jsbreadcrumbs-intro-vertical": "Últimas $1 páginas vistas",
 	"prefs-jsbreadcrumbs": "Recorrido de navegación",
-	"prefs-jsbreadcrumbs-showsite": "Incluir el nombre de la web en el recorrido de navegación (útil cuando se usa a través de wikis)",
 	"prefs-jsbreadcrumbs-showcrumbs": "Mostrar el recorrido de navegación",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Número de vínculos de recorrido de navegación",
-	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Máximo, 20 vínculos de recorrido de navegación"
+	"prefs-jsbreadcrumbs-showsite": "Incluir el nombre de la web en el recorrido de navegación (útil cuando se usa a través de wikis)"
 }

@@ -3,15 +3,21 @@
 		"authors": [
 			"Hydra",
 			"Xiaomingyan",
-			"Yfdyh000"
+			"Yfdyh000",
+			"Liuxinyu970226"
 		]
 	},
 	"jsbreadcrumbs-desc": "在标签页栏下面添加面包屑导航",
 	"jsbreadcrumbs-horizontal-separator": "》",
-	"jsbreadcrumbs-leading-description": "轨迹导航",
+	"jsbreadcrumbs-intro-horizontal": "上次访问的$1个页面：",
+	"jsbreadcrumbs-intro-vertical": "上次访问的$1个页面",
 	"prefs-jsbreadcrumbs": "面包屑",
-	"prefs-jsbreadcrumbs-showsite": "在面包屑导航中包含网站名称（在跨wiki使用时很实用）",
+	"prefs-jsbreadcrumbs-showaction": "显示操作面包屑",
 	"prefs-jsbreadcrumbs-showcrumbs": "显示面包屑",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "面包屑数量",
-	"prefs-jsbreadcrumbs-numberofcrumbs-max": "面包屑最多20项"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "要显示的面包屑最大数量",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "横向显示时，每个面包屑的最大长度",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "纵向显示时，每个面包屑的最大长度",
+	"prefs-jsbreadcrumbs-horizontal": "面包屑尾部的方向为横向",
+	"prefs-jsbreadcrumbs-showsite": "为面包屑添加网站名前缀",
+	"prefs-jsbreadcrumbs-domain": "显示此域名上所有网站的面包屑"
 }

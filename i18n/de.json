@@ -1,14 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Kghbln"
+			"Kghbln",
+			"Metalhead64"
 		]
 	},
 	"jsbreadcrumbs-desc": "Ermöglicht die Anzeige des Navigationsweges des Benutzers durch das Wiki",
-	"jsbreadcrumbs-leading-description": "Navigationsweg",
+	"jsbreadcrumbs-intro-horizontal": "Die $1 zuletzt angesehenen Seiten:",
+	"jsbreadcrumbs-intro-vertical": "Die $1 zuletzt angesehenen Seiten",
 	"prefs-jsbreadcrumbs": "Navigationsweg",
-	"prefs-jsbreadcrumbs-showsite": "Namen der Website in den Navigationsweg aufnehmen (nützlich sofern wikiübergreifend eingesetzt)",
+	"prefs-jsbreadcrumbs-showaction": "Navigationsweg einschließlich Seitenaktionen anzeigen",
 	"prefs-jsbreadcrumbs-showcrumbs": "Navigationsweg anzeigen",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Anzahl der Navigationselemente",
-	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Maximal 20 Navigationselemente"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Maximale Anzahl anzuzeigender Navigationselemente",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Maximale Länge eines Navigationselements bei horizontaler Anzeige des Navigationswegs",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Maximale Länge eines Navigationselements bei vertikaler Anzeige des Navigationswegs",
+	"prefs-jsbreadcrumbs-horizontal": "Navigationsweg horizontal und nicht vertikal anzeigen",
+	"prefs-jsbreadcrumbs-showsite": "Navigationsweg einschließlich des vorangestellten Namens der Website anzeigen",
+	"prefs-jsbreadcrumbs-domain": "Navigationsweg für alle Websites dieser Domain anzeigen"
 }

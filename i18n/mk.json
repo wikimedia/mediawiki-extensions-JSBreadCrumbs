@@ -5,10 +5,15 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Става траги од трошки под лентата со јазичиња",
-	"jsbreadcrumbs-leading-description": "Пат на посети",
+	"jsbreadcrumbs-intro-horizontal": "$1 најновопосетени страници:",
+	"jsbreadcrumbs-intro-vertical": "$1 најновопосетени страници",
 	"prefs-jsbreadcrumbs": "Трошки",
-	"prefs-jsbreadcrumbs-showsite": "Вклучи го името на мреж. место во трошките (корисно за употреба на повеќе викија)",
+	"prefs-jsbreadcrumbs-showaction": "Прикажи дејствителни трошки",
 	"prefs-jsbreadcrumbs-showcrumbs": "Прикажувај трошки",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Број на трошки",
-	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Највеќе до 20 трошки"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Најголем број на трошки за приказ",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Најголема должина за приказ на секоја трошка во хоризонтала",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Најголема должина за приказ на секоја трошка во вертикала",
+	"prefs-jsbreadcrumbs-horizontal": "Насоченоста на трагата од трошки е хоризонтална",
+	"prefs-jsbreadcrumbs-showsite": "Придодај го името на мреж. место пред трошките",
+	"prefs-jsbreadcrumbs-domain": "Прикажувај трошки за сите мреж. места во овој домен"
 }
