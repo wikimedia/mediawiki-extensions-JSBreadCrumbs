@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "eee3df47_15be36d1",
+        "filename": "i18n/en.json",
+        "patchSetId": 10
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 370
+      },
+      "writtenOn": "2017-12-01T16:23:58Z",
+      "side": 1,
+      "message": "Raimond\u0027s comment is to be seen as an advice. Probably soon one of the translators on twn will open a task for this anyways.\n\nI suggest to do a new patch for this and a month after this was merged one could do a 1.0.1 release making sure that a lot of translations are already in.",
+      "parentUuid": "eee3df47_3e5ec07b",
+      "revId": "eb2cf899b2946b59ef6d4a707eb494279240ca6e",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "eee3df47_de2cf447",
         "filename": "i18n/en.json",
         "patchSetId": 10
