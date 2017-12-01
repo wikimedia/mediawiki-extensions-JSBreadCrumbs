@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "eee3df47_78d4d7be",
+        "filename": "i18n/en.json",
+        "patchSetId": 10
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1157
+      },
+      "writtenOn": "2017-12-01T18:39:11Z",
+      "side": 1,
+      "message": "\u003e I suggest to do a new patch for this . . .\n\nA new patch as in a patch different than this one? Or is this the new patch to which you are referring?\n\nI totally agree that a 1.0.1 once more translations are in would be good, since there were a lot of message changes in 1.0.\n\nI\u0027m waiting for somebody who knows translation syntax to review this to be sure I did it correctly. And to get an answer from you to the question above.",
+      "parentUuid": "eee3df47_15be36d1",
+      "revId": "eb2cf899b2946b59ef6d4a707eb494279240ca6e",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "eee3df47_de2cf447",
         "filename": "i18n/en.json",
         "patchSetId": 10
