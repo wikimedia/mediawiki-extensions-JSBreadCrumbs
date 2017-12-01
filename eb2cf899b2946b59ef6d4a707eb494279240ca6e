@@ -73,6 +73,24 @@
     },
     {
       "key": {
+        "uuid": "eee3df47_98fefb33",
+        "filename": "i18n/en.json",
+        "patchSetId": 10
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1157
+      },
+      "writtenOn": "2017-12-01T18:41:26Z",
+      "side": 1,
+      "message": "Sorry, I just realized you commented on this before you saw I had created https://gerrit.wikimedia.org/r/#/c/394515/ already. I thought I was commenting on that patch. Ignore my comment, please :-)",
+      "parentUuid": "eee3df47_78d4d7be",
+      "revId": "eb2cf899b2946b59ef6d4a707eb494279240ca6e",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "eee3df47_de2cf447",
         "filename": "i18n/en.json",
         "patchSetId": 10
