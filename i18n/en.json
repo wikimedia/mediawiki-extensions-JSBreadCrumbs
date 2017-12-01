@@ -3,13 +3,14 @@
 		"authors": [
 			"Ryan Lane",
 			"Kevin Forbes",
-			"Cindy Cicalese"
+			"Cindy Cicalese",
+			"Karsten Hoffmeyer"
 		]
 	},
 	"jsbreadcrumbs-desc": "Adds a trail of bread crumbs below the tab bar",
 	"jsbreadcrumbs-horizontal-separator": "»",
-	"jsbreadcrumbs-intro-horizontal": "Last $1 Pages Viewed: ",
-	"jsbreadcrumbs-intro-vertical": "Last $1 Pages Viewed",
+	"jsbreadcrumbs-intro-horizontal": "Last $1 {{PLURAL:$1|Page|Pages}} Viewed: ",
+	"jsbreadcrumbs-intro-vertical": "Last $1 {{PLURAL:$1|Page|Pages}} Viewed",
 	"prefs-jsbreadcrumbs": "Bread Crumbs",
 	"prefs-jsbreadcrumbs-showaction": "Show action bread crumbs",
 	"prefs-jsbreadcrumbs-showcrumbs": "Display bread crumbs",
