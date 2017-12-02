@@ -7,6 +7,7 @@
 	},
 	"jsbreadcrumbs-desc": "Setzt eng Lëscht vun Navigatiounslinken ënner d'Läischt vun den Navigatiounsongleten derbäi",
 	"jsbreadcrumbs-intro-horizontal": "Déi $1 lescht gekuckt Säiten:",
+	"jsbreadcrumbs-intro-vertical": "Déi $1 lescht gekuckt Säiten",
 	"prefs-jsbreadcrumbs": "Navigatiounslinken (bread crumbs)",
 	"prefs-jsbreadcrumbs-showcrumbs": "Navigatiounslinken (bread crumbs) weisen",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Maximal Zuel vun den Navigatiounslinken (bread crumbs)",

@@ -1,14 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"EugeneZelenko"
+			"EugeneZelenko",
+			"Red Winged Duck"
 		]
 	},
 	"jsbreadcrumbs-desc": "Дадае навігацыйны шлях («хлебныя крошкі») пад панэль закладак",
-	"jsbreadcrumbs-leading-description": "Навігацыйны шлях",
 	"prefs-jsbreadcrumbs": "Навігацыйны шлях",
-	"prefs-jsbreadcrumbs-showsite": "Далучаць назву сайта ў навігацыйны шлях (карысна пад час выкарыстаньня некалькіх вікі)",
 	"prefs-jsbreadcrumbs-showcrumbs": "Паказваць навігацыйны шлях",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Даўжыня навігацыйнага шляху",
-	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Ня болей 20 пунктаў"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Максымальная даўжыня навігацыйнага шляху для паказу",
+	"prefs-jsbreadcrumbs-showsite": "Далучаць назву сайта ў навігацыйны шлях (карысна пад час выкарыстаньня некалькіх вікі)"
 }
