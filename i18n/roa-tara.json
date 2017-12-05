@@ -5,10 +5,15 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Aggiunge 'nu percorse de briciole de pane sotte 'a barre de le tabbulaziune",
-	"jsbreadcrumbs-leading-description": "Percorse de navigazione",
+	"jsbreadcrumbs-intro-horizontal": "Urteme $1 Pàggene 'Ndrucate:",
+	"jsbreadcrumbs-intro-vertical": "Urteme $1 Pàggene 'Ndrucate",
 	"prefs-jsbreadcrumbs": "Briciole de pane",
-	"prefs-jsbreadcrumbs-showsite": "'Nglude 'u nome d'u site jndr'à le briciole de pane (utile quanne ause le uicchi 'ngrociate)",
+	"prefs-jsbreadcrumbs-showaction": "Fà 'ndrucà l'azioen de le mollichele de pane",
 	"prefs-jsbreadcrumbs-showcrumbs": "Fà vedè le briciole de pane",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Numere de briciole de pane",
-	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Massime 20 briciole de pane"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Numere massime de mollichele de pane da fà 'ndrucà",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Lunghezza massime da fà 'ndrucà pe ogne mollichele de pane quanne ste orizzondale",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Lunghezza massime da fà 'ndrucà pe ogne mollichele de pane quanne ste verticale",
+	"prefs-jsbreadcrumbs-horizontal": "Oriendamende d'a mollichele de pane ca ste orizzondale",
+	"prefs-jsbreadcrumbs-showsite": "Prefisse de le mollichele de pane cu 'u nome d'u site",
+	"prefs-jsbreadcrumbs-domain": "Fà 'ndrucà le mollichele de pane pe tutte le site sus a stu dominie"
 }

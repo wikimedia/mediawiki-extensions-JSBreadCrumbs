@@ -5,10 +5,8 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Додає навігаційний шлях («хлібні крихти») під панель інструментів",
-	"jsbreadcrumbs-leading-description": "Навігаційний шлях",
 	"prefs-jsbreadcrumbs": "Хлібні крихти",
-	"prefs-jsbreadcrumbs-showsite": "Включає назву сайту до хлібних крихт (корисно при використанні декількох вікі)",
 	"prefs-jsbreadcrumbs-showcrumbs": "Показувати хлібні крихти",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Число хлібних крихт",
-	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Максимум 20 хлібних крихт"
+	"prefs-jsbreadcrumbs-showsite": "Включає назву сайту до хлібних крихт (корисно при використанні декількох вікі)"
 }

@@ -4,7 +4,8 @@
 			"Peter17",
 			"Urhixidur",
 			"Verdy p",
-			"Wladek92"
+			"Wladek92",
+			"Gomoko"
 		]
 	},
 	"jsbreadcrumbs-desc": "Ajoute une suite de liens de navigation sous la barre d’onglets",
@@ -12,7 +13,12 @@
 	"jsbreadcrumbs-intro-horizontal": "$1 dernières pages visitées :",
 	"jsbreadcrumbs-intro-vertical": "$1 dernières pages visitées :",
 	"prefs-jsbreadcrumbs": "Barre de navigation",
+	"prefs-jsbreadcrumbs-showaction": "Afficher le chemin de fer de l’action",
 	"prefs-jsbreadcrumbs-showcrumbs": "Afficher la barre de navigation",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Nombre de liens de navigation",
-	"prefs-jsbreadcrumbs-showsite": "Inclure le nom du site dans la barre de navigation (utile lorsque la fonctionnalité est utilisée à travers plusieurs wikis)"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Nombre maximal de liens de navigation à afficher",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Longueur maximale d’affichage pour chaque lien de navigation, quand il est horizontal",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Longueur maximale d’affichage pour chaque lien de navigation quand il est vertical",
+	"prefs-jsbreadcrumbs-horizontal": "L’orientation du chemin de fer est horizontale",
+	"prefs-jsbreadcrumbs-showsite": "Inclure le nom du site dans la barre de navigation (utile lorsque la fonctionnalité est utilisée à travers plusieurs wikis)",
+	"prefs-jsbreadcrumbs-domain": "Afficher les liens de navigation de tous les sites sur ce domaine"
 }

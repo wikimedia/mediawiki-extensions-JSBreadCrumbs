@@ -5,10 +5,8 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Voegt een spoor van broodkruimels toe onder de menubalk",
-	"jsbreadcrumbs-leading-description": "Navigatiepad",
 	"prefs-jsbreadcrumbs": "Navigatiegeschiedenis",
-	"prefs-jsbreadcrumbs-showsite": "Sitenaam opnemen in de navigatiegeschiedenis (handig bij gebruik van meerdere wiki's)",
 	"prefs-jsbreadcrumbs-showcrumbs": "Navigatiegeschiedenis weergeven",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Aantal weer te geven pagina's in navigatiegeschiedenis",
-	"prefs-jsbreadcrumbs-numberofcrumbs-max": "Maximaal 20 weergegeven pagina's"
+	"prefs-jsbreadcrumbs-showsite": "Sitenaam opnemen in de navigatiegeschiedenis (handig bij gebruik van meerdere wiki's)"
 }
