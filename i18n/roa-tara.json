@@ -5,8 +5,8 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Aggiunge 'nu percorse de briciole de pane sotte 'a barre de le tabbulaziune",
-	"jsbreadcrumbs-intro-horizontal": "Urteme $1 Pàggene 'Ndrucate:",
-	"jsbreadcrumbs-intro-vertical": "Urteme $1 Pàggene 'Ndrucate",
+	"jsbreadcrumbs-intro-horizontal": "Urteme {{PLURAL:$1|Pàgene|Pàggene}} 'Ndrucate:",
+	"jsbreadcrumbs-intro-vertical": "Urteme {{PLURAL:$1|Pàgene|Pàggene}} 'Ndrucate",
 	"prefs-jsbreadcrumbs": "Briciole de pane",
 	"prefs-jsbreadcrumbs-showaction": "Fà 'ndrucà l'azioen de le mollichele de pane",
 	"prefs-jsbreadcrumbs-showcrumbs": "Fà vedè le briciole de pane",
