@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hamilton Abreu"
+			"Hamilton Abreu",
+			"MokaAkashiyaPT"
 		]
 	},
 	"jsbreadcrumbs-desc": "Adiciona um trilho de navegação até a página corrente, por baixo da barra de separadores",
-	"jsbreadcrumbs-intro-horizontal": "Últimas $1 páginas vistas:",
-	"jsbreadcrumbs-intro-vertical": "Últimas $1 páginas vistas",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Última página vista|$1 Últimas páginas vistas}}:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Última página vista|$1 Últimas páginas vistas}}",
 	"prefs-jsbreadcrumbs": "Trilho de navegação",
 	"prefs-jsbreadcrumbs-showaction": "Mostrar percurso até a página corrente",
 	"prefs-jsbreadcrumbs-showcrumbs": "Apresentar o trilho de navegação",
