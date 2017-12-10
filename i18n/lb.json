@@ -6,7 +6,7 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Setzt eng Lëscht vun Navigatiounslinken ënner d'Läischt vun den Navigatiounsongleten derbäi",
-	"jsbreadcrumbs-intro-horizontal": "Déi $1 lescht gekuckt Säiten:",
+	"jsbreadcrumbs-intro-horizontal": "Déi {{PLURAL:$1| |$1}} lescht gekuckt  {{PLURAL:$1|Säit|Säiten}}:",
 	"jsbreadcrumbs-intro-vertical": "Déi {{PLURAL:$1||$1}} lescht gekuckt {{PLURAL:$1|Säit|Säiten}}",
 	"prefs-jsbreadcrumbs": "Navigatiounslinken (bread crumbs)",
 	"prefs-jsbreadcrumbs-showcrumbs": "Navigatiounslinken (bread crumbs) weisen",
