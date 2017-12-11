@@ -8,8 +8,8 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Añade los vínculos del recorrido de navegación bajo la barra de pestañas",
-	"jsbreadcrumbs-intro-horizontal": "Últimas $1 páginas vistas:",
-	"jsbreadcrumbs-intro-vertical": "Últimas $1 páginas vistas",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Última página vista|Últimas $1 páginas vistas}}:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Última página vista|Últimas $1 páginas vistas}}",
 	"prefs-jsbreadcrumbs": "Recorrido de navegación",
 	"prefs-jsbreadcrumbs-showcrumbs": "Mostrar el recorrido de navegación",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Número de vínculos de recorrido de navegación",
