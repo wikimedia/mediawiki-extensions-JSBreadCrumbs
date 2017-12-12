@@ -41,13 +41,13 @@ class JSBreadCrumbsHooks {
 		if ( $horizontal ) {
 			$vars['CSSSelector'] = $GLOBALS['wgJSBreadCrumbsCSSSelectorHorizontal'];
 			$vars['LeadingDescription'] = wfMessage( 'jsbreadcrumbs-intro-horizontal',
-				$vars['SiteMaxCrumbs'] )->plain();
+				$vars['SiteMaxCrumbs'] )->parse();
 			$vars['MaxLength'] =
 				$user->getOption( 'jsbreadcrumbs-maxlength-horizontal' );
 		} else {
 			$vars['CSSSelector'] = $GLOBALS['wgJSBreadCrumbsCSSSelectorVertical'];
 			$vars['LeadingDescription'] = wfMessage( 'jsbreadcrumbs-intro-vertical',
-				$vars['SiteMaxCrumbs'] )->plain();
+				$vars['SiteMaxCrumbs'] )->parse();
 			$vars['MaxLength'] =
 				$user->getOption( 'jsbreadcrumbs-maxlength-vertical' );
 		}
@@ -68,7 +68,7 @@ class JSBreadCrumbsHooks {
 			if ( $message->isBlank() ) {
 				$vars['Action'] = $action;
 			} else {
-				$vars['Action'] = $message->plain();
+				$vars['Action'] = $message->parse();
 			}
 		}
 
