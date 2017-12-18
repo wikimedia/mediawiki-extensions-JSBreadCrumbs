@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Hamilton Abreu",
-			"MokaAkashiyaPT"
+			"MokaAkashiyaPT",
+			"Athena in Wonderland"
 		]
 	},
 	"jsbreadcrumbs-desc": "Adiciona um trilho de navegação até a página corrente, por baixo da barra de separadores",
