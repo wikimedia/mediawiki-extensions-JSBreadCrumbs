@@ -5,8 +5,15 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Amiesta un camín d'enllaces de navegación baxo la barra de llingüetes",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Última páxina vista|Últimes $1 páxines vistes}}:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Última páxina vista|Últimes $1 páxines vistes}}",
 	"prefs-jsbreadcrumbs": "Enllaces de navegación",
+	"prefs-jsbreadcrumbs-showaction": "Amosar enllaces de navegación d'aiciones",
 	"prefs-jsbreadcrumbs-showcrumbs": "Amosar los enllaces de navegación",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Númberu d'enllaces de navegación",
-	"prefs-jsbreadcrumbs-showsite": "Incluir el nome del sitiu nos enllaces de navegación (útil cuando s'usa al traviés de varies wikis)"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Númberu máximu d'enllaces de navegación a amosar",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Llargor máximu que se ve de cada enllaz de navegación cuando ta n'horizontal",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Llargor máximu que se ve de cada enllaz de navegación cuando ta en vertical",
+	"prefs-jsbreadcrumbs-horizontal": "La orientación del rastru d'enllaces de navegación ye horizontal",
+	"prefs-jsbreadcrumbs-showsite": "Poner como prefixu el nome del sitiu nos enllaces de navegación",
+	"prefs-jsbreadcrumbs-domain": "Ver enllaces de navegación pa tolos sitios d'esti dominiu"
 }
