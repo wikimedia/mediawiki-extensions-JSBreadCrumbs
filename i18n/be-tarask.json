@@ -6,6 +6,7 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Дадае навігацыйны шлях («хлебныя крошкі») пад панэль закладак",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|$1 апошняя прагледжаная старонка|$1 апошнія прагледжаныя старонкі|$1 апошніх прагледжаных старонак}}:",
 	"prefs-jsbreadcrumbs": "Навігацыйны шлях",
 	"prefs-jsbreadcrumbs-showcrumbs": "Паказваць навігацыйны шлях",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Максымальная даўжыня навігацыйнага шляху для паказу",
