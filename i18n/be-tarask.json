@@ -9,6 +9,7 @@
 	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|$1 апошняя прагледжаная старонка|$1 апошнія прагледжаныя старонкі|$1 апошніх прагледжаных старонак}}:",
 	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|$1 апошняя прагледжаная старонка|$1 апошнія прагледжаныя старонкі|$1 апошніх прагледжаных старонак}}",
 	"prefs-jsbreadcrumbs": "Навігацыйны шлях",
+	"prefs-jsbreadcrumbs-showaction": "Паказваць навігацыйныя шляхі дзеяньняў",
 	"prefs-jsbreadcrumbs-showcrumbs": "Паказваць навігацыйны шлях",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Максымальная даўжыня навігацыйнага шляху для паказу",
 	"prefs-jsbreadcrumbs-showsite": "Далучаць прэфіксам назву сайту ў навігацыйны шлях"
