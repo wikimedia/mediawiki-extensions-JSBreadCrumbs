@@ -12,5 +12,7 @@
 	"prefs-jsbreadcrumbs-showaction": "Паказваць навігацыйныя шляхі дзеяньняў",
 	"prefs-jsbreadcrumbs-showcrumbs": "Паказваць навігацыйны шлях",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Максымальная даўжыня навігацыйнага шляху для паказу",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Максымальная даўжыня для паказу кожнага навігацыйнага шляху, калі абраны гарызантальны рэжым",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Максымальная даўжыня для паказу кожнага навігацыйнага шляху, калі абраны вэртыкальны рэжым",
 	"prefs-jsbreadcrumbs-showsite": "Далучаць прэфіксам назву сайту ў навігацыйны шлях"
 }
