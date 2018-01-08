@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Giro720"
+			"Giro720",
+			"Eduardo Addad de Oliveira"
 		]
 	},
 	"jsbreadcrumbs-desc": "Adiciona o percurso até a página corrente, por baixo da barra de separadores",
 	"prefs-jsbreadcrumbs": "Percurso de Navegação",
 	"prefs-jsbreadcrumbs-showcrumbs": "Mostrar percurso de navegação",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Número de passos",
-	"prefs-jsbreadcrumbs-showsite": "Incluir o nome do site no percurso de navegação (útil quando usado entre wikis)"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Número máximo de passos do trilho a mostrar",
+	"prefs-jsbreadcrumbs-showsite": "Preceder o trilho de navegação com o nome do site"
 }
