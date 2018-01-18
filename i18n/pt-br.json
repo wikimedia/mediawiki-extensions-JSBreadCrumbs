@@ -6,8 +6,15 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Adiciona o percurso até a página corrente, por baixo da barra de separadores",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Última página vista|$1 Últimas páginas vistas}}:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Última página vista|$1 Últimas páginas vistas}}",
 	"prefs-jsbreadcrumbs": "Percurso de Navegação",
+	"prefs-jsbreadcrumbs-showaction": "Mostrar percurso até a página corrente",
 	"prefs-jsbreadcrumbs-showcrumbs": "Mostrar percurso de navegação",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Número máximo de passos do trilho a mostrar",
-	"prefs-jsbreadcrumbs-showsite": "Preceder o trilho de navegação com o nome do site"
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Comprimento máximo para mostrar para cada passo se horizontal",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Comprimento máximo para mostrar para cada passo se vertical",
+	"prefs-jsbreadcrumbs-horizontal": "A orientação do trilho é horizontal",
+	"prefs-jsbreadcrumbs-showsite": "Preceder o trilho de navegação com o nome do site",
+	"prefs-jsbreadcrumbs-domain": "Mostrar trilho de navegação em todos os sites deste domínio"
 }
