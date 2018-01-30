@@ -16,6 +16,6 @@
 	"prefs-jsbreadcrumbs-maxlength-horizontal": "Comprimento máximo a mostrar para cada passo se horizontal",
 	"prefs-jsbreadcrumbs-maxlength-vertical": "Comprimento máximo a mostrar para cada passo se vertical",
 	"prefs-jsbreadcrumbs-horizontal": "A orientação do trilho é horizontal",
-	"prefs-jsbreadcrumbs-showsite": "Preceder o trilho de navegação com o nome do site",
-	"prefs-jsbreadcrumbs-domain": "Mostrar trilho de navegação em todos os sites deste domínio"
+	"prefs-jsbreadcrumbs-showsite": "Preceder o trilho de navegação com o nome do sítio",
+	"prefs-jsbreadcrumbs-domain": "Mostrar trilho de navegação em todos os sítios deste domínio"
 }
