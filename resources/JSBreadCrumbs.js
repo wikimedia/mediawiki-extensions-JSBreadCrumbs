@@ -46,7 +46,7 @@ var jsbreadcrumbs_controller = ( function( mw, $ ) {
 
 			// add the current URL to the breadcrumb list if it points
 			// to a valid page
-			if ( !pageName.endsWith( "Badtitle" ) ) {
+			if ( !pageName.substring( pageName.length - 8, "Badtitle" ) ) {
 				breadcrumbs.push( {
 					url: url,
 					title: pageName,
