@@ -44,6 +44,16 @@ var jsbreadcrumbs_controller = ( function( mw, $ ) {
 				}
 			}
 
+			// polyfill String.prototype.endsWith() required for IE11
+			if ( !String.prototype.endsWith ) {
+				String.prototype.endsWith = function( search, this_len ) {
+					if ( this_len === undefined || this_len > this.length ) {
+						this_len = this.length;
+					}
+					return this.substring(this_len - search.length, this_len) === search;
+				};
+			}
+
 			// add the current URL to the breadcrumb list if it points
 			// to a valid page
 			if ( !pageName.endsWith( "Badtitle" ) ) {
