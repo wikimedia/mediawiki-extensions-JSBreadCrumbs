@@ -1,4 +1,20 @@
 {
-	"@metadata": [],
-	"jsbreadcrumbs-horizontal-separator": "》"
+	"@metadata": {
+		"authors": [
+			"Kly"
+		]
+	},
+	"jsbreadcrumbs-desc": "在以下分頁列添加麵包屑導航",
+	"jsbreadcrumbs-horizontal-separator": "》",
+	"jsbreadcrumbs-intro-horizontal": "上一次所檢視的{{PLURAL:$1|頁面| $1 個頁面}}：",
+	"jsbreadcrumbs-intro-vertical": "上一次所檢視的{{PLURAL:$1|頁面| $1 個頁面}}：",
+	"prefs-jsbreadcrumbs": "麵包屑",
+	"prefs-jsbreadcrumbs-showaction": "顯示麵包屑操作",
+	"prefs-jsbreadcrumbs-showcrumbs": "顯示麵包屑",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "要顯示的麵包屑最大數量",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "當橫向時各麵包屑所顯示的最大長度",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "當直向時各麵包屑所顯示的最大長度",
+	"prefs-jsbreadcrumbs-horizontal": "麵包屑導航方向為橫向",
+	"prefs-jsbreadcrumbs-showsite": "為麵包屑添加網站名稱前綴",
+	"prefs-jsbreadcrumbs-domain": "顯示此網域上所有網站的麵包屑"
 }
