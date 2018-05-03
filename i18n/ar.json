@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"ديفيد"
+		]
+	},
+	"jsbreadcrumbs-desc": "يضيف دربا من فتات الخبز أسفل شريط علامة التبويب",
+	"jsbreadcrumbs-intro-horizontal": "آخر {{PLURAL:$1|صفحة|$1 صفحات}} مشاهدة:",
+	"jsbreadcrumbs-intro-vertical": "آخر {{PLURAL:$1|صفحة|$1 صفحات}} مشاهدة:",
+	"prefs-jsbreadcrumbs": "فتات الخبز",
+	"prefs-jsbreadcrumbs-showaction": "عرض عمل فتات الخبز",
+	"prefs-jsbreadcrumbs-showcrumbs": "عرض فتات الخبز",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "أقصى عدد من فتات الخبز لعرضها",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "أقصى طول لعرض كل فتات الخبز عندما يكون أفقيا",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "أقصى طول لعرض كل فتات الخبز عندما يكون رأسيا",
+	"prefs-jsbreadcrumbs-horizontal": "توجيه درب خبز الفتات أفقي",
+	"prefs-jsbreadcrumbs-showsite": "بدء فتات الخبز باسم الموقع",
+	"prefs-jsbreadcrumbs-domain": "إظهار فتات الخبز لجميع المواقع في هذا النطاق"
+}
