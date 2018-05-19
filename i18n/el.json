@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nikosgranturismogt"
+		]
+	},
+	"jsbreadcrumbs-intro-horizontal": "Τελευταίες {{PLURAL:$1|Σελίδα|$1 Σελίδες}} που προβλήθηκαν:",
+	"jsbreadcrumbs-intro-vertical": "Τελευταίες {{PLURAL:$1|Σελίδα|$1 Σελίδες}} που προβλήθηκαν:",
+	"prefs-jsbreadcrumbs": "Ψίχουλα ψωμιού",
+	"prefs-jsbreadcrumbs-showaction": "Εμφάνιση της δράσης ψίχουλα ψωμιού",
+	"prefs-jsbreadcrumbs-showcrumbs": "Εμφάνιση ψίχουλων ψωμιού",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Μέγιστος αριθμός ψίχουλων ψωμιού για εμφάνιση",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Μέγιστο μήκος εμφάνισης για κάθε ψίχουλο ψωμιού όταν είναι οριζόντιο"
+}
