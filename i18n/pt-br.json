@@ -5,7 +5,7 @@
 			"Eduardo Addad de Oliveira"
 		]
 	},
-	"jsbreadcrumbs-desc": "Adiciona o percurso até a página corrente, por baixo da barra de separadores",
+	"jsbreadcrumbs-desc": "Adiciona um trilho de navegação até a página corrente, por baixo da barra de separadores",
 	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Última página vista|$1 Últimas páginas vistas}}:",
 	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Última página vista|$1 Últimas páginas vistas}}",
 	"prefs-jsbreadcrumbs": "Percurso de Navegação",
