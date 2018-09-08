@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Toliño",
-			"Athena in Wonderland"
+			"Athena in Wonderland",
+			"Elisardojm"
 		]
 	},
 	"jsbreadcrumbs-desc": "Engade un conxunto de ligazóns de navegación baixo a barra de lapelas",
 	"prefs-jsbreadcrumbs": "Barra de navegación",
-	"prefs-jsbreadcrumbs-showcrumbs": "Mostrar a barra de navegación",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Número máximo de ligazóns de navegación a mostrar",
+	"prefs-jsbreadcrumbs-showcrumbs": "Amosar a barra de navegación",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Número máximo de ligazóns de navegación a amosar",
 	"prefs-jsbreadcrumbs-showsite": "Incluír o nome do sitio na barra de navegación (útil ao usar a funcionalidade a través de varios wikis)"
 }
