@@ -5,8 +5,8 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Става траги од трошки под лентата со јазичиња",
-	"jsbreadcrumbs-intro-horizontal": "$1 најновопосетени страници:",
-	"jsbreadcrumbs-intro-vertical": "$1 најновопосетени страници",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Најновопосетена страница|$1 најновопосетени страници}}:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Најновопосетена страница|$1 најновопосетени страници}}",
 	"prefs-jsbreadcrumbs": "Трошки",
 	"prefs-jsbreadcrumbs-showaction": "Прикажи дејствителни трошки",
 	"prefs-jsbreadcrumbs-showcrumbs": "Прикажувај трошки",
