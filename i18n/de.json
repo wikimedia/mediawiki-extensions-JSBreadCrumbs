@@ -6,7 +6,7 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Ermöglicht die Anzeige des Navigationsweges des Benutzers durch das Wiki",
-	"jsbreadcrumbs-intro-horizontal": "Die {{PLURAL:$1|zuletzt angesehene Seite|$1 zuletzt angesehenen Seiten}}:",
+	"jsbreadcrumbs-intro-horizontal": "Die {{PLURAL:$1|zuletzt angesehene Seite|$1 zuletzt angesehenen Seiten}}:&ensp;",
 	"jsbreadcrumbs-intro-vertical": "Die {{PLURAL:$1|zuletzt angesehene Seite|$1 zuletzt angesehenen Seiten}}",
 	"prefs-jsbreadcrumbs": "Navigationsweg",
 	"prefs-jsbreadcrumbs-showaction": "Navigationsweg einschließlich Seitenaktionen anzeigen",
