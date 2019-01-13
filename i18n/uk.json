@@ -1,12 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Base"
+			"Base",
+			"Piramidion"
 		]
 	},
-	"jsbreadcrumbs-desc": "Додає навігаційний шлях («хлібні крихти») під панель інструментів",
+	"jsbreadcrumbs-desc": "Додає навігаційний шлях («хлібні крихти») під панель вкладок",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Остання $1 переглянута сторінка|Останні $1 переглянуті сторінки|Останні $1 переглянутих сторінок}}:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Остання $1 переглянута сторінка|Останні $1 переглянуті сторінки|Останні $1 переглянутих сторінок}}:",
 	"prefs-jsbreadcrumbs": "Хлібні крихти",
+	"prefs-jsbreadcrumbs-showaction": "Показувати хлібні крихти дій",
 	"prefs-jsbreadcrumbs-showcrumbs": "Показувати хлібні крихти",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Число хлібних крихт",
-	"prefs-jsbreadcrumbs-showsite": "Включає назву сайту до хлібних крихт (корисно при використанні декількох вікі)"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Максимальна кількість хлібних крихт, які показувати",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Максимальна довжина кожної хлібної крихти в горизонтальній орієнтації",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Максимальна довжина кожної хлібної крихти у вертикальній орієнтації",
+	"prefs-jsbreadcrumbs-horizontal": "Орієнтація сліду з хлібних крихт є горизонтальною",
+	"prefs-jsbreadcrumbs-showsite": "Додати до хлібних крихт префікс із назвою сайту",
+	"prefs-jsbreadcrumbs-domain": "Показувати хлібні крихти для всіх сайтів на цьому домені"
 }
