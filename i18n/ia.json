@@ -7,6 +7,6 @@
 	"jsbreadcrumbs-desc": "Adde un tracia de \"micas de pan\" sub le barra de schedas",
 	"prefs-jsbreadcrumbs": "Micas de pan",
 	"prefs-jsbreadcrumbs-showcrumbs": "Monstrar micas de pan",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Numero de micas de pan",
-	"prefs-jsbreadcrumbs-showsite": "Includer le nomine del sito in le micas de pan (utile si usate trans wikis)"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Numero maxime de micas de pan a monstrar",
+	"prefs-jsbreadcrumbs-showsite": "Inserer le nomine del sito ante le micas de pan"
 }
