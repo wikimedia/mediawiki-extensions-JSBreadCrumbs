@@ -1,12 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
-			"Nghtwlkr"
+			"Nghtwlkr",
+			"Jon Harald Søby"
 		]
 	},
 	"jsbreadcrumbs-desc": "Legger til et brødsmulespor under fanelinjen",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Sist viste side|$1 siste viste sider}}:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Siste viste side|$1 siste viste sider}}",
 	"prefs-jsbreadcrumbs": "Brødsmuler",
+	"prefs-jsbreadcrumbs-showaction": "Vis handlingsbrødsmuler",
 	"prefs-jsbreadcrumbs-showcrumbs": "Vis brødsmuler",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Antall brødsmuler",
-	"prefs-jsbreadcrumbs-showsite": "Inkluder nettstedsnavn i brødsmulene (nyttig når de skal brukes på tvers av wikier)"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Maksimalt antall brødsmuler som skal vises",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Maksimal lengde å vise for hver brødsmule når horisontal",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Maksimal lengde å vise for hver brødsmule når vertikal",
+	"prefs-jsbreadcrumbs-horizontal": "Retningen til brødsmulesporet er horisontal",
+	"prefs-jsbreadcrumbs-showsite": "Bruk nettstedets navn foran brødsmulene",
+	"prefs-jsbreadcrumbs-domain": "Vis brødsmuler for alle nettsteder på dette domenet"
 }
