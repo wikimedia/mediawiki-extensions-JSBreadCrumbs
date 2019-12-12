@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"BaRaN6161 TURK"
+		]
+	},
+	"jsbreadcrumbs-desc": "Sekme çubuğunun altına ekmek kırıntısı izi ekler",
+	"jsbreadcrumbs-intro-horizontal": "Son {{PLURAL:$1|Sayfa|$1 Sayfa}} Görüntülenen:",
+	"jsbreadcrumbs-intro-vertical": "Son {{PLURAL:$1|Sayfa|$1 Sayfa}} Görüntülenen",
+	"prefs-jsbreadcrumbs": "Ekmek Kırıtıları",
+	"prefs-jsbreadcrumbs-showaction": "İşlem ekmek kırıntılarını göster",
+	"prefs-jsbreadcrumbs-showcrumbs": "Ekmek kırıntılarını görüntüle",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Gösterilecek maksimum ekmek kırıntısı sayısı",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Yatay iken her ekmek kırıntısı için gösterilecek maksimum uzunluk",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Dikey olduğunda her ekmek kırıntısı için gösterilecek maksimum uzunluk",
+	"prefs-jsbreadcrumbs-horizontal": "Ekmek kırıntısı izinin yönü yataydır",
+	"prefs-jsbreadcrumbs-showsite": "Öneki ekmek kırıntıları ile site adı",
+	"prefs-jsbreadcrumbs-domain": "Bu etki alanındaki tüm siteler için ekmek kırıntılarını göster"
+}
