@@ -1,18 +1,15 @@
 /* BreadCrumbs plugin */
 
-	/*position: relative;*/
+/* position: relative; */
 .jsbc-breadcrumbs {
-	font-size:0.8em;
+	font-size: 0.8em;
 	top: -15px;
 	position: relative;
-
-	background-color:#f6f6f6;
-	border-color:gainsboro;
-	border-radius:3px;
-	border-style:solid;
-	border-width:1px;
-
+	background-color: #f6f6f6;
+	border-color: #dcdcdc;
+	border-radius: 3px;
+	border-style: solid;
+	border-width: 1px;
 	padding: 0.5625em 0.875em 0.5625em;
 	display: block;
-
 }
