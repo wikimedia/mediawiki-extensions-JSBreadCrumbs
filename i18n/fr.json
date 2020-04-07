@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Gomoko",
 			"Peter17",
 			"Urhixidur",
 			"Verdy p",
-			"Wladek92",
-			"Gomoko"
+			"Wladek92"
 		]
 	},
 	"jsbreadcrumbs-desc": "Ajoute une suite de liens de navigation sous la barre d’onglets",

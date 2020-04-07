@@ -2,9 +2,9 @@
 	"@metadata": {
 		"authors": [
 			"Crazymadlover",
-			"Translationista",
 			"Fitoschido",
-			"Indiralena"
+			"Indiralena",
+			"Translationista"
 		]
 	},
 	"jsbreadcrumbs-desc": "Añade los vínculos del recorrido de navegación bajo la barra de pestañas",

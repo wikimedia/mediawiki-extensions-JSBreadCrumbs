@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Giro720",
-			"Eduardo Addad de Oliveira"
+			"Eduardo Addad de Oliveira",
+			"Giro720"
 		]
 	},
 	"jsbreadcrumbs-desc": "Adiciona um trilho de navegação até a página corrente, por baixo da barra de separadores",
