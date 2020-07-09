@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
+			"MemphisA5",
 			"아라"
 		]
 	},
 	"jsbreadcrumbs-desc": "탭 바 아래에 이동 경로의 발자취를 추가합니다",
 	"prefs-jsbreadcrumbs": "빵 부스러기",
 	"prefs-jsbreadcrumbs-showcrumbs": "이동 경로 표시",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "빵 부스러기의 수",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "표시되는 빵 부스러기의 최대 수",
 	"prefs-jsbreadcrumbs-showsite": "빵 부스러기에 사이트 이름 포함 (위키에서 사용할 때 유용함)"
 }
