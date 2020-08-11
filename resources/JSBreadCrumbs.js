@@ -109,7 +109,7 @@ var jsbreadcrumbs_controller = ( function () {
 				$( selector ).before(
 					'<span id="mwext-bc" class="noprint plainlinks jsbc-breadcrumbs"></span>' );
 				var mwextbc = $( '#mwext-bc' );
-				mwextbc.append( leadingDescription );
+				mwextbc.append( leadingDescription + ' ' );
 				for ( index = visibleCrumbs.length - 1; index >= 0; index-- ) {
 					mwextbc.append( visibleCrumbs[ index ] );
 					if ( index > 0 ) {
