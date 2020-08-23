@@ -150,11 +150,11 @@ var jsbreadcrumbs_controller = ( function () {
 
 window.JSBreadCrumbsController = jsbreadcrumbs_controller;
 
-( function () {
-	$.ready( document )
-		.ready( function () {
+( function( mw, $ ) {
+	$( document )
+		.ready( function() {
 			if ( mw.config.exists( 'JSBreadCrumbs' ) ) {
 				window.JSBreadCrumbsController.initialize();
 			}
 		} );
-}() );
+}( mediaWiki, jQuery ) );
