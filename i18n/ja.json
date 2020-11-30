@@ -3,12 +3,13 @@
 		"authors": [
 			"Shirayuki",
 			"Suyama",
+			"つぶあん派",
 			"青子守歌"
 		]
 	},
 	"jsbreadcrumbs-desc": "パンくずリストをタブバーの下に追加する",
 	"prefs-jsbreadcrumbs": "パンくずリスト",
 	"prefs-jsbreadcrumbs-showcrumbs": "パンくずリストを表示",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "パンくずリストの数",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "表示するパンくずリストの最大数",
 	"prefs-jsbreadcrumbs-showsite": "サイト名をパンくずリストの前に表示"
 }
