@@ -1,12 +1,20 @@
 {
 	"@metadata": {
 		"authors": [
+			"SemanticPioneer",
 			"Sp5uhe"
 		]
 	},
-	"jsbreadcrumbs-desc": "Dodaje szlak nawigacyjny poniżej paska zakładek",
-	"prefs-jsbreadcrumbs": "Ścieżka hiperłączy",
-	"prefs-jsbreadcrumbs-showcrumbs": "Wyświetl ścieżkę hiperłączy",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Liczba hiperłączy w ścieżce",
-	"prefs-jsbreadcrumbs-showsite": "Dodaj do ścieżki hiperłączy nazwę witryny (przydatne gdy korzysta się z wielu wiki)"
+	"jsbreadcrumbs-desc": "Dodaje szlak linków nawigacyjnych poniżej paska zakładek",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Ostatnia|$1 Ostatnie|$1 Ostatnich}} {{PLURAL:$1|wyświetlana|wyświetlane|wyświetlanych}} {{PLURAL:$1|strona|strony|stron}}:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Ostatnia|$1 Ostatnie|$1 Ostatnich}} {{PLURAL:$1|wyświetlana|wyświetlane|wyświetlanych}} {{PLURAL:$1|strona|strony|stron}}:",
+	"prefs-jsbreadcrumbs": "Linki nawigacyjne",
+	"prefs-jsbreadcrumbs-showaction": "Pokaż linki nawigacyjne dla akcji.",
+	"prefs-jsbreadcrumbs-showcrumbs": "Wyświetl ścieżkę linków nawigacyjnych",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Maksymalna liczba wyświetlanych linków nawigacyjnych.",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Maksymalna długość do wyświetlenia dla każdego z linków nawigacyjnych, gdy są poziomo.",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Maksymalna długość do wyświetlenia dla każdego z linków nawigacyjnych, gdy są pionowo.",
+	"prefs-jsbreadcrumbs-horizontal": "Orientacja linków nawigacyjnych jest pozioma.",
+	"prefs-jsbreadcrumbs-showsite": "Dodaj do ścieżki linków nawigacyjnych nazwę witryny (przydatne, gdy korzysta się z wielu wiki)",
+	"prefs-jsbreadcrumbs-domain": "Pokaż linki nawigacyjne dla wszystkich stron z tej domeny."
 }
