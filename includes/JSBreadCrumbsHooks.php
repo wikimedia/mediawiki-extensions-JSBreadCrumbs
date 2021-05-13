@@ -151,7 +151,7 @@ class JSBreadCrumbsHooks {
 	private static function getDisplayTitle( Title $title, &$displaytitle ) {
 		$pagetitle = $title->getPrefixedText();
 		$title = $title->createFragmentTarget( '' );
-		if ( $title instanceof Title ) {
+		if ( $title instanceof Title && $title->canExist() ) {
 			$values = PageProps::getInstance()->getProperties( $title, 'displaytitle' );
 			$id = $title->getArticleID();
 			if ( array_key_exists( $id, $values ) ) {
