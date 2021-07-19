@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
+			"McDutchie",
 			"Siebrand"
 		]
 	},
@@ -10,6 +11,6 @@
 	"jsbreadcrumbs-intro-vertical": "Laatste {{PLURAL:$1|pagina|$1 pagina's}} bekeken",
 	"prefs-jsbreadcrumbs": "Navigatiegeschiedenis",
 	"prefs-jsbreadcrumbs-showcrumbs": "Navigatiegeschiedenis weergeven",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Aantal weer te geven pagina's in navigatiegeschiedenis",
-	"prefs-jsbreadcrumbs-showsite": "Sitenaam opnemen in de navigatiegeschiedenis (handig bij gebruik van meerdere wiki's)"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Maximumaantal broodkruimels om weer te geven",
+	"prefs-jsbreadcrumbs-showsite": "Naam van de site tonen vóór broodkruimels"
 }
