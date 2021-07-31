@@ -10,7 +10,6 @@
 		"no-implicit-globals": "off",
 		"no-jquery/no-global-selector": "off",
 		"no-jquery/no-parse-html-literal": "off",
-		"no-jquery/variable-pattern": "off",
-		"vars-on-top": "off"
+		"no-jquery/variable-pattern": "off"
 	}
 }
