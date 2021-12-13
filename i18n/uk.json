@@ -2,10 +2,12 @@
 	"@metadata": {
 		"authors": [
 			"Base",
-			"Piramidion"
+			"Piramidion",
+			"DDPAT"
 		]
 	},
 	"jsbreadcrumbs-desc": "Додає навігаційний шлях («хлібні крихти») під панель вкладок",
+	"jsbreadcrumbs-horizontal-separator": "»",
 	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Остання $1 переглянута сторінка|Останні $1 переглянуті сторінки|Останні $1 переглянутих сторінок}}:",
 	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Остання $1 переглянута сторінка|Останні $1 переглянуті сторінки|Останні $1 переглянутих сторінок}}:",
 	"prefs-jsbreadcrumbs": "Хлібні крихти",
