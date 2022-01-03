@@ -3,12 +3,19 @@
 		"authors": [
 			"Diki Ananta",
 			"Farras",
-			"Sumbukompor"
+			"Sumbukompor",
+			"Daud I.F. Argana"
 		]
 	},
 	"jsbreadcrumbs-desc": "Menambahkan jejak remahroti di bawah kotak tab",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Halaman|$1 Halaman}} Terakhir yang Dibaca",
 	"prefs-jsbreadcrumbs": "Remah Roti",
+	"prefs-jsbreadcrumbs-showaction": "Tampilkan remah roti tindakan",
 	"prefs-jsbreadcrumbs-showcrumbs": "Tampilkan remah roti",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "Jumlah remah roti",
-	"prefs-jsbreadcrumbs-showsite": "Prefiks remah roti dengan nama situs"
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Jumlah maksimum remah roti yang ditampilkan",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Panjang maksimum yang ditampilkan untuk setiap remah roti ketika horizontal",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Panjang maksimum yang ditampilkan untuk setiap remah roti ketika vertikal",
+	"prefs-jsbreadcrumbs-horizontal": "Orientasi jejak remah roti adalah horizontal",
+	"prefs-jsbreadcrumbs-showsite": "Prefiks remah roti dengan nama situs",
+	"prefs-jsbreadcrumbs-domain": "Tampilkan remah roti untuk semua situs di domain ini"
 }
