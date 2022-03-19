@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 class JSBreadCrumbsHooks {
 
 	/**
@@ -152,7 +154,10 @@ class JSBreadCrumbsHooks {
 		$pagetitle = $title->getPrefixedText();
 		$title = $title->createFragmentTarget( '' );
 		if ( $title instanceof Title && $title->canExist() ) {
-			$values = PageProps::getInstance()->getProperties( $title, 'displaytitle' );
+			$services = MediaWikiServices::getInstance();
+			// TODO MW 1.36+ Simplify: MediaWikiServices::getPageProps() has been introduced in MW 1.36.
+			$pageProps = $services->hasService( 'PageProps' ) ? $services->getPageProps() : PageProps::getInstance();
+			$values = $pageProps->getProperties( $title, 'displaytitle' );
 			$id = $title->getArticleID();
 			if ( array_key_exists( $id, $values ) ) {
 				$value = $values[$id];
