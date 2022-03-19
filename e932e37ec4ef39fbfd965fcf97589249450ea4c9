@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5da7dcf1_be18f07d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 608
+      },
+      "writtenOn": "2022-03-19T15:17:06Z",
+      "side": 1,
+      "message": "The CI failure seems unrelated given it is a PHP deprecation warning (PHP Deprecated: Use of PageProps::getInstance was deprecated in MediaWiki 1.38. [Called from JSBreadCrumbsHooks::getDisplayTitle]).",
+      "revId": "e932e37ec4ef39fbfd965fcf97589249450ea4c9",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
