@@ -16,6 +16,24 @@
       "message": "Thanks for the +2 !",
       "revId": "63369ac2bb2b39349d934914dc8571a5a108a76d",
       "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "48cb7ece_59b454b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 161
+      },
+      "writtenOn": "2022-03-20T09:19:22Z",
+      "side": 1,
+      "message": "I have merged the deprecation Ia94a913d9b406c8a74ef41a82f502ebf0205667c as well - so this is a welcome follow up to handle it in this extension ;-)",
+      "parentUuid": "ae07fb64_4ce86c56",
+      "revId": "63369ac2bb2b39349d934914dc8571a5a108a76d",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
     }
   ]
 }
