@@ -3,6 +3,7 @@
 		"authors": [
 			"Gomoko",
 			"Peter17",
+			"Seb35",
 			"Urhixidur",
 			"Verdy p",
 			"Wladek92"
@@ -11,14 +12,14 @@
 	"jsbreadcrumbs-desc": "Ajoute une suite de liens de navigation sous la barre d’onglets",
 	"jsbreadcrumbs-horizontal-separator": "&nbsp;»",
 	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Dernière page visitée|$1 dernières pages visitées}} :",
-	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Dernière page visitée|$1 dernières pages visitées}} :",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Dernière page visitée|$1 dernières pages visitées}}",
 	"prefs-jsbreadcrumbs": "Barre de navigation",
-	"prefs-jsbreadcrumbs-showaction": "Afficher le chemin de fer de l’action",
+	"prefs-jsbreadcrumbs-showaction": "Afficher l’action dans la barre de navigation",
 	"prefs-jsbreadcrumbs-showcrumbs": "Afficher la barre de navigation",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Nombre maximal de liens de navigation à afficher",
 	"prefs-jsbreadcrumbs-maxlength-horizontal": "Longueur maximale d’affichage pour chaque lien de navigation, quand il est horizontal",
 	"prefs-jsbreadcrumbs-maxlength-vertical": "Longueur maximale d’affichage pour chaque lien de navigation quand il est vertical",
-	"prefs-jsbreadcrumbs-horizontal": "L’orientation du chemin de fer est horizontale",
+	"prefs-jsbreadcrumbs-horizontal": "La barre de navigation est orientée horizontalement",
 	"prefs-jsbreadcrumbs-showsite": "Inclure le nom du site dans la barre de navigation (utile lorsque la fonctionnalité est utilisée à travers plusieurs wikis)",
 	"prefs-jsbreadcrumbs-domain": "Afficher les liens de navigation de tous les sites sur ce domaine"
 }
