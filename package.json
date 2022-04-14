@@ -1,4 +1,5 @@
 {
+	"name": "JSBreadCrumbs",
 	"private": true,
 	"scripts": {
 		"test": "grunt test"
