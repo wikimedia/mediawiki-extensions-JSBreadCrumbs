@@ -1,12 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"Armin1392"
+			"Armin1392",
+			"Jeeputer"
 		]
 	},
 	"jsbreadcrumbs-desc": "افزودن دنبالهٔ خرده نان‌ها زیر نوار تب",
 	"prefs-jsbreadcrumbs": "خرده‌های نان",
 	"prefs-jsbreadcrumbs-showcrumbs": "نمایش خرده‌های نان",
-	"prefs-jsbreadcrumbs-numberofcrumbs": "تعداد خرده‌های نان",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "حداکثر تعداد خرده‌های نان برای نمایش",
 	"prefs-jsbreadcrumbs-showsite": "شامل کردن نام سایت در خرده‌های نان (هنگامی که همه‌جای ویکی‌ها استفاده شد مفید بود)"
 }
