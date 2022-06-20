@@ -5,8 +5,15 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Adde un tracia de \"micas de pan\" sub le barra de schedas",
+	"jsbreadcrumbs-intro-horizontal": "Le ultime {{PLURAL:$1|pagina|$1 paginas}} visitate:",
+	"jsbreadcrumbs-intro-vertical": "Le ultime {{PLURAL:$1|pagina|$1 paginas}} visitate",
 	"prefs-jsbreadcrumbs": "Micas de pan",
+	"prefs-jsbreadcrumbs-showaction": "Monstrar tu actiones in le barra de navigation",
 	"prefs-jsbreadcrumbs-showcrumbs": "Monstrar micas de pan",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Numero maxime de micas de pan a monstrar",
-	"prefs-jsbreadcrumbs-showsite": "Inserer le nomine del sito ante le micas de pan"
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Longitude maxime a monstrar pro cata passo quando horizontal",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Longitude maxime a monstrar pro cata passo quando vertical",
+	"prefs-jsbreadcrumbs-horizontal": "Le barra de navigation es orientate horizontalmente",
+	"prefs-jsbreadcrumbs-showsite": "Inserer le nomine del sito ante le micas de pan",
+	"prefs-jsbreadcrumbs-domain": "Monstrar le ligamines de navigation de tote le sitos sur iste dominio"
 }

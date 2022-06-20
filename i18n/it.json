@@ -2,13 +2,14 @@
 	"@metadata": {
 		"authors": [
 			"Beta16",
-			"Darth Kule"
+			"Darth Kule",
+			"McDutchie"
 		]
 	},
 	"prefs-jsbreadcrumbs": "Breadcrumb",
 	"prefs-jsbreadcrumbs-showcrumbs": "Mostra breadcrumb",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Numero massimo di breadcrumb da visualizzare",
-	"prefs-jsbreadcrumbs-maxlength-horizontal": "Lunghezza massima da visualizzare per ogni breadcrumb quando verticale",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Lunghezza massima da visualizzare per ogni breadcrumb quando horizontale",
 	"prefs-jsbreadcrumbs-maxlength-vertical": "Lunghezza massima da visualizzare per ogni breadcrumb quando verticale",
 	"prefs-jsbreadcrumbs-showsite": "Anteponi il nome del sito nelle breadcrumb",
 	"prefs-jsbreadcrumbs-domain": "Mostra breadcrumb per tutti i siti in questo dominio"
