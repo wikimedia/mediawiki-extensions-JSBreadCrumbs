@@ -13,20 +13,21 @@ class JSBreadCrumbsHooks {
 	 * @param Skin $skin Skin object that will be used to generate the page
 	 */
 	public static function onBeforePageDisplay( $output, $skin ) {
+		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 		$user = $output->getUser();
 		if ( !$user->isAllowed( 'read' ) ||
-			!$user->getOption( 'jsbreadcrumbs-showcrumbs' ) ) {
+			!$userOptionsManager->getOption( $user, 'jsbreadcrumbs-showcrumbs' ) ) {
 			return;
 		}
 
 		$vars = [];
 
-		$vars['SiteMaxCrumbs'] = $user->getOption( 'jsbreadcrumbs-numberofcrumbs' );
+		$vars['SiteMaxCrumbs'] = $userOptionsManager->getOption( $user, 'jsbreadcrumbs-numberofcrumbs' );
 		$vars['GlobalMaxCrumbs'] = $GLOBALS['wgJSBreadCrumbsGlobalMaxCrumbs'];
 
-		$vars['ShowAction'] = (bool)$user->getOption( 'jsbreadcrumbs-showaction' );
-		$vars['ShowSite'] = (bool)$user->getOption( 'jsbreadcrumbs-showsite' );
-		$vars['Domain'] = (bool)$user->getOption( 'jsbreadcrumbs-domain' );
+		$vars['ShowAction'] = (bool)$userOptionsManager->getOption( $user, 'jsbreadcrumbs-showaction' );
+		$vars['ShowSite'] = (bool)$userOptionsManager->getOption( $user, 'jsbreadcrumbs-showsite' );
+		$vars['Domain'] = (bool)$userOptionsManager->getOption( $user, 'jsbreadcrumbs-domain' );
 
 		// Allow localized horizontal separator to be overriden
 		if ( $GLOBALS['wgJSBreadCrumbsHorizontalSeparator'] !== '' ) {
@@ -38,20 +39,20 @@ class JSBreadCrumbsHooks {
 		}
 
 		$horizontal =
-			(bool)$user->getOption( 'jsbreadcrumbs-horizontal' );
+			(bool)$userOptionsManager->getOption( $user, 'jsbreadcrumbs-horizontal' );
 		$vars['Horizontal'] = $horizontal;
 		if ( $horizontal ) {
 			$vars['CSSSelector'] = $GLOBALS['wgJSBreadCrumbsCSSSelectorHorizontal'];
 			$vars['LeadingDescription'] = wfMessage( 'jsbreadcrumbs-intro-horizontal',
 				$vars['SiteMaxCrumbs'] )->parse();
 			$vars['MaxLength'] =
-				$user->getOption( 'jsbreadcrumbs-maxlength-horizontal' );
+				$userOptionsManager->getOption( $user, 'jsbreadcrumbs-maxlength-horizontal' );
 		} else {
 			$vars['CSSSelector'] = $GLOBALS['wgJSBreadCrumbsCSSSelectorVertical'];
 			$vars['LeadingDescription'] = wfMessage( 'jsbreadcrumbs-intro-vertical',
 				$vars['SiteMaxCrumbs'] )->parse();
 			$vars['MaxLength'] =
-				$user->getOption( 'jsbreadcrumbs-maxlength-vertical' );
+				$userOptionsManager->getOption( $user, 'jsbreadcrumbs-maxlength-vertical' );
 		}
 
 		$title = $output->getTitle();
