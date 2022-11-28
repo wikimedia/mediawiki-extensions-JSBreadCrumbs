@@ -5,8 +5,14 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "הוספת שביל פירורי לחם תחת סרגל הלשוניות",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|הדף האחרון שנצפה|$1 הדפים האחרונים שנצפו}}",
 	"prefs-jsbreadcrumbs": "פירורי לחם",
+	"prefs-jsbreadcrumbs-showaction": "הצג פירורי לחם של פעולות",
 	"prefs-jsbreadcrumbs-showcrumbs": "להציג פירורי לחם",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "מספר פירורי הלחם המרבי להצגה",
-	"prefs-jsbreadcrumbs-showsite": "להוסיף את שם האתר לתחילת פירורי לחם"
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "האורך המרבי לתצוגה עבור כל פירור לחם אופקי",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "האורך המרבי לתצוגה עבור כל פירור לחם אנכי",
+	"prefs-jsbreadcrumbs-horizontal": "הכיוון של שביל פירורי הלחם אופקי",
+	"prefs-jsbreadcrumbs-showsite": "להוסיף את שם האתר לתחילת פירורי לחם",
+	"prefs-jsbreadcrumbs-domain": "הצגת פירורי לחם עבור כל האתרים בתחום הזה"
 }
