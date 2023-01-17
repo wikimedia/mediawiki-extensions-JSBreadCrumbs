@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Eleassar"
+		]
+	},
+	"jsbreadcrumbs-desc": "Strani doda navigacijsko sled (niz drobtinic) pod vrstico zavihkov.",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Zadnja ogledana stran|Zadnji $1 ogledani strani|Zadnje $1 ogledane strani|Zadnjih $1 ogledanih strani}}:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Zadnja ogledana stran|Zadnji $1 ogledani strani|Zadnje $1 ogledane strani|Zadnjih $1 ogledanih strani}}:",
+	"prefs-jsbreadcrumbs": "Navigacijska sled",
+	"prefs-jsbreadcrumbs-showaction": "Prikaži navigacijsko sled z dejanji",
+	"prefs-jsbreadcrumbs-showcrumbs": "Prikaži navigacijsko sled",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Največje število drobtinic za prikaz",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Največja dolžina za prikaz vsake drobtinice v vodoravnem položaju",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Največja dolžina za prikaz vsake drobtinice v navpičnem položaju",
+	"prefs-jsbreadcrumbs-horizontal": "Vodoravna usmeritev navigacijske sledi",
+	"prefs-jsbreadcrumbs-showsite": "Drobtinice naj imajo predpono imena mesta",
+	"prefs-jsbreadcrumbs-domain": "Prikaži navigacijsko sled v vseh mestih na tej domeni"
+}
