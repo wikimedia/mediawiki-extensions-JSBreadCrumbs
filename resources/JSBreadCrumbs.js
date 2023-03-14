@@ -46,7 +46,7 @@ var jsbreadcrumbs_controller = ( function () {
 
 			// add the current URL to the breadcrumb list if it points
 			// to a valid page
-			if ( pageName.substring( pageName.length - 8 ) !== 'Badtitle' ) {
+			if ( pageName.slice( Math.max( 0, pageName.length - 8 ) ) !== 'Badtitle' ) {
 				breadcrumbs.push( {
 					url: url,
 					title: pageName,
@@ -69,7 +69,7 @@ var jsbreadcrumbs_controller = ( function () {
 							}
 							var title = breadcrumb.title;
 							if ( title.length > maxLength ) {
-								title = title.substr( 0, maxLength ) + '...';
+								title = title.slice( 0, Math.max( 0, maxLength ) ) + '...';
 							}
 							if ( 'action' in breadcrumb && breadcrumb.action.length > 0 ) {
 								title += ' [' + breadcrumb.action + ']';
