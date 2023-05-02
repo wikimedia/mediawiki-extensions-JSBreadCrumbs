@@ -10,7 +10,7 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Ajoute une suite de liens de navigation sous la barre d’onglets",
-	"jsbreadcrumbs-horizontal-separator": "&nbsp;»",
+	"jsbreadcrumbs-horizontal-separator": "▸",
 	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|D|$1 d}}ernière{{PLURAL:$1||s}} page{{PLURAL:$1||s}} visitée{{PLURAL:$1||s}} :",
 	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Dernière page visitée|$1 dernières pages visitées}}",
 	"prefs-jsbreadcrumbs": "Barre de navigation",
