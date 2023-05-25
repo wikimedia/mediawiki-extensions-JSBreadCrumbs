@@ -1,0 +1,9 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Paskutinis peržiūrėtas puslapis|Paskutiniai $1 peržiūrėti puslapiai}}:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Paskutinis peržiūrėtas puslapis|Paskutiniai $1 peržiūrėti puslapiai}}:"
+}
