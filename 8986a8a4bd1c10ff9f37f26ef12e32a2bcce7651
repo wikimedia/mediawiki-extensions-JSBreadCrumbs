@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1e357504_af44fd6e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1157
+      },
+      "writtenOn": "2023-06-18T13:01:59Z",
+      "side": 1,
+      "message": "Thank you for the patch, and sorry for the delay!",
+      "revId": "8986a8a4bd1c10ff9f37f26ef12e32a2bcce7651",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
