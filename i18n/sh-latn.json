@@ -1,0 +1,10 @@
+{
+	"@metadata": {
+		"authors": [
+			"Winston Sung"
+		]
+	},
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Najnovoposjećenija stranica|$1 najnovoposjećenijih stranica}}",
+	"prefs-jsbreadcrumbs": "Mrvice",
+	"prefs-jsbreadcrumbs-showcrumbs": "Prikazivaj mrvice"
+}
