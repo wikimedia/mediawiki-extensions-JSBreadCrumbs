@@ -10,7 +10,12 @@
 	"jsbreadcrumbs-intro-horizontal": "Laatste {{PLURAL:$1|pagina|$1 pagina's}} bekeken:",
 	"jsbreadcrumbs-intro-vertical": "Laatste {{PLURAL:$1|pagina|$1 pagina's}} bekeken",
 	"prefs-jsbreadcrumbs": "Navigatiegeschiedenis",
+	"prefs-jsbreadcrumbs-showaction": "Kruimelspoor van uw handelingen tonen",
 	"prefs-jsbreadcrumbs-showcrumbs": "Navigatiegeschiedenis weergeven",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Maximumaantal broodkruimels om weer te geven",
-	"prefs-jsbreadcrumbs-showsite": "Naam van de site tonen vóór broodkruimels"
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Maximale weergavelengte voor elk broodkruimeltje, horizontaal",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Maximale weergavelengte voor elk broodkruimeltje, verticaal",
+	"prefs-jsbreadcrumbs-horizontal": "De oriëntatie van het kruimelspoor is horizontaal",
+	"prefs-jsbreadcrumbs-showsite": "Naam van de site tonen vóór broodkruimels",
+	"prefs-jsbreadcrumbs-domain": "Toon broodkruimels voor alle sites op dit domein"
 }
