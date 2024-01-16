@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Jon Harald Søby",
-			"Nghtwlkr"
+			"Nghtwlkr",
+			"Pheisholt"
 		]
 	},
 	"jsbreadcrumbs-desc": "Legger til et brødsmulespor under fanelinjen",
-	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Sist viste side|$1 siste viste sider}}:",
-	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Siste viste side|$1 siste viste sider}}",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Sist viste side|$1 sist viste sider}}:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Sist viste side|$1 sist viste sider}}",
 	"prefs-jsbreadcrumbs": "Brødsmuler",
 	"prefs-jsbreadcrumbs-showaction": "Vis handlingsbrødsmuler",
 	"prefs-jsbreadcrumbs-showcrumbs": "Vis brødsmuler",
