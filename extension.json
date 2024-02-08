@@ -31,7 +31,7 @@
 				"JSBreadCrumbs.css"
 			],
 			"dependencies": [
-				"jquery.cookie"
+				"mediawiki.cookie"
 			]
 		}
 	},

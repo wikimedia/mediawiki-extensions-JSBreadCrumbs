@@ -22,7 +22,7 @@ var jsbreadcrumbs_controller = ( function () {
 				siteName = mw.config.get( 'wgSiteName' ),
 
 				// get the breadcrumbs from the cookie
-				breadcrumbs = $.cookie( 'mwext-jsbreadcrumbs' );
+				breadcrumbs = mw.cookie.get( 'mwext-jsbreadcrumbs' );
 			if ( breadcrumbs ) {
 				try {
 					breadcrumbs = JSON.parse( breadcrumbs );
@@ -91,7 +91,7 @@ var jsbreadcrumbs_controller = ( function () {
 			}
 
 			// save the breadcrumbs to the cookie
-			$.cookie( 'mwext-jsbreadcrumbs', JSON.stringify( breadcrumbs ),
+			mw.cookie.set( 'mwext-jsbreadcrumbs', JSON.stringify( breadcrumbs ),
 				{ path: '/', expires: 30, secure: window.location.protocol === 'https:', sameSite: 'Strict' } );
 
 			var skin = mw.config.get( 'skin' ),
