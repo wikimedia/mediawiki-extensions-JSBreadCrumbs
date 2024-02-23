@@ -1,0 +1,7 @@
+Verified+2: jenkins-bot
+Code-Review+2: L10n-bot <l10n-bot@translatewiki.net>
+Submitted-by: jenkins-bot
+Submitted-at: Fri, 23 Feb 2024 07:47:06 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/c/mediawiki/extensions/JSBreadCrumbs/+/1005900
+Project: mediawiki/extensions/JSBreadCrumbs
+Branch: refs/heads/master
