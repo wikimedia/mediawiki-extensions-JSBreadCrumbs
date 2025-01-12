@@ -100,6 +100,8 @@ var jsbreadcrumbs_controller = ( function () {
 			if ( horizontal ) {
 				if ( skin in cssSelector ) {
 					selector = cssSelector[ skin ];
+				} else if ( skin === 'vector-2022' ) {
+					selector = '#mw-content-subtitle';
 				} else if ( skin === 'foreground' ) {
 					selector = '#mw-js-message';
 				} else {
@@ -119,7 +121,7 @@ var jsbreadcrumbs_controller = ( function () {
 			} else {
 				if ( skin in cssSelector ) {
 					selector = cssSelector[ skin ];
-				} else if ( skin === 'vector' ) {
+				} else if ( skin === 'vector' || skin === 'vector-2022' ) {
 					selector = '#p-tb';
 				} else if ( skin === 'modern' ) {
 					selector = '#mw_portlets';
@@ -131,13 +133,13 @@ var jsbreadcrumbs_controller = ( function () {
 					selector = '#column-one';
 				}
 
-				if ( skin === 'vector' ) {
+				if ( skin === 'vector' || skin === 'vector-2022' ) {
 					$( selector ).after( "<div class='portal' id='p-rv' role='navigation' aria-labelledby='p-rv-label'></div>" );
 					$( '#p-rv' ).append( "<h3 id='p-rv-label'>" + leadingDescription + '</h3>' );
 					$( '#p-rv' ).append( "<div class='body' style='display: block;'><ul id='p-rv-list2'></ul>" );
 				} else {
 					$( selector ).append( "<div class='portlet' id='p-rv' role='navigation'></div>" );
-					$( '#p-rv' ).append( '<h3>' + leadingDescription + "</h3><div class='pBody'><ul id='p-rv-list'></ul></div>" );
+					$( '#p-rv' ).append( '<h3>' + leadingDescription + "</h3><div class='pBody'><ul id='p-rv-list2'></ul></div>" );
 				}
 
 				for ( index = 0; index < visibleCrumbs.length; index++ ) {
