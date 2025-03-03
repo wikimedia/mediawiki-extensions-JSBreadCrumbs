@@ -154,9 +154,10 @@ class JSBreadCrumbsHooks {
 	private static function getDisplayTitle( Title $title, &$displaytitle ) {
 		$pagetitle = $title->getPrefixedText();
 		$title = $title->createFragmentTarget( '' );
-		if ( $title instanceof Title && $title->canExist() ) {
+		if ( $title->canExist() ) {
 			$services = MediaWikiServices::getInstance();
 			// TODO MW 1.36+ Simplify: MediaWikiServices::getPageProps() has been introduced in MW 1.36.
+			// @phan-suppress-next-line PhanUndeclaredStaticMethod Removed in MW 1.36+
 			$pageProps = $services->hasService( 'PageProps' ) ? $services->getPageProps() : PageProps::getInstance();
 			$values = $pageProps->getProperties( $title, 'displaytitle' );
 			$id = $title->getArticleID();
