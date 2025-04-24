@@ -1,13 +1,17 @@
 <?php
 
+namespace MediaWiki\Extension\JSBreadCrumbs;
+
+use Action;
 use MediaWiki\Config\Config;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\PageProps;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Options\UserOptionsManager;
 use MediaWiki\User\User;
+use Skin;
 
-class JSBreadCrumbsHooks implements
+class Hooks implements
 	\MediaWiki\Output\Hook\BeforePageDisplayHook,
 	\MediaWiki\Preferences\Hook\GetPreferencesHook
 {
