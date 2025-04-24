@@ -43,6 +43,7 @@
 		"main": {
 			"class": "JSBreadCrumbsHooks",
 			"services": [
+				"MainConfig",
 				"PageProps",
 				"UserOptionsManager"
 			]

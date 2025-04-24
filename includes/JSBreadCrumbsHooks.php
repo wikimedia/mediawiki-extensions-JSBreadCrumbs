@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Config\Config;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Page\PageProps;
 use MediaWiki\Title\Title;
@@ -11,13 +12,16 @@ class JSBreadCrumbsHooks implements
 	\MediaWiki\Preferences\Hook\GetPreferencesHook
 {
 
+	private Config $config;
 	private PageProps $pageProps;
 	private UserOptionsManager $userOptionsManager;
 
 	public function __construct(
+		Config $config,
 		PageProps $pageProps,
 		UserOptionsManager $userOptionsManager
 	) {
+		$this->config = $config;
 		$this->pageProps = $pageProps;
 		$this->userOptionsManager = $userOptionsManager;
 	}
@@ -40,16 +44,16 @@ class JSBreadCrumbsHooks implements
 		$vars = [];
 
 		$vars['SiteMaxCrumbs'] = $this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-numberofcrumbs' );
-		$vars['GlobalMaxCrumbs'] = $GLOBALS['wgJSBreadCrumbsGlobalMaxCrumbs'];
+		$vars['GlobalMaxCrumbs'] = $this->config->get( 'JSBreadCrumbsGlobalMaxCrumbs' );
 
 		$vars['ShowAction'] = (bool)$this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-showaction' );
 		$vars['ShowSite'] = (bool)$this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-showsite' );
 		$vars['Domain'] = (bool)$this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-domain' );
 
 		// Allow localized horizontal separator to be overriden
-		if ( $GLOBALS['wgJSBreadCrumbsHorizontalSeparator'] !== '' ) {
+		if ( $this->config->get( 'JSBreadCrumbsHorizontalSeparator' ) !== '' ) {
 			$vars['HorizontalSeparator'] =
-				$GLOBALS['wgJSBreadCrumbsHorizontalSeparator'];
+				$this->config->get( 'JSBreadCrumbsHorizontalSeparator' );
 		} else {
 			$vars['HorizontalSeparator'] =
 				wfMessage( 'jsbreadcrumbs-horizontal-separator' )->escaped();
@@ -59,13 +63,13 @@ class JSBreadCrumbsHooks implements
 			(bool)$this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-horizontal' );
 		$vars['Horizontal'] = $horizontal;
 		if ( $horizontal ) {
-			$vars['CSSSelector'] = $GLOBALS['wgJSBreadCrumbsCSSSelectorHorizontal'];
+			$vars['CSSSelector'] = $this->config->get( 'JSBreadCrumbsCSSSelectorHorizontal' );
 			$vars['LeadingDescription'] = wfMessage( 'jsbreadcrumbs-intro-horizontal',
 				$vars['SiteMaxCrumbs'] )->parse();
 			$vars['MaxLength'] =
 				$this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-maxlength-horizontal' );
 		} else {
-			$vars['CSSSelector'] = $GLOBALS['wgJSBreadCrumbsCSSSelectorVertical'];
+			$vars['CSSSelector'] = $this->config->get( 'JSBreadCrumbsCSSSelectorVertical' );
 			$vars['LeadingDescription'] = wfMessage( 'jsbreadcrumbs-intro-vertical',
 				$vars['SiteMaxCrumbs'] )->parse();
 			$vars['MaxLength'] =
@@ -109,7 +113,7 @@ class JSBreadCrumbsHooks implements
 			'section' => 'rendering/jsbreadcrumbs'
 		];
 
-		$max = $GLOBALS['wgJSBreadCrumbsGlobalMaxCrumbs'];
+		$max = $this->config->get( 'JSBreadCrumbsGlobalMaxCrumbs' );
 		$preferences['jsbreadcrumbs-numberofcrumbs'] = [
 			'type' => 'int',
 			'min' => 1,
