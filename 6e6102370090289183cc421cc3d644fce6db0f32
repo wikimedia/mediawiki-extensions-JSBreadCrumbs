@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49b8285d_737a929a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 366
+      },
+      "writtenOn": "2025-04-24T17:08:10Z",
+      "side": 1,
+      "message": "Needs force-merging, sadly, due to references to very old MW classes.",
+      "revId": "6e6102370090289183cc421cc3d644fce6db0f32",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
