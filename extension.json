@@ -19,8 +19,8 @@
 			"i18n"
 		]
 	},
-	"AutoloadClasses": {
-		"JSBreadCrumbsHooks": "includes/JSBreadCrumbsHooks.php"
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\JSBreadCrumbs\\": "includes/"
 	},
 	"ResourceModules": {
 		"ext.JSBreadCrumbs": {
@@ -41,7 +41,7 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "JSBreadCrumbsHooks",
+			"class": "MediaWiki\\Extension\\JSBreadCrumbs\\Hooks",
 			"services": [
 				"MainConfig",
 				"PageProps",
