@@ -5,7 +5,10 @@ use MediaWiki\Output\OutputPage;
 use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 
-class JSBreadCrumbsHooks {
+class JSBreadCrumbsHooks implements
+	\MediaWiki\Output\Hook\BeforePageDisplayHook,
+	\MediaWiki\Preferences\Hook\GetPreferencesHook
+{
 
 	/**
 	 * Implements BeforePageDisplay hook.
@@ -15,7 +18,7 @@ class JSBreadCrumbsHooks {
 	 * @param OutputPage $output OutputPage object
 	 * @param Skin $skin Skin object that will be used to generate the page
 	 */
-	public static function onBeforePageDisplay( $output, $skin ) {
+	public function onBeforePageDisplay( $output, $skin ): void {
 		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 		$user = $output->getUser();
 		if ( !$user->isAllowed( 'read' ) ||
@@ -88,7 +91,7 @@ class JSBreadCrumbsHooks {
 	 * @param User $user User whose preferences are being modified
 	 * @param array &$preferences Preferences description array
 	 */
-	public static function onGetPreferences( User $user, array &$preferences ) {
+	public function onGetPreferences( $user, &$preferences ) {
 		$preferences['jsbreadcrumbs-showcrumbs'] = [
 			'type' => 'toggle',
 			'label-message' => 'prefs-jsbreadcrumbs-showcrumbs',

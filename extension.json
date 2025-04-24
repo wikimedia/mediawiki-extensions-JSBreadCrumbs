@@ -12,7 +12,7 @@
 	"license-name": "GPL-2.0-or-later",
 	"type": "other",
 	"requires": {
-		"MediaWiki": ">= 1.41.0"
+		"MediaWiki": ">= 1.42.0"
 	},
 	"MessagesDirs": {
 		"JSBreadCrumbs": [
@@ -39,9 +39,14 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "JSBreadCrumbs/resources"
 	},
+	"HookHandlers": {
+		"main": {
+			"class": "JSBreadCrumbsHooks"
+		}
+	},
 	"Hooks": {
-		"BeforePageDisplay": "JSBreadCrumbsHooks::onBeforePageDisplay",
-		"GetPreferences": "JSBreadCrumbsHooks::onGetPreferences"
+		"BeforePageDisplay": "main",
+		"GetPreferences": "main"
 	},
 	"DefaultUserOptions": {
 		"jsbreadcrumbs-showcrumbs": true,
