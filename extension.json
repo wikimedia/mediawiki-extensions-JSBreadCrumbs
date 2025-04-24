@@ -41,7 +41,11 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "JSBreadCrumbsHooks"
+			"class": "JSBreadCrumbsHooks",
+			"services": [
+				"PageProps",
+				"UserOptionsManager"
+			]
 		}
 	},
 	"Hooks": {

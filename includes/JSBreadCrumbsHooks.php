@@ -1,14 +1,26 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Page\PageProps;
 use MediaWiki\Title\Title;
+use MediaWiki\User\Options\UserOptionsManager;
 use MediaWiki\User\User;
 
 class JSBreadCrumbsHooks implements
 	\MediaWiki\Output\Hook\BeforePageDisplayHook,
 	\MediaWiki\Preferences\Hook\GetPreferencesHook
 {
+
+	private PageProps $pageProps;
+	private UserOptionsManager $userOptionsManager;
+
+	public function __construct(
+		PageProps $pageProps,
+		UserOptionsManager $userOptionsManager
+	) {
+		$this->pageProps = $pageProps;
+		$this->userOptionsManager = $userOptionsManager;
+	}
 
 	/**
 	 * Implements BeforePageDisplay hook.
@@ -19,21 +31,20 @@ class JSBreadCrumbsHooks implements
 	 * @param Skin $skin Skin object that will be used to generate the page
 	 */
 	public function onBeforePageDisplay( $output, $skin ): void {
-		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
 		$user = $output->getUser();
 		if ( !$user->isAllowed( 'read' ) ||
-			!$userOptionsManager->getOption( $user, 'jsbreadcrumbs-showcrumbs' ) ) {
+			!$this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-showcrumbs' ) ) {
 			return;
 		}
 
 		$vars = [];
 
-		$vars['SiteMaxCrumbs'] = $userOptionsManager->getOption( $user, 'jsbreadcrumbs-numberofcrumbs' );
+		$vars['SiteMaxCrumbs'] = $this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-numberofcrumbs' );
 		$vars['GlobalMaxCrumbs'] = $GLOBALS['wgJSBreadCrumbsGlobalMaxCrumbs'];
 
-		$vars['ShowAction'] = (bool)$userOptionsManager->getOption( $user, 'jsbreadcrumbs-showaction' );
-		$vars['ShowSite'] = (bool)$userOptionsManager->getOption( $user, 'jsbreadcrumbs-showsite' );
-		$vars['Domain'] = (bool)$userOptionsManager->getOption( $user, 'jsbreadcrumbs-domain' );
+		$vars['ShowAction'] = (bool)$this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-showaction' );
+		$vars['ShowSite'] = (bool)$this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-showsite' );
+		$vars['Domain'] = (bool)$this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-domain' );
 
 		// Allow localized horizontal separator to be overriden
 		if ( $GLOBALS['wgJSBreadCrumbsHorizontalSeparator'] !== '' ) {
@@ -45,24 +56,24 @@ class JSBreadCrumbsHooks implements
 		}
 
 		$horizontal =
-			(bool)$userOptionsManager->getOption( $user, 'jsbreadcrumbs-horizontal' );
+			(bool)$this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-horizontal' );
 		$vars['Horizontal'] = $horizontal;
 		if ( $horizontal ) {
 			$vars['CSSSelector'] = $GLOBALS['wgJSBreadCrumbsCSSSelectorHorizontal'];
 			$vars['LeadingDescription'] = wfMessage( 'jsbreadcrumbs-intro-horizontal',
 				$vars['SiteMaxCrumbs'] )->parse();
 			$vars['MaxLength'] =
-				$userOptionsManager->getOption( $user, 'jsbreadcrumbs-maxlength-horizontal' );
+				$this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-maxlength-horizontal' );
 		} else {
 			$vars['CSSSelector'] = $GLOBALS['wgJSBreadCrumbsCSSSelectorVertical'];
 			$vars['LeadingDescription'] = wfMessage( 'jsbreadcrumbs-intro-vertical',
 				$vars['SiteMaxCrumbs'] )->parse();
 			$vars['MaxLength'] =
-				$userOptionsManager->getOption( $user, 'jsbreadcrumbs-maxlength-vertical' );
+				$this->userOptionsManager->getOption( $user, 'jsbreadcrumbs-maxlength-vertical' );
 		}
 
 		$title = $output->getTitle();
-		if ( self::getDisplayTitle( $title, $displayTitle ) ) {
+		if ( $this->getDisplayTitle( $title, $displayTitle ) ) {
 			$pagename = $displayTitle;
 		} else {
 			$pagename = $title->getPrefixedText();
@@ -157,13 +168,11 @@ class JSBreadCrumbsHooks implements
 	 * @return bool true if the page has a displaytitle page property that is
 	 * different from the prefixed page name, false otherwise
 	 */
-	private static function getDisplayTitle( Title $title, &$displaytitle ) {
+	private function getDisplayTitle( Title $title, &$displaytitle ): bool {
 		$pagetitle = $title->getPrefixedText();
 		$title = $title->createFragmentTarget( '' );
 		if ( $title->canExist() ) {
-			$services = MediaWikiServices::getInstance();
-			$pageProps = $services->getPageProps();
-			$values = $pageProps->getProperties( $title, 'displaytitle' );
+			$values = $this->pageProps->getProperties( $title, 'displaytitle' );
 			$id = $title->getArticleID();
 			if ( array_key_exists( $id, $values ) ) {
 				$value = $values[$id];
