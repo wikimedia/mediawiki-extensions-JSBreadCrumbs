@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6884ccc9_f05d12b8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 366
+      },
+      "writtenOn": "2025-04-25T14:13:03Z",
+      "side": 1,
+      "message": "Leaving to Cindy to decide whether bumping to 1.44+ is OK.",
+      "revId": "81e0207b9705221ba41939e734dc0364d3c8543f",
+      "serverId": "e9e9afe9-4712-486d-8885-f54b72dd1951"
+    }
+  ]
+}
