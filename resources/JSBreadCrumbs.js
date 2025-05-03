@@ -1,11 +1,11 @@
-var jsbreadcrumbs_controller = ( function () {
+const jsbreadcrumbs_controller = ( function () {
 	'use strict';
 
 	return {
 
 		initialize: function () {
 
-			var config = mw.config.get( 'JSBreadCrumbs' ),
+			let config = mw.config.get( 'JSBreadCrumbs' ),
 				pageName = config.PageName,
 				action = config.Action,
 				maxLength = config.MaxLength,
@@ -34,7 +34,7 @@ var jsbreadcrumbs_controller = ( function () {
 			}
 
 			// remove this URL from the breadcrumb list if it is already in it
-			var url = location.pathname + location.search,
+			let url = location.pathname + location.search,
 				index = 0;
 			while ( index < breadcrumbs.length ) {
 				if ( breadcrumbs[ index ].url === url ) {
@@ -56,18 +56,18 @@ var jsbreadcrumbs_controller = ( function () {
 			}
 
 			// get the list of breadcrumbs to display
-			var visibleCrumbs = [];
+			const visibleCrumbs = [];
 			for ( index = breadcrumbs.length - 1; index >= 0; index-- ) {
 				if ( domain || breadcrumbs[ index ].siteName === siteName ) {
 					if ( visibleCrumbs.length < siteMaxCrumbs ) {
-						var breadcrumb = breadcrumbs[ index ];
+						const breadcrumb = breadcrumbs[ index ];
 						if ( !( 'action' in breadcrumb ) || showAction ||
 							breadcrumb.action.length === 0 ) {
-							var link = '<a href="' + breadcrumb.url + '">';
+							let link = '<a href="' + breadcrumb.url + '">';
 							if ( showSite ) {
 								link += breadcrumb.siteName + ': ';
 							}
-							var title = breadcrumb.title;
+							let title = breadcrumb.title;
 							if ( title.length > maxLength ) {
 								title = title.slice( 0, Math.max( 0, maxLength ) ) + '...';
 							}
@@ -94,7 +94,7 @@ var jsbreadcrumbs_controller = ( function () {
 			mw.cookie.set( 'mwext-jsbreadcrumbs', JSON.stringify( breadcrumbs ),
 				{ path: '/', expires: 30, secure: window.location.protocol === 'https:', sameSite: 'Strict' } );
 
-			var skin = mw.config.get( 'skin' ),
+			let skin = mw.config.get( 'skin' ),
 
 				selector;
 			if ( horizontal ) {
@@ -110,7 +110,7 @@ var jsbreadcrumbs_controller = ( function () {
 
 				$( selector ).before(
 					'<span id="mwext-bc" class="noprint plainlinks jsbc-breadcrumbs"></span>' );
-				var mwextbc = $( '#mwext-bc' );
+				const mwextbc = $( '#mwext-bc' );
 				mwextbc.append( leadingDescription + ' ' );
 				for ( index = visibleCrumbs.length - 1; index >= 0; index-- ) {
 					mwextbc.append( visibleCrumbs[ index ] );
@@ -153,7 +153,7 @@ var jsbreadcrumbs_controller = ( function () {
 window.JSBreadCrumbsController = jsbreadcrumbs_controller;
 
 ( function () {
-	$( function () {
+	$( () => {
 		if ( mw.config.exists( 'JSBreadCrumbs' ) ) {
 			window.JSBreadCrumbsController.initialize();
 		}
