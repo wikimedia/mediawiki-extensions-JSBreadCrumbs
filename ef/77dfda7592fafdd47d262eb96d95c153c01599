@@ -1,0 +1,7 @@
+Code-Review+2: Libraryupgrader <tools.libraryupgrader@tools.wmflabs.org>
+Verified+2: jenkins-bot
+Submitted-by: jenkins-bot
+Submitted-at: Sat, 12 Jul 2025 10:08:21 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/c/mediawiki/extensions/JSBreadCrumbs/+/1168391
+Project: mediawiki/extensions/JSBreadCrumbs
+Branch: refs/heads/master
