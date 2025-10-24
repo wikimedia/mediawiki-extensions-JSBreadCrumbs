@@ -7,8 +7,15 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "Engade un conxunto de ligazóns de navegación baixo a barra de lapelas",
-	"prefs-jsbreadcrumbs": "Barra de navegación",
-	"prefs-jsbreadcrumbs-showcrumbs": "Amosar a barra de navegación",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Última páxina visitada|Últimas $1 páxinas visitadas}}:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Última páxina visitada|Últimas $1 páxinas visitadas}}",
+	"prefs-jsbreadcrumbs": "Ligazóns de navegación",
+	"prefs-jsbreadcrumbs-showaction": "Amosar as accións nas ligazóns de navegación",
+	"prefs-jsbreadcrumbs-showcrumbs": "Amosar as ligazóns de navegación",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "Número máximo de ligazóns de navegación a amosar",
-	"prefs-jsbreadcrumbs-showsite": "Incluír o nome do sitio na barra de navegación (útil ao usar a funcionalidade a través de varios wikis)"
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Lonxitude máxima para cada ligazón de navegación cando a barra é horizontal",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Lonxitude máxima para cada ligazón de navegación cando a barra é vertical",
+	"prefs-jsbreadcrumbs-horizontal": "A barra de ligazóns de navegación é horizontal",
+	"prefs-jsbreadcrumbs-showsite": "Prefixar as ligazóns de navegación co nome do sitio",
+	"prefs-jsbreadcrumbs-domain": "Amosar as ligazóns de navegación para todos os sitios deste dominio"
 }
