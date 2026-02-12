@@ -1,0 +1,9 @@
+Verified+2: jenkins-bot
+Code-Review+1: Jforrester <jforrester@wikimedia.org>
+Code-Review+2: C. Scott Ananian <cananian@wikimedia.org>
+Submitted-by: jenkins-bot
+Submitted-at: Thu, 12 Feb 2026 19:29:58 +0000
+Reviewed-on: https://gerrit.wikimedia.org/r/c/mediawiki/extensions/JSBreadCrumbs/+/1138912
+Comments-Total: 2
+Project: mediawiki/extensions/JSBreadCrumbs
+Branch: refs/heads/master
