@@ -5,24 +5,23 @@ const jsbreadcrumbs_controller = ( function () {
 
 		initialize: function () {
 
-			let config = mw.config.get( 'JSBreadCrumbs' ),
-				pageName = config.PageName,
-				action = config.Action,
-				maxLength = config.MaxLength,
-				siteMaxCrumbs = config.SiteMaxCrumbs,
-				globalMaxCrumbs = config.GlobalMaxCrumbs,
-				domain = config.Domain,
-				showAction = config.ShowAction,
-				showSite = config.ShowSite,
-				horizontal = config.Horizontal,
-				horizontalSeparator = config.HorizontalSeparator,
-				cssSelector = config.CSSSelector,
-				leadingDescription = config.LeadingDescription,
+			const config = mw.config.get( 'JSBreadCrumbs' );
+			const pageName = config.PageName;
+			const action = config.Action;
+			const maxLength = config.MaxLength;
+			const siteMaxCrumbs = config.SiteMaxCrumbs;
+			const globalMaxCrumbs = config.GlobalMaxCrumbs;
+			const domain = config.Domain;
+			const showAction = config.ShowAction;
+			const showSite = config.ShowSite;
+			const horizontal = config.Horizontal;
+			const horizontalSeparator = config.HorizontalSeparator;
+			const cssSelector = config.CSSSelector;
+			const leadingDescription = config.LeadingDescription;
+			const siteName = mw.config.get( 'wgSiteName' );
 
-				siteName = mw.config.get( 'wgSiteName' ),
-
-				// get the breadcrumbs from the cookie
-				breadcrumbs = mw.cookie.get( 'mwext-jsbreadcrumbs' );
+			// get the breadcrumbs from the cookie
+			let breadcrumbs = mw.cookie.get( 'mwext-jsbreadcrumbs' );
 			if ( breadcrumbs ) {
 				try {
 					breadcrumbs = JSON.parse( breadcrumbs );
@@ -34,8 +33,8 @@ const jsbreadcrumbs_controller = ( function () {
 			}
 
 			// remove this URL from the breadcrumb list if it is already in it
-			let url = location.pathname + location.search,
-				index = 0;
+			const url = location.pathname + location.search;
+			let index = 0;
 			while ( index < breadcrumbs.length ) {
 				if ( breadcrumbs[ index ].url === url ) {
 					breadcrumbs.splice( index, 1 );
@@ -94,9 +93,8 @@ const jsbreadcrumbs_controller = ( function () {
 			mw.cookie.set( 'mwext-jsbreadcrumbs', JSON.stringify( breadcrumbs ),
 				{ path: '/', expires: 30, secure: window.location.protocol === 'https:', sameSite: 'Strict' } );
 
-			let skin = mw.config.get( 'skin' ),
-
-				selector;
+			const skin = mw.config.get( 'skin' );
+			let selector;
 			if ( horizontal ) {
 				if ( skin in cssSelector ) {
 					selector = cssSelector[ skin ];

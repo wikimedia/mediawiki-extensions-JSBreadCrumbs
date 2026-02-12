@@ -1,4 +1,5 @@
-/* eslint-env node */
+'use strict';
+
 module.exports = function ( grunt ) {
 	const conf = grunt.file.readJSON( 'extension.json' );
 
@@ -12,11 +13,7 @@ module.exports = function ( grunt ) {
 			options: {
 				cache: true
 			},
-			all: [
-				'**/*.js{,on}',
-				'!node_modules/**',
-				'!vendor/**'
-			]
+			all: [ '.' ]
 		},
 		stylelint: {
 			options: {
