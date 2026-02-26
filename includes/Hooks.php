@@ -15,19 +15,11 @@ class Hooks implements
 	\MediaWiki\Output\Hook\BeforePageDisplayHook,
 	\MediaWiki\Preferences\Hook\GetPreferencesHook
 {
-
-	private Config $config;
-	private PageProps $pageProps;
-	private UserOptionsManager $userOptionsManager;
-
 	public function __construct(
-		Config $config,
-		PageProps $pageProps,
-		UserOptionsManager $userOptionsManager
+		private readonly Config $config,
+		private readonly PageProps $pageProps,
+		private readonly UserOptionsManager $userOptionsManager,
 	) {
-		$this->config = $config;
-		$this->pageProps = $pageProps;
-		$this->userOptionsManager = $userOptionsManager;
 	}
 
 	/**
