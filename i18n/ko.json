@@ -8,8 +8,15 @@
 		]
 	},
 	"jsbreadcrumbs-desc": "탭 바 아래에 이동 경로의 발자취를 추가합니다",
+	"jsbreadcrumbs-intro-horizontal": "마지막으로 본 {{PLURAL:$1|문서|$1개 문서}}:",
+	"jsbreadcrumbs-intro-vertical": "마지막으로 본 {{PLURAL:$1|문서|$1개 문서}}:",
 	"prefs-jsbreadcrumbs": "빵 부스러기",
+	"prefs-jsbreadcrumbs-showaction": "작업 브레드크럼 표시",
 	"prefs-jsbreadcrumbs-showcrumbs": "이동 경로 표시",
 	"prefs-jsbreadcrumbs-numberofcrumbs": "표시되는 빵 부스러기의 최대 수",
-	"prefs-jsbreadcrumbs-showsite": "사이트 이름이 접두사로 붙은 빵 부스러기"
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "가로 방향으로 표시할 때의 각 브레드크럼의 최대 길이",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "수직 방향으로 표시할 때의 각 브레드크럼의 최대 길이",
+	"prefs-jsbreadcrumbs-horizontal": "브레드크럼의 궤적의 방향은 수평입니다",
+	"prefs-jsbreadcrumbs-showsite": "사이트 이름이 접두사로 붙은 빵 부스러기",
+	"prefs-jsbreadcrumbs-domain": "이 도메인의 모든 사이트에 대한 브레드크럼을 표시합니다"
 }
