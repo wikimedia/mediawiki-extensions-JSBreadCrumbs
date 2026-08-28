@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"jsbreadcrumbs-desc": "Waxay ku dartaa silsilad raad-raacyo ah oo ka hooseysa baarka tab-yada",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Bog|Bogag}} ugu dambeeyay ee la arkay:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Bog|$1 Bogag}} ugu dambeeyay ee la arkay",
+	"prefs-jsbreadcrumbs": "Raad raacyo",
+	"prefs-jsbreadcrumbs-showaction": "Muuji raad raacyada falalka",
+	"prefs-jsbreadcrumbs-showcrumbs": "Muuji raad raacyada",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Tirada ugu badan ee raad raacyada la muujinayo",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Dhererka ugu badan ee raad raac kasta la muujinayo marka uu jiif yahay",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Dhererka ugu badan ee raad raac kasta la muujinayo marka uu toosan yahay",
+	"prefs-jsbreadcrumbs-horizontal": "Jihada silsiladda raad raacyadu waa jiif",
+	"prefs-jsbreadcrumbs-showsite": "Ku bilow raad raacyada magaca goobta",
+	"prefs-jsbreadcrumbs-domain": "Muuji raad raacyada dhammaan goobaha ku jira xayndaabkan"
+}
