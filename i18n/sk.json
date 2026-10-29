@@ -1,0 +1,19 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"jsbreadcrumbs-desc": "Pridá pod lištu kariet navigačnú cestu",
+	"jsbreadcrumbs-intro-horizontal": "{{PLURAL:$1|Posledná zobrazená stránka|Posledné $1 zobrazené stránky|Posledných $1 zobrazených stránok}}:",
+	"jsbreadcrumbs-intro-vertical": "{{PLURAL:$1|Posledná zobrazená stránka|Posledné $1 zobrazené stránky|Posledných $1 zobrazených stránok}}",
+	"prefs-jsbreadcrumbs": "Navigačná cesta",
+	"prefs-jsbreadcrumbs-showaction": "Zobraziť akcie v navigačnej ceste",
+	"prefs-jsbreadcrumbs-showcrumbs": "Zobraziť navigačnú cestu",
+	"prefs-jsbreadcrumbs-numberofcrumbs": "Najväčší počet zobrazených položiek navigačnej cesty",
+	"prefs-jsbreadcrumbs-maxlength-horizontal": "Najväčšia zobrazená dĺžka každej položky navigačnej cesty pri vodorovnom zobrazení",
+	"prefs-jsbreadcrumbs-maxlength-vertical": "Najväčšia zobrazená dĺžka každej položky navigačnej cesty pri zvislom zobrazení",
+	"prefs-jsbreadcrumbs-horizontal": "Navigačná cesta je vodorovná",
+	"prefs-jsbreadcrumbs-showsite": "Pred položky navigačnej cesty pridať názov stránky",
+	"prefs-jsbreadcrumbs-domain": "Zobraziť navigačnú cestu pre všetky stránky v tejto doméne"
+}
